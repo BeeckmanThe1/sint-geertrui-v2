@@ -20,7 +20,7 @@ Show upcoming church events in a scannable card grid, with basic category naviga
 
 - [ ] Page is available at `/<locale>/agenda`.
 - [ ] All user-facing strings use `next-intl` (temporary/lorem copy is allowed for now).
-- [ ] Header includes links to `agenda`, `restauratie`, `geschiedenis`, and `contact`.
+- [ ] Header includes links to `agenda`, `restauratie`, history (localized), and `contact`.
 - [ ] Secondary tabs are visible for `Agenda`, `Concerten`, and `Gemeenschap`.
 - [ ] Event listing renders as 3 columns on desktop.
 - [ ] Each event card shows image, date, and short event description.

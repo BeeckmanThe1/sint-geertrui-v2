@@ -2,7 +2,8 @@
 
 ## Route
 
-- `/<locale>/geschiedenis`
+- App segment: `src/app/[locale]/history/`
+- Localized URLs: `/nl/geschiedenis`, `/fr/histoire`, `/en/history`
 
 ## Purpose
 
@@ -18,9 +19,9 @@ Provide long-form historical context about the church with readable typography a
 
 ## Acceptance criteria
 
-- [ ] Page is available at `/<locale>/geschiedenis`.
+- [ ] Page is available at localized paths (`/nl/geschiedenis`, `/fr/histoire`, `/en/history`).
 - [ ] All user-facing strings use `next-intl` (temporary/lorem copy is allowed for now).
-- [ ] Header includes links to `agenda`, `restauratie`, `geschiedenis`, and `contact`.
+- [ ] Header includes links to `agenda`, `restauratie`, history (localized), and `contact`.
 - [ ] Hero image appears below header and spans page width on desktop.
 - [ ] Main content includes page heading and structured long-form text blocks.
 - [ ] Subsections are visually separated and readable (line length, spacing, hierarchy).

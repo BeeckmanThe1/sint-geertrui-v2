@@ -6,14 +6,14 @@
     "home": "Home",
     "agenda": "Agenda",
     "restauratie": "Restoration",
-    "geschiedenis": "History",
+    "history": "History",
     "contact": "Contact"
   },
   "pages": {
     "home": "Home",
     "agenda": "Agenda",
     "restauratie": "Restoration",
-    "geschiedenis": "History",
+    "history": "History",
     "contact": "Contact",
     "privacy": "Privacy policy",
     "cookies": "Cookies"
@@ -50,8 +50,30 @@
       "title": "360° tour",
       "iframeTitle": "Virtual tour of the church",
       "fallbackHint": "The virtual tour will load here once the embed URL is available.",
-      "embedSrc": ""
+      "embedSrc": "https://kerkenleuven.storygraaf.be/sintgeertrui.html"
     }
+  },
+  "history": {
+    "metaTitle": "History | Sint-Geertruikerk Leuven",
+    "metaDescription": "Discover the history of Sint-Geertruikerk and the abbey in Leuven.",
+    "heroAlt": "Interior of Sint-Geertruikerk with woodwork and vaulting",
+    "heading": "History",
+    "intro": "The <abdij>Sint-Geertrui Abbey</abdij> and its surroundings tell a story of centuries of prayer, music, and city life in <leuven>Leuven</leuven>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent semper feugiat nibh sed pulvinar.",
+    "section1Title": "Early Middle Ages",
+    "section1p1": "In the early Middle Ages, <kanunniken>regular canons</kanunniken> formed the core of the religious community. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa.",
+    "section1p2": "Under <hendrik>Henry I of Brabant</hendrik>, the foundation gained greater political and cultural weight. Integer enim neque volutpat ac tincidunt vitae semper quis lectus.",
+    "section2Title": "City and church",
+    "section2p1": "The bond between the monastery and the urban fabric remained strong for centuries. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet non curabitur.",
+    "section2p2": "Today the ensemble bears witness to late Gothic and Baroque. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque.",
+    "bookSectionLabel": "Archive images",
+    "bookTeaserAlt": "Open book with a historic photograph of the church",
+    "bookOpenLabel": "Open archive image gallery",
+    "bookEmptyFallback": "No images are available yet.",
+    "dialogTitle": "Archive images",
+    "closeLabel": "Close",
+    "prevLabel": "Previous",
+    "nextLabel": "Next",
+    "carouselImageAlt": "Archive image {current} of {total}"
   },
   "footer": {
     "ariaNav": "Footer navigation",

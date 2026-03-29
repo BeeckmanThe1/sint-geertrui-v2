@@ -27,6 +27,7 @@ export async function HomePanorama({ locale }: HomePanoramaProps) {
           <div className="aspect-video w-full">
             {embedSrc ? (
               <iframe
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
                 allowFullScreen
                 className="h-full w-full border-0"
                 src={embedSrc}

@@ -6,14 +6,14 @@
     "home": "Home",
     "agenda": "Agenda",
     "restauratie": "Restauratie",
-    "geschiedenis": "Geschiedenis",
+    "history": "Geschiedenis",
     "contact": "Contact"
   },
   "pages": {
     "home": "Home",
     "agenda": "Agenda",
     "restauratie": "Restauratie",
-    "geschiedenis": "Geschiedenis",
+    "history": "Geschiedenis",
     "contact": "Contact",
     "privacy": "Privacyverklaring",
     "cookies": "Cookies"
@@ -50,8 +50,30 @@
       "title": "Rondleiding in 360°",
       "iframeTitle": "Virtuele rondleiding door de kerk",
       "fallbackHint": "De virtuele rondleiding wordt hier geladen zodra de embed-URL beschikbaar is.",
-      "embedSrc": ""
+      "embedSrc": "https://kerkenleuven.storygraaf.be/sintgeertrui.html"
     }
+  },
+  "history": {
+    "metaTitle": "Geschiedenis | Sint-Geertruikerk Leuven",
+    "metaDescription": "Ontdek de geschiedenis van de Sint-Geertruikerk en de Sint-Geertrui-abdij in Leuven.",
+    "heroAlt": "Interieur van de Sint-Geertruikerk met houtwerk en gewelven",
+    "heading": "Geschiedenis",
+    "intro": "De <abdij>Sint-Geertrui-abdij</abdij> en haar omgeving vertellen een verhaal van eeuwen gebed, muziek en stadsleven in <leuven>Leuven</leuven>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent semper feugiat nibh sed pulvinar.",
+    "section1Title": "Vroege middeleeuwen",
+    "section1p1": "In de vroege middeleeuwen vormden <kanunniken>reguliere kanunniken</kanunniken> de kern van de religieuze gemeenschap. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa.",
+    "section1p2": "Onder <hendrik>Hendrik I van Brabant</hendrik> kreeg de stichting meer politiek en cultureel gewicht. Integer enim neque volutpat ac tincidunt vitae semper quis lectus.",
+    "section2Title": "Stad en kerk",
+    "section2p1": "De band tussen het klooster en het stedelijk weefsel bleef eeuwenlang sterk. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet non curabitur.",
+    "section2p2": "Vandaag vormt het ensemble een stil getuigenis van laatgotiek en barok. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque.",
+    "bookSectionLabel": "Archiefbeelden",
+    "bookTeaserAlt": "Open boek met historische foto van de kerk",
+    "bookOpenLabel": "Open galerij met archiefbeelden",
+    "bookEmptyFallback": "Er zijn nog geen beelden beschikbaar.",
+    "dialogTitle": "Archiefbeelden",
+    "closeLabel": "Sluiten",
+    "prevLabel": "Vorige",
+    "nextLabel": "Volgende",
+    "carouselImageAlt": "Archiefbeeld {current} van {total}"
   },
   "footer": {
     "ariaNav": "Footer navigatie",

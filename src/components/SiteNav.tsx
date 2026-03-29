@@ -1,14 +1,16 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
-import { Link, usePathname } from "@/i18n/navigation";
+import { getPathname, Link, usePathname } from "@/i18n/navigation";
 
 const navItems = [
   { href: "/agenda", key: "agenda" as const },
   { href: "/restauratie", key: "restauratie" as const },
-  { href: "/geschiedenis", key: "geschiedenis" as const },
+  { href: "/history", key: "history" as const },
   { href: "/contact", key: "contact" as const },
 ] as const;
+
+type MainNavHref = (typeof navItems)[number]["href"];
 
 const localeItems = [
   { code: "nl" as const, label: "NL" },
@@ -35,8 +37,12 @@ export function SiteNav() {
   const pathname = usePathname();
   const locale = useLocale();
 
-  const pathActive = (href: string) =>
-    pathname === href || pathname.startsWith(`${href}/`);
+  const pathActive = (canonicalHref: MainNavHref) => {
+    const localized = getPathname({ href: canonicalHref, locale });
+    return (
+      pathname === localized || pathname.startsWith(`${localized}/`)
+    );
+  };
 
   return (
     <header className="w-full bg-[#b3b098] shadow-[inset_0_-1px_0_0_rgba(0,0,0,0.06)]">

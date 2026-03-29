@@ -6,14 +6,14 @@
     "home": "Accueil",
     "agenda": "Agenda",
     "restauratie": "Restauration",
-    "geschiedenis": "Histoire",
+    "history": "Histoire",
     "contact": "Contact"
   },
   "pages": {
     "home": "Accueil",
     "agenda": "Agenda",
     "restauratie": "Restauration",
-    "geschiedenis": "Histoire",
+    "history": "Histoire",
     "contact": "Contact",
     "privacy": "Déclaration de confidentialité",
     "cookies": "Cookies"
@@ -50,8 +50,30 @@
       "title": "Visite à 360°",
       "iframeTitle": "Visite virtuelle de l'église",
       "fallbackHint": "La visite virtuelle sera affichée ici dès que l'URL d'intégration sera disponible.",
-      "embedSrc": ""
+      "embedSrc": "https://kerkenleuven.storygraaf.be/sintgeertrui.html"
     }
+  },
+  "history": {
+    "metaTitle": "Histoire | Sint-Geertruikerk Louvain",
+    "metaDescription": "Découvrez l'histoire de l'église Sint-Geertruikerk et de l'abbaye à Louvain.",
+    "heroAlt": "Intérieur de l'église Sint-Geertruikerk avec boiseries et voûtes",
+    "heading": "Histoire",
+    "intro": "L'<abdij>abbaye Sainte-Gertrude</abdij> et son environnement racontent des siècles de prière, de musique et de vie urbaine à <leuven>Louvain</leuven>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent semper feugiat nibh sed pulvinar.",
+    "section1Title": "Haut Moyen Âge",
+    "section1p1": "Aux premiers siècles du Moyen Âge, des <kanunniken>chanoines réguliers</kanunniken> formèrent le cœur de la communauté. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa.",
+    "section1p2": "Sous <hendrik>Henri Ier de Brabant</hendrik>, la fondation prit un poids politique et culturel plus marqué. Integer enim neque volutpat ac tincidunt vitae semper quis lectus.",
+    "section2Title": "Ville et église",
+    "section2p1": "Le lien entre le monastère et le tissu urbain resta fort pendant des siècles. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet non curabitur.",
+    "section2p2": "Aujourd'hui, l'ensemble témoigne du gothique tardif et du baroque. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque.",
+    "bookSectionLabel": "Images d'archives",
+    "bookTeaserAlt": "Livre ouvert avec une photo historique de l'église",
+    "bookOpenLabel": "Ouvrir la galerie d'images d'archives",
+    "bookEmptyFallback": "Aucune image n'est disponible pour le moment.",
+    "dialogTitle": "Images d'archives",
+    "closeLabel": "Fermer",
+    "prevLabel": "Précédent",
+    "nextLabel": "Suivant",
+    "carouselImageAlt": "Image d'archives {current} sur {total}"
   },
   "footer": {
     "ariaNav": "Navigation du pied de page",

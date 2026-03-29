@@ -17,14 +17,18 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
           aria-label={t("ariaNav")}
           className="flex flex-col gap-2 text-sm font-semibold"
         >
-          <Link className="w-fit hover:underline" href="/#missie" locale={locale}>
+          <Link
+            className="w-fit hover:underline"
+            href={{ pathname: "/", hash: "missie" }}
+            locale={locale}
+          >
             {t("onzeMissie")}
           </Link>
           <Link className="w-fit hover:underline" href="/agenda" locale={locale}>
             {nav("agenda")}
           </Link>
-          <Link className="w-fit hover:underline" href="/geschiedenis" locale={locale}>
-            {nav("geschiedenis")}
+          <Link className="w-fit hover:underline" href="/history" locale={locale}>
+            {nav("history")}
           </Link>
           <Link className="w-fit hover:underline" href="/contact" locale={locale}>
             {nav("contact")}
