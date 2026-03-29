@@ -14,6 +14,49 @@
     "agenda": "Agenda",
     "restauratie": "Restauration",
     "geschiedenis": "Histoire",
-    "contact": "Contact"
+    "contact": "Contact",
+    "privacy": "Déclaration de confidentialité",
+    "cookies": "Cookies"
+  },
+  "home": {
+    "metaTitle": "Sint-Geertruikerk Louvain",
+    "metaDescription": "Découvrez l'histoire, la restauration et les activités de l'église Sint-Geertruikerk à Louvain.",
+    "hero": {
+      "imageAlt": "Extérieur de l'église Sint-Geertruikerk",
+      "missionTitle": "Notre mission",
+      "missionBody": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+    },
+    "newsletter": {
+      "cta": "Restez informé via notre newsletter"
+    },
+    "events": {
+      "title": "Événements à venir",
+      "imageAlt": "Illustration d'un événement",
+      "nextEventsAria": "Voir plus d'événements",
+      "card1": {
+        "date": "11.10.2025",
+        "description": "Un concert de carillon vibrant qui résonne à travers la ville."
+      },
+      "card2": {
+        "date": "24.11.2025",
+        "description": "Visite guidée de l'intérieur et des recoins cachés de l'église."
+      },
+      "card3": {
+        "date": "15.12.2025",
+        "description": "Célébration de la veille de Noël avec communauté et musique."
+      }
+    },
+    "panorama": {
+      "title": "Visite à 360°",
+      "iframeTitle": "Visite virtuelle de l'église",
+      "fallbackHint": "La visite virtuelle sera affichée ici dès que l'URL d'intégration sera disponible.",
+      "embedSrc": ""
+    }
+  },
+  "footer": {
+    "ariaNav": "Navigation du pied de page",
+    "onzeMissie": "Notre mission",
+    "addressLine1": "Sint-Geertruiabdij 1",
+    "addressLine2": "3000 Leuven"
   }
 }

@@ -14,6 +14,49 @@
     "agenda": "Agenda",
     "restauratie": "Restauratie",
     "geschiedenis": "Geschiedenis",
-    "contact": "Contact"
+    "contact": "Contact",
+    "privacy": "Privacyverklaring",
+    "cookies": "Cookies"
+  },
+  "home": {
+    "metaTitle": "Sint-Geertruikerk Leuven",
+    "metaDescription": "Ontdek geschiedenis, restauratie en activiteiten van de Sint-Geertruikerk in Leuven.",
+    "hero": {
+      "imageAlt": "Exterieur van de Sint-Geertruikerk",
+      "missionTitle": "Onze missie",
+      "missionBody": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+    },
+    "newsletter": {
+      "cta": "Blijf op de hoogte via onze nieuwsbrief"
+    },
+    "events": {
+      "title": "Aankomende evenementen",
+      "imageAlt": "Sfeerbeeld bij een evenement",
+      "nextEventsAria": "Meer evenementen bekijken",
+      "card1": {
+        "date": "11.10.2025",
+        "description": "Een bruisend beiaardconcert met klanken die door de stad zweven."
+      },
+      "card2": {
+        "date": "24.11.2025",
+        "description": "Rondleiding door het interieur en de verborgen hoekjes van de kerk."
+      },
+      "card3": {
+        "date": "15.12.2025",
+        "description": "Kerstavondviering met gemeenschap en muziek in feeëriek licht."
+      }
+    },
+    "panorama": {
+      "title": "Rondleiding in 360°",
+      "iframeTitle": "Virtuele rondleiding door de kerk",
+      "fallbackHint": "De virtuele rondleiding wordt hier geladen zodra de embed-URL beschikbaar is.",
+      "embedSrc": ""
+    }
+  },
+  "footer": {
+    "ariaNav": "Footer navigatie",
+    "onzeMissie": "Onze missie",
+    "addressLine1": "Sint-Geertruiabdij 1",
+    "addressLine2": "3000 Leuven"
   }
 }

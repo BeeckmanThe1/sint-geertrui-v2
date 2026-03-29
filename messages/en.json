@@ -14,6 +14,49 @@
     "agenda": "Agenda",
     "restauratie": "Restoration",
     "geschiedenis": "History",
-    "contact": "Contact"
+    "contact": "Contact",
+    "privacy": "Privacy policy",
+    "cookies": "Cookies"
+  },
+  "home": {
+    "metaTitle": "Sint-Geertruikerk Leuven",
+    "metaDescription": "Discover the history, restoration, and activities of Sint-Geertruikerk in Leuven.",
+    "hero": {
+      "imageAlt": "Exterior of Sint-Geertruikerk",
+      "missionTitle": "Our mission",
+      "missionBody": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+    },
+    "newsletter": {
+      "cta": "Stay informed via our newsletter"
+    },
+    "events": {
+      "title": "Upcoming events",
+      "imageAlt": "Event atmosphere photo",
+      "nextEventsAria": "View more events",
+      "card1": {
+        "date": "11.10.2025",
+        "description": "A vibrant carillon concert carrying across the city."
+      },
+      "card2": {
+        "date": "24.11.2025",
+        "description": "Guided walk through the interior and hidden corners of the church."
+      },
+      "card3": {
+        "date": "15.12.2025",
+        "description": "Christmas Eve service with community and music in soft light."
+      }
+    },
+    "panorama": {
+      "title": "360° tour",
+      "iframeTitle": "Virtual tour of the church",
+      "fallbackHint": "The virtual tour will load here once the embed URL is available.",
+      "embedSrc": ""
+    }
+  },
+  "footer": {
+    "ariaNav": "Footer navigation",
+    "onzeMissie": "Our mission",
+    "addressLine1": "Sint-Geertruiabdij 1",
+    "addressLine2": "3000 Leuven"
   }
 }
