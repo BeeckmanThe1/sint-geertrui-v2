@@ -21,7 +21,7 @@ Introduce the church website clearly and guide users to history, renovation, pra
 
 - [ ] Page is available at `/<locale>`.
 - [ ] All user-facing strings use `next-intl` (temporary/lorem copy is allowed for now).
-- [ ] Header includes links to `agenda`, `restauratie`, `geschiedenis`, `contact`, and a prominent `steun ons` CTA.
+- [ ] Header includes links to `agenda`, `restauratie`, `geschiedenis`, and `contact`.
 - [ ] Site branding appears in the header ("Sint-Geertruikerk Leuven").
 - [ ] Mission content block is visible on top of the hero image.
 - [ ] Newsletter CTA is present in the hero area and remains visible on desktop.

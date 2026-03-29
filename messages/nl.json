@@ -1,0 +1,16 @@
+{
+  "nav": {
+    "home": "Home",
+    "agenda": "Agenda",
+    "restauratie": "Restauratie",
+    "geschiedenis": "Geschiedenis",
+    "contact": "Contact"
+  },
+  "pages": {
+    "home": "Home",
+    "agenda": "Agenda",
+    "restauratie": "Restauratie",
+    "geschiedenis": "Geschiedenis",
+    "contact": "Contact"
+  }
+}

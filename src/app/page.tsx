@@ -1,7 +1,5 @@
-export default function HomePage() {
-  return (
-    <main className="min-h-screen p-8">
-      <h1 className="text-2xl font-semibold">Welcome</h1>
-    </main>
-  );
+import { redirect } from "next/navigation";
+
+export default function RootPage() {
+  redirect("/nl");
 }

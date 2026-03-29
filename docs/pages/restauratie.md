@@ -20,7 +20,7 @@ Explain restoration progress and context through a mixed layout of text and supp
 
 - [ ] Page is available at `/<locale>/restauratie`.
 - [ ] All user-facing strings use `next-intl` (temporary/lorem copy is allowed for now).
-- [ ] Header includes links to `agenda`, `restauratie`, `geschiedenis`, `contact`, and `steun ons`.
+- [ ] Header includes links to `agenda`, `restauratie`, `geschiedenis`, and `contact`.
 - [ ] Hero image appears below header and spans page width on desktop.
 - [ ] Intro section includes page title and introductory paragraph.
 - [ ] At least 3 restoration content blocks are supported with mixed image/text layout.

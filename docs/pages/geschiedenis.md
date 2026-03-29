@@ -20,7 +20,7 @@ Provide long-form historical context about the church with readable typography a
 
 - [ ] Page is available at `/<locale>/geschiedenis`.
 - [ ] All user-facing strings use `next-intl` (temporary/lorem copy is allowed for now).
-- [ ] Header includes links to `agenda`, `restauratie`, `geschiedenis`, `contact`, and `steun ons`.
+- [ ] Header includes links to `agenda`, `restauratie`, `geschiedenis`, and `contact`.
 - [ ] Hero image appears below header and spans page width on desktop.
 - [ ] Main content includes page heading and structured long-form text blocks.
 - [ ] Subsections are visually separated and readable (line length, spacing, hierarchy).
