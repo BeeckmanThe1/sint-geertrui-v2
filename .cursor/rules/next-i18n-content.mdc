@@ -1,0 +1,16 @@
+---
+description: Next.js app rules, i18n requirements, and content sourcing policy
+globs: src/**/*
+alwaysApply: false
+---
+
+# Next.js, i18n, and Content
+
+- Build with Next.js App Router conventions.
+- All user-facing strings must be translatable with `next-intl` from day one.
+- Do not hardcode UI copy in components/pages, except for temporary developer-only placeholders.
+- Supported locales are fixed: `nl` (default), `fr`, `en`.
+- New pages/components must include locale-aware copy keys and translations.
+- No CMS integration unless explicitly requested.
+- Keep site content local in `src/content` using JSON/MD when possible.
+- Do not add remote content fetching unless explicitly requested.

@@ -1,0 +1,13 @@
+---
+description: Unit testing expectations for Jest-based tests
+globs: **/*.test.{ts,tsx}
+alwaysApply: false
+---
+
+# Testing Standards
+
+- Use Jest for unit tests.
+- Test names should describe expected behavior (not implementation details).
+- Keep tests deterministic; do not rely on network calls or system time without mocks.
+- For behavior changes, add or update tests unless explicitly skipped with justification.
+- Ensure test changes pass with `npm test`.
