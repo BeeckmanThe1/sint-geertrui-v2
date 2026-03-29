@@ -1,5 +1,8 @@
 {
   "nav": {
+    "brandLine1": "Sint-Geertruikerk",
+    "brandLine2": "Leuven",
+    "ariaMain": "Navigation principale",
     "home": "Accueil",
     "agenda": "Agenda",
     "restauratie": "Restauration",
