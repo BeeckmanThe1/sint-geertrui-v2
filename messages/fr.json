@@ -33,18 +33,13 @@
       "title": "Événements à venir",
       "imageAlt": "Illustration d'un événement",
       "nextEventsAria": "Voir plus d'événements",
-      "card1": {
-        "date": "11.10.2025",
-        "description": "Un concert de carillon vibrant qui résonne à travers la ville."
-      },
-      "card2": {
-        "date": "24.11.2025",
-        "description": "Visite guidée de l'intérieur et des recoins cachés de l'église."
-      },
-      "card3": {
-        "date": "15.12.2025",
-        "description": "Célébration de la veille de Noël avec communauté et musique."
-      }
+      "emptyUpcoming": "Aucun événement à venir pour le moment. Consultez l'agenda pour l'aperçu complet."
+    },
+    "youtube": {
+      "title": "Vidéo",
+      "iframeTitle": "Vidéo intégrée de l'église Sint-Geertruikerk sur YouTube",
+      "posterAlt": "Aperçu de la vidéo ; lecture au défilement",
+      "embedSrc": "https://www.youtube.com/embed/n8djATdBNUY?rel=0&playsinline=1&modestbranding=1"
     },
     "panorama": {
       "title": "Visite à 360°",
@@ -88,80 +83,6 @@
     },
     "pagination": {
       "aria": "Pagination"
-    },
-    "events": {
-      "ev01": {
-        "date": "11.10.2025",
-        "description": "Un concert de carillon vibrant dont les sons parcourent la ville."
-      },
-      "ev02": {
-        "date": "24.11.2025",
-        "description": "Visite guidée de l'intérieur et des recoins cachés de l'église."
-      },
-      "ev03": {
-        "date": "15.12.2025",
-        "description": "Veillée de Noël avec la communauté et la musique dans une lumière douce."
-      },
-      "ev04": {
-        "date": "05.01.2026",
-        "description": "Célébration du Nouvel An avec chœur et orgue au début de l'année."
-      },
-      "ev05": {
-        "date": "18.02.2026",
-        "description": "Conférence sur l'histoire de l'abbaye et la vie de la communauté."
-      },
-      "ev06": {
-        "date": "08.03.2026",
-        "description": "Début du Carême avec prière et musique silencieuse."
-      },
-      "ev07": {
-        "date": "11.05.2025",
-        "description": "Orgue et quatuor à cordes : baroque et musique contemporaine."
-      },
-      "ev08": {
-        "date": "22.06.2025",
-        "description": "Carillon et chœur : vieux hymnes et nouveaux arrangements."
-      },
-      "ev09": {
-        "date": "03.07.2025",
-        "description": "Contrebasse et orgue dans un concert de musique de chambre intimiste."
-      },
-      "ev10": {
-        "date": "14.08.2025",
-        "description": "Musique de chambre dans le chœur avec la lumière des hautes fenêtres."
-      },
-      "ev11": {
-        "date": "25.09.2025",
-        "description": "Improvisation à l'orgue après une courte visite guidée."
-      },
-      "ev12": {
-        "date": "06.10.2025",
-        "description": "Ensemble baroque avec Bach et des compositeurs contemporains."
-      },
-      "ev13": {
-        "date": "12.04.2025",
-        "description": "Prière de Taizé avec chant et silence, ouverte à toutes et tous."
-      },
-      "ev14": {
-        "date": "26.04.2025",
-        "description": "Brunch après la célébration : rencontre et conversation autour de longues tables."
-      },
-      "ev15": {
-        "date": "10.05.2025",
-        "description": "Groupe de jeunes : musique, récit et moment créatif dans l'église."
-      },
-      "ev16": {
-        "date": "24.05.2025",
-        "description": "Accueil des nouveaux habitants du quartier et de la paroisse."
-      },
-      "ev17": {
-        "date": "07.06.2025",
-        "description": "Journée de travail au jardin autour de l'église, verdure et fleurs ensemble."
-      },
-      "ev18": {
-        "date": "21.06.2025",
-        "description": "Café de quartier avec café et écoute des histoires de chacun."
-      }
     }
   },
   "footer": {

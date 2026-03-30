@@ -6,8 +6,8 @@ import type { AgendaCategory } from "@/lib/agenda-events";
 
 const FILTERS: { id: AgendaCategory; msgKey: "agenda" | "concerts" | "community" }[] = [
   { id: "agenda", msgKey: "agenda" },
-  { id: "concerts", msgKey: "concerts" },
   { id: "community", msgKey: "community" },
+  { id: "concerts", msgKey: "concerts" },
 ];
 
 type AgendaSubNavProps = {

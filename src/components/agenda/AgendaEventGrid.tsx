@@ -1,6 +1,10 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import type { AgendaEventItem } from "@/lib/agenda-events";
+import {
+  AGENDA_CATEGORY_IMAGE_SEEDS,
+  formatAgendaDate,
+  type AgendaEventItem,
+} from "@/lib/agenda-events";
 
 type AgendaEventGridProps = {
   locale: string;
@@ -19,7 +23,9 @@ export async function AgendaEventGrid({ locale, items }: AgendaEventGridProps) {
   return (
     <div className="grid items-stretch gap-7 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
       {items.map((item) => {
-        const src = `https://picsum.photos/seed/${item.seed}/640/480`;
+        const seed = AGENDA_CATEGORY_IMAGE_SEEDS[item.category];
+        const src = `https://picsum.photos/seed/${encodeURIComponent(seed)}/640/480`;
+        const formattedDate = formatAgendaDate(item.date, locale);
         return (
           <article
             className="flex h-full min-h-0 flex-col overflow-hidden rounded-sm shadow-sm shadow-black/5"
@@ -36,12 +42,11 @@ export async function AgendaEventGrid({ locale, items }: AgendaEventGridProps) {
             </div>
             <div className="flex flex-1 flex-col justify-start bg-[#f5eedc] px-4 py-4 text-zinc-900">
               <p className="text-sm leading-snug">
-                <span className="font-semibold tabular-nums">
-                  {t(`events.${item.key}.date`)}
-                </span>
+                <span className="font-semibold tabular-nums">{formattedDate}</span>
                 <span className="mx-2 font-light text-zinc-600">|</span>
-                <span>{t(`events.${item.key}.description`)}</span>
+                <span className="font-semibold">{item.title}</span>
               </p>
+              <p className="mt-2 text-sm leading-snug text-zinc-800">{item.description}</p>
             </div>
           </article>
         );

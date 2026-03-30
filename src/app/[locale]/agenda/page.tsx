@@ -5,7 +5,7 @@ import { AgendaPagination } from "@/components/agenda/AgendaPagination";
 import { AgendaSubNav } from "@/components/agenda/AgendaSubNav";
 import type { AgendaCategory } from "@/lib/agenda-events";
 import {
-  filterByCategory,
+  filterAgendaItems,
   getAgendaPageSize,
   getAllAgendaItems,
   getTotalPages,
@@ -41,7 +41,7 @@ export default async function AgendaPage({ params, searchParams }: AgendaPagePro
   const parsedPage = parseInt(sp.page ?? "1", 10);
   const pageSize = getAgendaPageSize();
   const allItems = getAllAgendaItems();
-  const filtered = filterByCategory(allItems, filter);
+  const filtered = filterAgendaItems(allItems, filter);
   const totalPages = getTotalPages(filtered.length, pageSize);
   const rawPage = Number.isFinite(parsedPage) ? parsedPage : 1;
   const page = Math.min(Math.max(1, rawPage), totalPages);

@@ -1,0 +1,187 @@
+{
+  "pageSize": 9,
+  "events": [
+    {
+      "id": "2025-11-11-0",
+      "category": "community",
+      "title": "Interreligieuze viering",
+      "description": "Brede waaier levensbeschouwelijke gemeenschappen komen samen voor vrede en menselijkheid in de Sint-Pieterskerk. Thema: “Menselijkheid, nu meer dan ooit”.",
+      "date": "2025-11-11"
+    },
+    {
+      "id": "2025-11-09-1",
+      "category": "community",
+      "title": "Dienst van Woord en Communie",
+      "description": "Voorgegaan door Marc Michiels.",
+      "date": "2025-11-09"
+    },
+    {
+      "id": "2025-11-16-2",
+      "category": "community",
+      "title": "Eucharistieviering",
+      "description": "Voorgegaan door pater Castro.",
+      "date": "2025-11-16"
+    },
+    {
+      "id": "2025-11-23-3",
+      "category": "community",
+      "title": "Dienst van Woord en Communie",
+      "description": "Gebedsleider: Tomas Bruyland.",
+      "date": "2025-11-23"
+    },
+    {
+      "id": "2025-11-30-4",
+      "category": "community",
+      "title": "Eucharistieviering",
+      "description": "Voorgegaan door pater Castro. Eerste zondag van de Advent, met Solidariteitstafel t.v.v. de Voedselbank.",
+      "date": "2025-11-30"
+    },
+    {
+      "id": "2026-01-25-5",
+      "category": "community",
+      "title": "Geen viering (Radiomis in Sint-Pieterskerk)",
+      "description": "We sluiten aan bij de radiomis vanuit de Sint-Pieterskerk waar ons Gertrokoor samen met het koor Gaudeamus zorgt voor de muzikale opluistering.",
+      "date": "2026-01-25"
+    },
+    {
+      "id": "2026-02-01-6",
+      "category": "community",
+      "title": "Dienst van Woord en Communie (Lichtmisviering)",
+      "description": "Voorgegaan door Dirk Verheyen. Tijdens de viering ontvangen de dopelingen van het voorbije jaar de kinderzegening.",
+      "date": "2026-02-01"
+    },
+    {
+      "id": "2026-02-08-7",
+      "category": "community",
+      "title": "Geloofsgesprek 2",
+      "description": "Om 9.30 u. in de pastorie met Pater Castro, in gesprek over de lezingen van die zondag.",
+      "date": "2026-02-08"
+    },
+    {
+      "id": "2026-02-08-8",
+      "category": "community",
+      "title": "Eucharistieviering",
+      "description": "Voorgegaan door Pater Arnold Castro.",
+      "date": "2026-02-08"
+    },
+    {
+      "id": "2026-02-15-9",
+      "category": "community",
+      "title": "Dienst van Woord en Communie",
+      "description": "Gebedsleider: Tomas Bruyland.",
+      "date": "2026-02-15"
+    },
+    {
+      "id": "2026-02-18-10",
+      "category": "community",
+      "title": "Aswoensdag",
+      "description": "Geen Aswoensdagviering in onze kerk; men kan terecht om 11 uur in de Sint-Pieterskerk of 's avonds in een van de andere gemeenschappen.",
+      "date": "2026-02-18"
+    },
+    {
+      "id": "2026-02-22-11",
+      "category": "community",
+      "title": "Eucharistieviering",
+      "description": "Voorgegaan door Pater Arnold Castro.",
+      "date": "2026-02-22"
+    },
+    {
+      "id": "2026-02-24-12",
+      "category": "community",
+      "title": "Geertruicafé",
+      "description": "Om 19.30 u. in Geertruihof. Gastspreker: jongerenpastor Robin Bovy, over geloven en de toekomst.",
+      "date": "2026-02-24"
+    },
+    {
+      "id": "2026-03-01-13",
+      "category": "community",
+      "title": "Dienst van Woord en Communie",
+      "description": "Om 11 uur, gebedsleider: Marc Michiels.",
+      "date": "2026-03-01"
+    },
+    {
+      "id": "2026-03-07-14",
+      "category": "community",
+      "title": "Portie Gemengd",
+      "description": "Activiteit rond verbinding, ontmoeting en gelijkwaardigheid tussen alle levensbeschouwingen. Vanaf 17.00 u. in Hal 5, Locomotievenstraat 104, 3010 Kessel-Lo. Formule Potluck.",
+      "date": "2026-03-07"
+    },
+    {
+      "id": "2026-03-08-15",
+      "category": "community",
+      "title": "Afrikaanse viering",
+      "description": "Om 11 uur, volgens Congolese ritus, voorgegaan door pater Joseph Imama en opgeluisterd door het koor Elikya, gevolgd door de solidaire maaltijd t.v.v. Broederlijk Delen in Geertruihof.",
+      "date": "2026-03-08"
+    },
+    {
+      "id": "2026-03-15-16",
+      "category": "community",
+      "title": "Eucharistieviering",
+      "description": "Om 11 uur, voorgegaan door Pater Arnold Castro.",
+      "date": "2026-03-15"
+    },
+    {
+      "id": "2026-03-22-17",
+      "category": "community",
+      "title": "Dienst van Woord en Communie",
+      "description": "Gebedsleider: Bart Massart.",
+      "date": "2026-03-22"
+    },
+    {
+      "id": "2026-03-29-18",
+      "category": "community",
+      "title": "Eucharistieviering met palmwijding (Palmzondag)",
+      "description": "Om 11 uur, voorgegaan door Pater Arnold Castro, vertrek bij goed weer vanuit de tuin van de Sint-Geertruiabdij.",
+      "date": "2026-03-29"
+    },
+    {
+      "id": "2026-03-30-19",
+      "category": "community",
+      "title": "Chrismaviering",
+      "description": "Om 19.30 u. voorgegaan door aartsbisschop Luc Terlinden in de Sint-Romboutskathedraal in Mechelen.",
+      "date": "2026-03-30"
+    },
+    {
+      "id": "2026-03-31-20",
+      "category": "community",
+      "title": "Verzoeningsviering",
+      "description": "Om 19 uur voor de Pastorale zone Leuven aan de Dijle in de Sint-Jozefskerk.",
+      "date": "2026-03-31"
+    },
+    {
+      "id": "2026-04-03-21",
+      "category": "community",
+      "title": "Goede Vrijdagviering met Kruishulde",
+      "description": "Om 20 uur in onze kerk. Meegebrachte bloemen worden verwerkt in de versiering van de kerk.",
+      "date": "2026-04-03"
+    },
+    {
+      "id": "2026-04-04-22",
+      "category": "community",
+      "title": "Paaswake",
+      "description": "Om 21 uur voorgegaan door Pater Castro.",
+      "date": "2026-04-04"
+    },
+    {
+      "id": "2026-04-05-23",
+      "category": "community",
+      "title": "Hoogfeest van Pasen (Eucharistieviering)",
+      "description": "Om 11 uur, voorgegaan door Pater Castro en feestelijk opgeluisterd door het Gertrokoor.",
+      "date": "2026-04-05"
+    },
+    {
+      "id": "2026-04-19-24",
+      "category": "community",
+      "title": "Derde geloofsgesprek",
+      "description": "Pater Castro zal opnieuw gespreksleider zijn, in dialoog over de lezingen van die zondag.",
+      "date": "2026-04-19"
+    },
+    {
+      "id": "2026-05-19-25",
+      "category": "community",
+      "title": "Geertruicafé met gastspreker",
+      "description": "Gastspreker: Kris Gelaude.",
+      "date": "2026-05-19"
+    }
+  ]
+}

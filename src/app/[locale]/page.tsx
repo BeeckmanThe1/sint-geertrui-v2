@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { HomeEventsPreview } from "@/components/home/HomeEventsPreview";
 import { HomeHero } from "@/components/home/HomeHero";
 import { HomePanorama } from "@/components/home/HomePanorama";
+import { HomeYouTube } from "@/components/home/HomeYouTube";
 
 type LocaleHomePageProps = {
   params: Promise<{ locale: string }>;
@@ -27,6 +28,7 @@ export default async function LocaleHomePage({ params }: LocaleHomePageProps) {
     <>
       <HomeHero locale={locale} />
       <HomeEventsPreview locale={locale} />
+      <HomeYouTube locale={locale} />
       <HomePanorama locale={locale} />
     </>
   );

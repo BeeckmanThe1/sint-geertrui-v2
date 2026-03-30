@@ -1,14 +1,9 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { formatAgendaDate, getUpcomingAgendaItems } from "@/lib/agenda-events";
 
-const CARD_IMAGE_SRC = [
-  "https://picsum.photos/seed/sg-home-event-1/480/320",
-  "https://picsum.photos/seed/sg-home-event-2/480/320",
-  "https://picsum.photos/seed/sg-home-event-3/480/320",
-] as const;
-
-const CARD_KEYS = ["card1", "card2", "card3"] as const;
+const PREVIEW_LIMIT = 3;
 
 type HomeEventsPreviewProps = {
   locale: string;
@@ -16,6 +11,7 @@ type HomeEventsPreviewProps = {
 
 export async function HomeEventsPreview({ locale }: HomeEventsPreviewProps) {
   const t = await getTranslations({ locale, namespace: "home" });
+  const upcoming = getUpcomingAgendaItems(PREVIEW_LIMIT);
 
   return (
     <section className="bg-[#d4d0c4] py-14 sm:py-20">
@@ -24,33 +20,42 @@ export async function HomeEventsPreview({ locale }: HomeEventsPreviewProps) {
           {t("events.title")}
         </h2>
         <div className="relative mt-10 md:mt-14">
-          <div className="grid items-stretch gap-7 md:grid-cols-3 md:gap-8 md:pr-14">
-            {CARD_KEYS.map((key, index) => (
-              <article
-                className="flex h-full min-h-0 flex-col overflow-hidden rounded-sm bg-transparent shadow-none"
-                key={key}
-              >
-                <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden bg-zinc-400/80">
-                  <Image
-                    alt={t("events.imageAlt")}
-                    className="object-cover"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    src={CARD_IMAGE_SRC[index]}
-                  />
-                </div>
-                <div className="flex flex-1 flex-col justify-start bg-[#c9b896] px-4 py-4 text-zinc-900">
-                  <p className="text-sm leading-snug">
-                    <span className="font-semibold tabular-nums">
-                      {t(`events.${key}.date`)}
-                    </span>
-                    <span className="mx-2 font-light text-zinc-700">|</span>
-                    <span>{t(`events.${key}.description`)}</span>
-                  </p>
-                </div>
-              </article>
-            ))}
-          </div>
+          {upcoming.length === 0 ? (
+            <p className="mx-auto max-w-xl py-6 text-center text-sm leading-relaxed text-zinc-700">
+              {t("events.emptyUpcoming")}
+            </p>
+          ) : (
+            <div className="grid items-stretch gap-7 md:grid-cols-3 md:gap-8 md:pr-14">
+              {upcoming.map((item) => {
+                const src = `https://picsum.photos/seed/${encodeURIComponent(`sg-home-${item.id}`)}/480/320`;
+                const formattedDate = formatAgendaDate(item.date, locale);
+                return (
+                  <article
+                    className="flex h-full min-h-0 flex-col overflow-hidden rounded-sm bg-transparent shadow-none"
+                    key={item.id}
+                  >
+                    <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden bg-zinc-400/80">
+                      <Image
+                        alt={t("events.imageAlt")}
+                        className="object-cover"
+                        fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        src={src}
+                      />
+                    </div>
+                    <div className="flex flex-1 flex-col justify-start bg-[#c9b896] px-4 py-4 text-zinc-900">
+                      <p className="text-sm leading-snug">
+                        <span className="font-semibold tabular-nums">{formattedDate}</span>
+                        <span className="mx-2 font-light text-zinc-700">|</span>
+                        <span className="font-semibold">{item.title}</span>
+                      </p>
+                      <p className="mt-2 text-sm leading-snug text-zinc-800">{item.description}</p>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          )}
           <div className="mt-8 flex justify-center md:absolute md:right-0 md:top-1/2 md:mt-0 md:-translate-y-1/2 md:justify-end">
             <Link
               aria-label={t("events.nextEventsAria")}

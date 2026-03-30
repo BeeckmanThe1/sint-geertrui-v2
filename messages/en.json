@@ -33,18 +33,13 @@
       "title": "Upcoming events",
       "imageAlt": "Event atmosphere photo",
       "nextEventsAria": "View more events",
-      "card1": {
-        "date": "11.10.2025",
-        "description": "A vibrant carillon concert carrying across the city."
-      },
-      "card2": {
-        "date": "24.11.2025",
-        "description": "Guided walk through the interior and hidden corners of the church."
-      },
-      "card3": {
-        "date": "15.12.2025",
-        "description": "Christmas Eve service with community and music in soft light."
-      }
+      "emptyUpcoming": "There are no upcoming events to show right now. See the agenda for the full list."
+    },
+    "youtube": {
+      "title": "Video",
+      "iframeTitle": "Embedded Sint-Geertruikerk video on YouTube",
+      "posterAlt": "Video preview thumbnail; playback starts when you scroll here",
+      "embedSrc": "https://www.youtube.com/embed/n8djATdBNUY?rel=0&playsinline=1&modestbranding=1"
     },
     "panorama": {
       "title": "360° tour",
@@ -88,80 +83,6 @@
     },
     "pagination": {
       "aria": "Pagination"
-    },
-    "events": {
-      "ev01": {
-        "date": "11.10.2025",
-        "description": "A vibrant carillon concert with sounds drifting across the city."
-      },
-      "ev02": {
-        "date": "24.11.2025",
-        "description": "Guided tour of the interior and hidden corners of the church."
-      },
-      "ev03": {
-        "date": "15.12.2025",
-        "description": "Christmas Eve service with community and music in soft light."
-      },
-      "ev04": {
-        "date": "05.01.2026",
-        "description": "New Year service with choir and organ at the start of the year."
-      },
-      "ev05": {
-        "date": "18.02.2026",
-        "description": "Talk on abbey history and the life of the community."
-      },
-      "ev06": {
-        "date": "08.03.2026",
-        "description": "Beginning of Lent with prayer and quiet music."
-      },
-      "ev07": {
-        "date": "11.05.2025",
-        "description": "Organ and string quartet with Baroque and contemporary works."
-      },
-      "ev08": {
-        "date": "22.06.2025",
-        "description": "Carillon and choir: old hymns and new arrangements."
-      },
-      "ev09": {
-        "date": "03.07.2025",
-        "description": "Double bass and organ in an intimate chamber concert."
-      },
-      "ev10": {
-        "date": "14.08.2025",
-        "description": "Chamber music in the choir with light through the tall windows."
-      },
-      "ev11": {
-        "date": "25.09.2025",
-        "description": "Organ improvisation after a short guided tour."
-      },
-      "ev12": {
-        "date": "06.10.2025",
-        "description": "Baroque ensemble with works by Bach and contemporary composers."
-      },
-      "ev13": {
-        "date": "12.04.2025",
-        "description": "Taizé prayer with song and silence, open to everyone."
-      },
-      "ev14": {
-        "date": "26.04.2025",
-        "description": "Brunch after the service: meeting and conversation at long tables."
-      },
-      "ev15": {
-        "date": "10.05.2025",
-        "description": "Youth group: music, storytelling, and a creative moment in church."
-      },
-      "ev16": {
-        "date": "24.05.2025",
-        "description": "Welcome for newcomers in the neighbourhood and parish."
-      },
-      "ev17": {
-        "date": "07.06.2025",
-        "description": "Garden work day around the church, green space and flowers together."
-      },
-      "ev18": {
-        "date": "21.06.2025",
-        "description": "Neighbourhood chat with coffee and listening to each other's stories."
-      }
     }
   },
   "footer": {

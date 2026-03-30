@@ -1,0 +1,362 @@
+{
+  "pageSize": 9,
+  "events": [
+    {
+      "id": "2025-01-12-c0",
+      "category": "concerts",
+      "title": "repetitie Dejans",
+      "description": "Tijd: 20 u. repetitie Dejans. Planning: Jan",
+      "date": "2025-01-12"
+    },
+    {
+      "id": "2025-02-09-c1",
+      "category": "concerts",
+      "title": "repetitie Dejans",
+      "description": "Tijd: 20 u. repetitie Dejans. Planning: Jan",
+      "date": "2025-02-09"
+    },
+    {
+      "id": "2025-03-09-c2",
+      "category": "concerts",
+      "title": "repetitie Dejans",
+      "description": "Tijd: 20 u. repetitie Dejans. Planning: Jan",
+      "date": "2025-03-09"
+    },
+    {
+      "id": "2025-03-14-c3",
+      "category": "concerts",
+      "title": "Forum Musicale, Luc Ponnet brengt Hammond",
+      "description": "Tijd: 13 u. Forum Musicale, Luc Ponnet brengt Hammond. Planning: Jan",
+      "date": "2025-03-14"
+    },
+    {
+      "id": "2025-03-17-c4",
+      "category": "concerts",
+      "title": "repetitie",
+      "description": "Tijd: 16-22 uur. repetitie. Planning: Jan",
+      "date": "2025-03-17"
+    },
+    {
+      "id": "2025-03-18-c5",
+      "category": "concerts",
+      "title": "repetitie",
+      "description": "Tijd: 15 uur. repetitie. Planning: Jan",
+      "date": "2025-03-18"
+    },
+    {
+      "id": "2025-03-18-c6",
+      "category": "concerts",
+      "title": "concert",
+      "description": "Tijd: 21u30. concert. Planning: Jan",
+      "date": "2025-03-18"
+    },
+    {
+      "id": "2025-03-19-c7",
+      "category": "concerts",
+      "title": "Currende, repetitie",
+      "description": "Tijd: 15-22 uur. Currende, repetitie. Planning: Jan",
+      "date": "2025-03-19"
+    },
+    {
+      "id": "2025-03-20-c8",
+      "category": "concerts",
+      "title": "Currende, repetitie",
+      "description": "Tijd: 15-22 uur. Currende, repetitie. Planning: Jan",
+      "date": "2025-03-20"
+    },
+    {
+      "id": "2025-04-15-c9",
+      "category": "concerts",
+      "title": "Currende, repetitie",
+      "description": "Tijd: 15-22 uur. Currende, repetitie. Planning: Jan",
+      "date": "2025-04-15"
+    },
+    {
+      "id": "2025-04-30-c10",
+      "category": "concerts",
+      "title": "SLAC Dido & Aeneas: toonmoment",
+      "description": "Tijd: 19 u. tot 20.30 u. SLAC Dido & Aeneas: toonmoment. Planning: Jan Contact: Floris De Rycker",
+      "date": "2025-04-30"
+    },
+    {
+      "id": "2025-05-05-c11",
+      "category": "concerts",
+      "title": "Generale orgelstemming",
+      "description": "Generale orgelstemming. Planning: Jan",
+      "date": "2025-05-05"
+    },
+    {
+      "id": "2025-05-06-c12",
+      "category": "concerts",
+      "title": "SLAC repetitie Dido & Aeneas",
+      "description": "Tijd: vanaf 18 uur. SLAC repetitie Dido & Aeneas. Planning: Jan Contact: Floris De Rycker",
+      "date": "2025-05-06"
+    },
+    {
+      "id": "2025-05-12-c13",
+      "category": "concerts",
+      "title": "Kerk gereserveerd voor Wouter",
+      "description": "Tijd: van 10 tot 14 u. Kerk gereserveerd voor Wouter",
+      "date": "2025-05-12"
+    },
+    {
+      "id": "2025-05-13-c14",
+      "category": "concerts",
+      "title": "SLAC examens",
+      "description": "Tijd: vanaf 16 uur. SLAC examens. Planning: Grietje",
+      "date": "2025-05-13"
+    },
+    {
+      "id": "2025-05-13-c15",
+      "category": "concerts",
+      "title": "concert Dido & Aeneas",
+      "description": "Tijd: 20 uur. concert Dido & Aeneas. Planning: Grietje",
+      "date": "2025-05-13"
+    },
+    {
+      "id": "2025-05-15-c16",
+      "category": "concerts",
+      "title": "Bezoek Spaanssprekende groep aan kruisweg Esquivel olv Paula Peeters",
+      "description": "Tijd: 13u30. Bezoek Spaanssprekende groep aan kruisweg Esquivel olv Paula Peeters. Planning: Grietje",
+      "date": "2025-05-15"
+    },
+    {
+      "id": "2025-05-16-c17",
+      "category": "concerts",
+      "title": "Kerk gereserveerd voor Wouter",
+      "description": "Kerk gereserveerd voor Wouter",
+      "date": "2025-05-16"
+    },
+    {
+      "id": "2025-05-17-c18",
+      "category": "concerts",
+      "title": "Kerk gereserveerd voor Wouter",
+      "description": "Kerk gereserveerd voor Wouter",
+      "date": "2025-05-17"
+    },
+    {
+      "id": "2025-05-18-c19",
+      "category": "concerts",
+      "title": "CD-voorstelling met concert Wouter Dekoninck",
+      "description": "Tijd: 15 uur. CD-voorstelling met concert Wouter Dekoninck",
+      "date": "2025-05-18"
+    },
+    {
+      "id": "2025-05-22-c20",
+      "category": "concerts",
+      "title": "bezoek Ards Congres voor koorbanken olv Hannah De Moor",
+      "description": "Tijd: 9.00 u. bezoek Ards Congres voor koorbanken olv Hannah De Moor. Planning: Grietje",
+      "date": "2025-05-22"
+    },
+    {
+      "id": "2025-05-22-c21",
+      "category": "concerts",
+      "title": "Openbaar examen Orgel",
+      "description": "Tijd: 14 uur. Openbaar examen Orgel",
+      "date": "2025-05-22"
+    },
+    {
+      "id": "2025-05-22-c22",
+      "category": "concerts",
+      "title": "Kooruwel: Generale repetitie",
+      "description": "Tijd: 19 uur. Kooruwel: Generale repetitie",
+      "date": "2025-05-22"
+    },
+    {
+      "id": "2025-05-23-c23",
+      "category": "concerts",
+      "title": "Kooruwel: leveren van stoelen en licht Contact: Bart Vanreusel 0478 24 00 18",
+      "description": "Kooruwel: leveren van stoelen en licht Contact: Bart Vanreusel 0478 24 00 18",
+      "date": "2025-05-23"
+    },
+    {
+      "id": "2025-05-24-c24",
+      "category": "concerts",
+      "title": "klaarzetten kerk",
+      "description": "Tijd: 16 uur. klaarzetten kerk",
+      "date": "2025-05-24"
+    },
+    {
+      "id": "2025-05-24-c25",
+      "category": "concerts",
+      "title": "Kooruwel:Concert",
+      "description": "Tijd: 20 uur. Kooruwel:Concert",
+      "date": "2025-05-24"
+    },
+    {
+      "id": "2025-05-26-c26",
+      "category": "concerts",
+      "title": "Ophalen materiaal",
+      "description": "Ophalen materiaal",
+      "date": "2025-05-26"
+    },
+    {
+      "id": "2025-06-07-c27",
+      "category": "concerts",
+      "title": "Florilegium: repetitie, Contact: Fried Buelens 0472 49 69 64",
+      "description": "Tijd: 15 uur. Florilegium: repetitie, Contact: Fried Buelens 0472 49 69 64",
+      "date": "2025-06-07"
+    },
+    {
+      "id": "2025-06-08-c28",
+      "category": "concerts",
+      "title": "Concert Florilegium, na het concert bescheiden drink in de kerk",
+      "description": "Tijd: 15 uur. Concert Florilegium, na het concert bescheiden drink in de kerk",
+      "date": "2025-06-08"
+    },
+    {
+      "id": "2025-06-21-c29",
+      "category": "concerts",
+      "title": "repetitie concert Vocaal Ensemble De Corde contact: Dries.fonteyn@gmail.com",
+      "description": "Tijd: 16 uur. repetitie concert Vocaal Ensemble De Corde contact: Dries.fonteyn@gmail.com",
+      "date": "2025-06-21"
+    },
+    {
+      "id": "2025-06-21-c30",
+      "category": "concerts",
+      "title": "concert",
+      "description": "Tijd: 20 uur. concert",
+      "date": "2025-06-21"
+    },
+    {
+      "id": "2025-07-03-c31",
+      "category": "concerts",
+      "title": "Orgelbespelingen, masterclass en concert van Contiusfoundation",
+      "description": "Orgelbespelingen, masterclass en concert van Contiusfoundation (Veerle Braem, Anna Wood)",
+      "date": "2025-07-03"
+    },
+    {
+      "id": "2025-07-04-c32",
+      "category": "concerts",
+      "title": "repetitie Brigitta Petropavlova",
+      "description": "Tijd: 8u30 tot 9u30. repetitie Brigitta Petropavlova",
+      "date": "2025-07-04"
+    },
+    {
+      "id": "2025-07-07-c33",
+      "category": "concerts",
+      "title": "repetities en individuele lessen",
+      "description": "Tijd: 8u30 tot 13u30. repetities en individuele lessen",
+      "date": "2025-07-07"
+    },
+    {
+      "id": "2025-07-08-c34",
+      "category": "concerts",
+      "title": "repetitie cantantes Much",
+      "description": "Tijd: 10 u tot 19 u. repetitie cantantes Much",
+      "date": "2025-07-08"
+    },
+    {
+      "id": "2025-07-09-c35",
+      "category": "concerts",
+      "title": "repetitie cantantes Much",
+      "description": "Tijd: 10 u tot 13 uur. repetitie cantantes Much",
+      "date": "2025-07-09"
+    },
+    {
+      "id": "2025-07-09-c36",
+      "category": "concerts",
+      "title": "individuele lessen",
+      "description": "Tijd: 14u tot 18u30. individuele lessen",
+      "date": "2025-07-09"
+    },
+    {
+      "id": "2025-07-10-c37",
+      "category": "concerts",
+      "title": "repetitie cantantes Much",
+      "description": "Tijd: 10 u tot 13 uur. repetitie cantantes Much",
+      "date": "2025-07-10"
+    },
+    {
+      "id": "2025-07-10-c38",
+      "category": "concerts",
+      "title": "individuele lessen",
+      "description": "Tijd: 14u30 tot 16u30. individuele lessen",
+      "date": "2025-07-10"
+    },
+    {
+      "id": "2025-07-24-c39",
+      "category": "concerts",
+      "title": "levering klavierinstrumenten door Musica Gloria",
+      "description": "Tijd: namiddag/avond. levering klavierinstrumenten door Musica Gloria",
+      "date": "2025-07-24"
+    },
+    {
+      "id": "2025-07-25-c40",
+      "category": "concerts",
+      "title": "stemming voormiddag en repetitie namiddag",
+      "description": "Tijd: vanaf 9 uur tot 21 uur. stemming voormiddag en repetitie namiddag",
+      "date": "2025-07-25"
+    },
+    {
+      "id": "2025-07-26-c41",
+      "category": "concerts",
+      "title": "ophalen klavierinstrumenten, trouwplechtigheid",
+      "description": "Tijd: voor 9 uur. ophalen klavierinstrumenten, trouwplechtigheid",
+      "date": "2025-07-26"
+    },
+    {
+      "id": "2025-08-13-c42",
+      "category": "concerts",
+      "title": "repetitie Currende",
+      "description": "Tijd: 15 tot 22 uur. repetitie Currende",
+      "date": "2025-08-13"
+    },
+    {
+      "id": "2025-08-14-c43",
+      "category": "concerts",
+      "title": "repetitie Currende",
+      "description": "Tijd: 15 tot 22 uur. repetitie Currende",
+      "date": "2025-08-14"
+    },
+    {
+      "id": "2025-08-24-c44",
+      "category": "concerts",
+      "title": "Koor XL, korte repetitie en 3 concertjes contact: cecilesarlet@gmail.com",
+      "description": "Tijd: 13 uur tot 17 uur. Koor XL, korte repetitie en 3 concertjes contact: cecilesarlet@gmail.com",
+      "date": "2025-08-24"
+    },
+    {
+      "id": "2025-09-24-c45",
+      "category": "concerts",
+      "title": "repetitie en opname cd",
+      "description": "Tijd: 10 tot 13 uur. repetitie en opname cd",
+      "date": "2025-09-24"
+    },
+    {
+      "id": "2025-09-24-c46",
+      "category": "concerts",
+      "title": "Concert old Persian Music - Farid Kheradmand",
+      "description": "Tijd: 20.30 uur. Concert old Persian Music - Farid Kheradmand",
+      "date": "2025-09-24"
+    },
+    {
+      "id": "2025-10-09-c47",
+      "category": "concerts",
+      "title": "Concert Festival 20/21",
+      "description": "Concert Festival 20/21",
+      "date": "2025-10-09"
+    },
+    {
+      "id": "2025-10-14-c48",
+      "category": "concerts",
+      "title": "Concert Festival 20/21 (Blindman)",
+      "description": "Concert Festival 20/21 (Blindman)",
+      "date": "2025-10-14"
+    },
+    {
+      "id": "2025-10-31-c49",
+      "category": "concerts",
+      "title": "Concert ‘Musica Gloria’ olv Nele Vertommen",
+      "description": "Concert ‘Musica Gloria’ olv Nele Vertommen",
+      "date": "2025-10-31"
+    },
+    {
+      "id": "2025-11-02-c50",
+      "category": "concerts",
+      "title": "Requiemconcert Sotto Voce olv Stef Conings",
+      "description": "Requiemconcert Sotto Voce olv Stef Conings",
+      "date": "2025-11-02"
+    }
+  ]
+}

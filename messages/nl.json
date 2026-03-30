@@ -33,18 +33,13 @@
       "title": "Aankomende evenementen",
       "imageAlt": "Sfeerbeeld bij een evenement",
       "nextEventsAria": "Meer evenementen bekijken",
-      "card1": {
-        "date": "11.10.2025",
-        "description": "Een bruisend beiaardconcert met klanken die door de stad zweven."
-      },
-      "card2": {
-        "date": "24.11.2025",
-        "description": "Rondleiding door het interieur en de verborgen hoekjes van de kerk."
-      },
-      "card3": {
-        "date": "15.12.2025",
-        "description": "Kerstavondviering met gemeenschap en muziek in feeëriek licht."
-      }
+      "emptyUpcoming": "Er zijn momenteel geen geplande evenementen om te tonen. Bekijk de agenda voor het volledige overzicht."
+    },
+    "youtube": {
+      "title": "Video",
+      "iframeTitle": "Geïntegreerde video van de Sint-Geertruikerk op YouTube",
+      "posterAlt": "Voorbeeldafbeelding van de video; start bij scrollen",
+      "embedSrc": "https://www.youtube.com/embed/n8djATdBNUY?rel=0&playsinline=1&modestbranding=1"
     },
     "panorama": {
       "title": "Rondleiding in 360°",
@@ -84,84 +79,10 @@
       "aria": "Filter activiteiten",
       "agenda": "Agenda",
       "concerts": "Concerten",
-      "community": "Gemeenschap"
+      "community": "Rita's mededelingen"
     },
     "pagination": {
       "aria": "Paginanummering"
-    },
-    "events": {
-      "ev01": {
-        "date": "11.10.2025",
-        "description": "Een bruisend beiaardconcert met klanken die door de stad zweven."
-      },
-      "ev02": {
-        "date": "24.11.2025",
-        "description": "Rondleiding door het interieur en de verborgen hoekjes van de kerk."
-      },
-      "ev03": {
-        "date": "15.12.2025",
-        "description": "Kerstavondviering met gemeenschap en muziek in feeëriek licht."
-      },
-      "ev04": {
-        "date": "05.01.2026",
-        "description": "Nieuwjaarsviering met koor en orgel aan het begin van het jaar."
-      },
-      "ev05": {
-        "date": "18.02.2026",
-        "description": "Lezing over de abdijgeschiedenis en het leven van de gemeenschap."
-      },
-      "ev06": {
-        "date": "08.03.2026",
-        "description": "Start van de veertigdagentijd met gebed en stille muziek."
-      },
-      "ev07": {
-        "date": "11.05.2025",
-        "description": "Orgel en strijkkwartet in een programma van barok en hedendaags werk."
-      },
-      "ev08": {
-        "date": "22.06.2025",
-        "description": "Beiaard en koor: oude hymnen en nieuwe arrangementen."
-      },
-      "ev09": {
-        "date": "03.07.2025",
-        "description": "Dubbelbas en orgel in een intiem kamermuziekconcert."
-      },
-      "ev10": {
-        "date": "14.08.2025",
-        "description": "Kamermuziek in het koor met licht door de hoge ramen."
-      },
-      "ev11": {
-        "date": "25.09.2025",
-        "description": "Improvisatie op het grote orgel na een korte rondleiding."
-      },
-      "ev12": {
-        "date": "06.10.2025",
-        "description": "Barokensemble met werken van Bach en contemporaine componisten."
-      },
-      "ev13": {
-        "date": "12.04.2025",
-        "description": "Taizé-gebed met zang en stilte, open voor iedereen."
-      },
-      "ev14": {
-        "date": "26.04.2025",
-        "description": "Brunch na de viering: ontmoeting en gesprek aan lange tafels."
-      },
-      "ev15": {
-        "date": "10.05.2025",
-        "description": "Jeugdkring: muziek, verhaal en creatief moment in de kerk."
-      },
-      "ev16": {
-        "date": "24.05.2025",
-        "description": "Welkom voor nieuwkomers in de buurt en de parochie."
-      },
-      "ev17": {
-        "date": "07.06.2025",
-        "description": "Werkdag in de tuin rond de kerk, samen groen en bloemen."
-      },
-      "ev18": {
-        "date": "21.06.2025",
-        "description": "Buurtbabbel met koffie en luisteren naar elkaars verhalen."
-      }
     }
   },
   "footer": {

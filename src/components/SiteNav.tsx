@@ -20,16 +20,16 @@ const localeItems = [
 
 function linkClassName(active: boolean) {
   if (active) {
-    return "text-sm font-semibold text-white underline decoration-white/70 underline-offset-[6px]";
+    return "text-base font-bold text-white underline decoration-white/70 underline-offset-[6px] sm:text-lg";
   }
-  return "text-sm font-medium text-white hover:opacity-90 transition-opacity";
+  return "text-base font-semibold text-white hover:opacity-90 transition-opacity sm:text-lg";
 }
 
 function localeClassName(active: boolean) {
   if (active) {
-    return "text-xs font-bold text-white";
+    return "text-sm font-bold text-white sm:text-base";
   }
-  return "text-xs font-semibold text-white/65 hover:text-white transition-colors";
+  return "text-sm font-semibold text-white/65 hover:text-white transition-colors sm:text-base";
 }
 
 export function SiteNav() {
@@ -77,7 +77,7 @@ export function SiteNav() {
 
           <div
             aria-hidden
-            className="mx-2 hidden h-4 w-px shrink-0 bg-white/35 sm:block"
+            className="mx-2 hidden h-5 w-px shrink-0 bg-white/35 sm:block"
           />
 
           <div className="flex items-center gap-2 sm:gap-3">
