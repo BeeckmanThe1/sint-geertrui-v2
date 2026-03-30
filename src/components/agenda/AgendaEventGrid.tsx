@@ -17,15 +17,15 @@ export async function AgendaEventGrid({ locale, items }: AgendaEventGridProps) {
   }
 
   return (
-    <div className="grid gap-7 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+    <div className="grid items-stretch gap-7 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
       {items.map((item) => {
         const src = `https://picsum.photos/seed/${item.seed}/640/480`;
         return (
           <article
-            className="overflow-hidden rounded-sm shadow-sm shadow-black/5"
+            className="flex h-full min-h-0 flex-col overflow-hidden rounded-sm shadow-sm shadow-black/5"
             key={item.id}
           >
-            <div className="relative aspect-[4/3] w-full overflow-hidden bg-zinc-400/50">
+            <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden bg-zinc-400/50">
               <Image
                 alt={t("imageAlt")}
                 className="object-cover"
@@ -34,7 +34,7 @@ export async function AgendaEventGrid({ locale, items }: AgendaEventGridProps) {
                 src={src}
               />
             </div>
-            <div className="bg-[#f5eedc] px-4 py-4 text-zinc-900">
+            <div className="flex flex-1 flex-col justify-start bg-[#f5eedc] px-4 py-4 text-zinc-900">
               <p className="text-sm leading-snug">
                 <span className="font-semibold tabular-nums">
                   {t(`events.${item.key}.date`)}

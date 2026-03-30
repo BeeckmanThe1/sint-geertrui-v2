@@ -24,13 +24,13 @@ export async function HomeEventsPreview({ locale }: HomeEventsPreviewProps) {
           {t("events.title")}
         </h2>
         <div className="relative mt-10 md:mt-14">
-          <div className="grid gap-7 md:grid-cols-3 md:gap-8 md:pr-14">
+          <div className="grid items-stretch gap-7 md:grid-cols-3 md:gap-8 md:pr-14">
             {CARD_KEYS.map((key, index) => (
               <article
-                className="overflow-hidden rounded-sm bg-transparent shadow-none"
+                className="flex h-full min-h-0 flex-col overflow-hidden rounded-sm bg-transparent shadow-none"
                 key={key}
               >
-                <div className="relative aspect-[4/3] w-full overflow-hidden bg-zinc-400/80">
+                <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden bg-zinc-400/80">
                   <Image
                     alt={t("events.imageAlt")}
                     className="object-cover"
@@ -39,7 +39,7 @@ export async function HomeEventsPreview({ locale }: HomeEventsPreviewProps) {
                     src={CARD_IMAGE_SRC[index]}
                   />
                 </div>
-                <div className="bg-[#c9b896] px-4 py-4 text-zinc-900">
+                <div className="flex flex-1 flex-col justify-start bg-[#c9b896] px-4 py-4 text-zinc-900">
                   <p className="text-sm leading-snug">
                     <span className="font-semibold tabular-nums">
                       {t(`events.${key}.date`)}
