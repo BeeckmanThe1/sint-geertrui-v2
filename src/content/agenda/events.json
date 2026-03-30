@@ -1,0 +1,23 @@
+{
+  "pageSize": 9,
+  "items": [
+    { "id": "1", "category": "agenda", "seed": "sg-agenda-ev-01", "key": "ev01" },
+    { "id": "2", "category": "agenda", "seed": "sg-agenda-ev-02", "key": "ev02" },
+    { "id": "3", "category": "agenda", "seed": "sg-agenda-ev-03", "key": "ev03" },
+    { "id": "4", "category": "agenda", "seed": "sg-agenda-ev-04", "key": "ev04" },
+    { "id": "5", "category": "agenda", "seed": "sg-agenda-ev-05", "key": "ev05" },
+    { "id": "6", "category": "agenda", "seed": "sg-agenda-ev-06", "key": "ev06" },
+    { "id": "7", "category": "concerts", "seed": "sg-agenda-ev-07", "key": "ev07" },
+    { "id": "8", "category": "concerts", "seed": "sg-agenda-ev-08", "key": "ev08" },
+    { "id": "9", "category": "concerts", "seed": "sg-agenda-ev-09", "key": "ev09" },
+    { "id": "10", "category": "concerts", "seed": "sg-agenda-ev-10", "key": "ev10" },
+    { "id": "11", "category": "concerts", "seed": "sg-agenda-ev-11", "key": "ev11" },
+    { "id": "12", "category": "concerts", "seed": "sg-agenda-ev-12", "key": "ev12" },
+    { "id": "13", "category": "community", "seed": "sg-agenda-ev-13", "key": "ev13" },
+    { "id": "14", "category": "community", "seed": "sg-agenda-ev-14", "key": "ev14" },
+    { "id": "15", "category": "community", "seed": "sg-agenda-ev-15", "key": "ev15" },
+    { "id": "16", "category": "community", "seed": "sg-agenda-ev-16", "key": "ev16" },
+    { "id": "17", "category": "community", "seed": "sg-agenda-ev-17", "key": "ev17" },
+    { "id": "18", "category": "community", "seed": "sg-agenda-ev-18", "key": "ev18" }
+  ]
+}
