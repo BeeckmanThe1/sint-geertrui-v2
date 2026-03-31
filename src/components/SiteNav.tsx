@@ -5,7 +5,7 @@ import { getPathname, Link, usePathname } from "@/i18n/navigation";
 
 const navItems = [
   { href: "/agenda", key: "agenda" as const },
-  { href: "/restauratie", key: "restauratie" as const },
+  { href: "/restoration", key: "restauratie" as const },
   { href: "/history", key: "history" as const },
   { href: "/contact", key: "contact" as const },
 ] as const;
@@ -84,7 +84,7 @@ export function SiteNav() {
             {localeItems.map((item) => (
               <Link
                 className={localeClassName(item.code === locale)}
-                href="/"
+                href={pathname}
                 key={item.code}
                 locale={item.code}
               >

@@ -11,7 +11,6 @@ export const HISTORY_GALLERY = [
   "/images/history/gallery/IMG_1348.jpg",
   "/images/history/gallery/IMG_1350.jpg",
   "/images/history/gallery/IMG_1354.jpg",
-  "/images/history/gallery/IMG_1355.jpg",
   "/images/history/gallery/IMG_1356.jpg",
   "/images/history/gallery/IMG_1357.jpg",
 ] as const;

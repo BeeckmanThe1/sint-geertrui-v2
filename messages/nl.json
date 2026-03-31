@@ -68,7 +68,36 @@
     "closeLabel": "Sluiten",
     "prevLabel": "Vorige",
     "nextLabel": "Volgende",
-    "carouselImageAlt": "Archiefbeeld {current} van {total}"
+    "carouselImageAlt": "Archiefbeeld {current} van {total}",
+    "article": {
+      "title": "Abdij- en parochiekerk",
+      "foundation": {
+        "title": "Stichting en kerkbouw",
+        "body": "De Sint-Geertrui was oorspronkelijk de kerk van de gelijknamige abdij, opgericht in 1206 door hertog Hendrik I van Brabant en zijn echtgenote Mathilde. De oorspronkelijke priorij groeide uit tot een rijke en invloedrijke gemeenschap van reguliere kanunniken van Sint-Augustinus. Kerk en abdij waren toegewijd aan de heilige Gertrudis of Geertrui van Nijvel. De abdij had talrijke landerijen en hoeves en binnen de Leuvense 14e-eeuwse stadswallen bezat zij ook wijngaarden, met een bijhorend, nog altijd bestaand wijnpershuis. In de schaduw van de abdij ontstond het Leuvense Klein-Begijnhof, wellicht als een gemeenschap van werkzusters in de abdij. Zeker is dat het Begijnhof nog tot in de 17de eeuw parochiaal afhing van de abdij.",
+        "imageAlt": "Historisch beeld van de abdij en kerk"
+      },
+      "tower": {
+        "title": "Toren zonder nagelen",
+        "body": "De kerk is gebouwd tussen de 13e en de 15e eeuw in Brabantse gotiekstijl. Zij kreeg in 1453 haar kenmerkende stenen torenspits, naar een ontwerp van architect Jan van Ruysbroeck. Dat de spits helemaal opgetrokken is in natuursteen, zorgde ervoor dat de kerk in latere tijden bekend werd als een van de Zeven Wonderen van Leuven, als de kerk zonder nagelen of spijkers en hout. De kerk, die nog altijd als parochiekerk dienstdoet, maar die ook voor tal van muzikale evenementen gebruikt wordt, is gelegen aan de Halfmaartstraat - zo genoemd naar de jaarlijkse markt voor huispersoneel die er onder het Ancien Regime gehouden werd.",
+        "imageAlt": "Detail van de Thierry-vleugel en abdijgebouwen"
+      },
+      "thierry": {
+        "title": "Thierry-vleugel",
+        "body": "De abdij zelf, die ook politiek en institutioneel een belangrijke rol speelde in het hertogdom Brabant en voor de in 1425 opgerichte universiteit, werd door de Franse revolutionairen die de Zuidelijke Nederlanden eind 18de eeuw hadden geannexeerd, opgedoekt. De gebouwen werden verkocht en voor allerlei doeleinden gebruikt, tot kanunnik Armand Thierry er eind 19de eeuw een nieuw klooster in oprichtte en de oude gebouwen naar eigen inzicht restaureerde. Dezelfde kanunnik bouwde nog tijdens de Eerste Wereldoorlog een reeks bizarre gevels met brokstukken van de vernieling van veel historische gebouwen door Duitse militairen in 1914. Architect Paul Van Aerschot bouwde er in 1981 een reeks woningen achter.",
+        "imageAlt": "De stenen torenspits van de Sint-Geertruikerk"
+      },
+      "cloister": {
+        "title": "Pandgang",
+        "body": "Momenteel is een deel van de overblijvende abdijgebouwen in privehanden. De kerk zelf is eigendom van de Kerkfabriek van Sint-Geertrui. De rest is bezit van de stad Leuven. Dat geldt ook voor de ooit majestueuze pandgang die sinds mei 1944 grotendeels in puin ligt. De stad Leuven werkt wel aan plannen om mee het geheel te renoveren, met inbegrip van het majestueuze vroegere abtsgebouw. Op het terrein staat ook een neogotische kapel die gebruikt wordt als museum van het scoutswezen.",
+        "imageAlt": "Historisch beeld van de kerk na oorlogsschade en restauratie"
+      },
+      "bombardment": {
+        "title": "Precisie-bombardement",
+        "body": "Een verkeerd gemikte Britse bom - bedoeld voor het Leuvense vormingsstation - vernielde in mei 1944 een deel van de kerk en diverse huizen en andere gebouwen in de omgeving. De kerk zelf werd tussen 1950 en 1953 snel heropgebouwd en ging opnieuw dienstdoen voor een katholieke parochie. Intussen is het gebouw aan een grondige restauratie toe (zie verder). Ze herbergt onder meer een zorgvuldig hersteld laatgotisch kerkgestoelte, dat ook zwaar onder het bombardement had geleden maar dat grotendeels in zijn oude glorie kon hersteld worden. Merkwaardig is ook het vakkundig gerestaureerde Penceler-orgel uit 1714 en een merkwaardige 18e-eeuwse Vanden Gheyn-beiaard - de oudste in Leuven. Die beiaard werd in 2025-2026 gerenoveerd en uitgebreid, met dank vooral aan beiaardier Marc Van Eyck. Als huisorganist kan de kerkgemeenschap een beroep doen op de gerenommeerde Wouter De Koninck, maar het instrument wordt ook druk gebruikt door de leerlingen van het Leuvense conservatorium.",
+        "imageAlt": "Pandgang en overblijvende abdijstructuren"
+      },
+      "sources": "Bronnen: inventaris.onroerenderfgoed.be; www.studioroma.be"
+    }
   },
   "agenda": {
     "metaTitle": "Agenda | Sint-Geertruikerk Leuven",
@@ -90,5 +119,45 @@
     "onzeMissie": "Onze missie",
     "addressLine1": "Sint-Geertruiabdij 1",
     "addressLine2": "3000 Leuven"
+  },
+  "restoration": {
+    "title": "Restauratie van de Geertrui-kerk",
+    "intro": "De Geertrui-kerk werd in mei 1944 getroffen door een verdwaalde Britse bom, bestemd voor het Leuvense vormingsstation. De vernielingen waren aanzienlijk. De kerk werd snel heropgebouwd, maar 75 jaar later is zij opnieuw aan een serieuze restauratie toe.",
+    "sections": {
+      "spire": {
+        "title": "Torenspits",
+        "body": "De unieke torenspits (de toren zonder nagelen en een van de zogeheten Wonderen van Leuven), is ruim twintig jaar geleden al grondig gerestaureerd.",
+        "imageAlt": "Restauratiebeeld torenspits"
+      },
+      "towerBody": {
+        "title": "Torenlichaam",
+        "body": "In 2024 bleken er kleine brokstukken van het onderliggende torenlichaam naar beneden te komen. Uit veiligheidsoverwegingen werden toen steenslagnetten aangebracht. In afspraak met de stad plant de kerkfabriek van Sint-Geertrui - de instelling die onder meer instaat voor het kerkgebouw - een restauratie in de komende jaren, voor Leuven in 2030 Europese culturele hoofdstad wordt.",
+        "imageAlt": "Restauratiebeeld torenlichaam"
+      },
+      "humidity": {
+        "title": "Vocht",
+        "body": "Stabiliteit en opstijgend vocht: het hele kerkgebouw moet beschermd worden tegen opstijgend vocht, vooral in de buitenmuren. Ook de vensters in de buitenmuren moeten op tal van plaatsen hersteld en verstevigd worden. Leuven is nu eenmaal een drassig gebied, doorsneden door waterlopen, op de eerste plaats de armen van de Dijle die langs de kerk stroomt.",
+        "imageAlt": "Restauratiebeeld vochtproblematiek"
+      },
+      "heatingStability": {
+        "title": "Verwarming en stabiliteit",
+        "body": "Verwarming: de kerk wordt al decennia niet verwarmd, tenzij tijdens kerkdiensten met terrasbranders. Met een onverwachte subsidie van de Vlaamse Overheid wil de kerkfabriek nu een minimale verwarming van het gebouw aanbrengen, in de hoop om in een later stadium alternatieve energie te kunnen aanwenden, liefst voor de hele buurt. Meteen worden ook delen van de zolder geisoleerd. Deze fase van de restauratie gaat in oktober 2026 van start en duurt wellicht zes maanden. In deze fase worden ook twee pijlers achteraan in het koor verstevigd tegen verzakkingen.",
+        "imageAlt": "Restauratiebeeld verwarming en stabiliteit"
+      },
+      "roof": {
+        "title": "Dak",
+        "body": "Het dak van de kerk is aan vervanging toe. In afspraak met de stad werden er eind 2025 werken uitgevoerd om het dak lekvrij te maken. Als het dak lekvrij is gemaakt, kan er ook isolatie op de gewelven worden aangebracht, die de helft van het warmteverlies in de kerk kan opvangen. Die isoleringswerkzaamheden vinden in 2026-2027 plaats, samen met de aanleg van een verwarmingssysteem.",
+        "imageAlt": "Restauratiebeeld dak"
+      },
+      "carillon": {
+        "title": "Beiaard",
+        "body": "De beiaard (carillon) was midden 2005 volop in herstelling. Tegen eind van dat jaar moest de herstelling rond zijn en zou er een nieuw octaaf worden bijgevoegd. Het gaat om de oudste beiaard van de stad, die er nog een viertal andere telt. De Vanden Gheyn-beiaard van de Geertruikerk dateert in haar kern nog uit de 18de eeuw.",
+        "imageAlt": "Restauratiebeeld beiaard"
+      }
+    },
+    "outro": {
+      "title": "Interieur",
+      "body": "Ook de binnenkant van de kerk moet aangepakt worden. Het ergst is de zogeheten Kapel van de Zeven Weeën eraan toe, bij binnenkomst rechts van het portaal. Maar de kerkfabriek wil op termijn ook de verbinding herstellen met het grotendeels nog in puin liggende abdijpand."
+    }
   }
 }

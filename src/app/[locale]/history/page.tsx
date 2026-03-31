@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { HistoryArticle } from "@/components/history/HistoryArticle";
 import { HistoryBookCarousel } from "@/components/history/HistoryBookCarousel";
-import { HistoryHero } from "@/components/history/HistoryHero";
 
 type HistoryPageProps = {
   params: Promise<{ locale: string }>;
@@ -20,14 +19,13 @@ export async function generateMetadata({
   };
 }
 
-export default async function HistoryPage({ params }: HistoryPageProps) {
-  const { locale } = await params;
-
+export default async function HistoryPage() {
   return (
-    <div className="bg-[#bdb7a6]">
-      <HistoryHero locale={locale} />
-      <HistoryArticle locale={locale} />
-      <HistoryBookCarousel />
+    <div className="bg-zinc-100">
+      <div className="mx-auto w-full max-w-[65rem] bg-[#bdb7a6]">
+        <HistoryArticle />
+        <HistoryBookCarousel />
+      </div>
     </div>
   );
 }

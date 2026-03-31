@@ -6,7 +6,11 @@ export const routing = defineRouting({
   pathnames: {
     "/": "/",
     "/agenda": "/agenda",
-    "/restauratie": "/restauratie",
+    "/restoration": {
+      nl: "/restauratie",
+      fr: "/restauration",
+      en: "/restoration",
+    },
     "/contact": "/contact",
     "/privacy": "/privacy",
     "/cookies": "/cookies",
