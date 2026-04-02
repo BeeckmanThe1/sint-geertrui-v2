@@ -73,27 +73,45 @@
       "title": "Abdij- en parochiekerk",
       "foundation": {
         "title": "Stichting en kerkbouw",
-        "body": "De Sint-Geertrui was oorspronkelijk de kerk van de gelijknamige abdij, opgericht in 1206 door hertog Hendrik I van Brabant en zijn echtgenote Mathilde. De oorspronkelijke priorij groeide uit tot een rijke en invloedrijke gemeenschap van reguliere kanunniken van Sint-Augustinus. Kerk en abdij waren toegewijd aan de heilige Gertrudis of Geertrui van Nijvel. De abdij had talrijke landerijen en hoeves en binnen de Leuvense 14e-eeuwse stadswallen bezat zij ook wijngaarden, met een bijhorend, nog altijd bestaand wijnpershuis. In de schaduw van de abdij ontstond het Leuvense Klein-Begijnhof, wellicht als een gemeenschap van werkzusters in de abdij. Zeker is dat het Begijnhof nog tot in de 17de eeuw parochiaal afhing van de abdij.",
+        "body": [
+          "De Sint-Geertrui was oorspronkelijk de kerk van de gelijknamige abdij, opgericht in 1206 door hertog Hendrik I van Brabant en zijn echtgenote Mathilde. De oorspronkelijke priorij groeide uit tot een rijke en invloedrijke gemeenschap van reguliere kanunniken van Sint-Augustinus.",
+          "Kerk en abdij waren toegewijd aan de heilige Gertrudis of Geertrui van Nijvel. De abdij had talrijke landerijen en hoeves en binnen de Leuvense 14e-eeuwse stadswallen bezat zij ook wijngaarden, met een bijhorend, nog altijd bestaand wijnpershuis.",
+          "In de schaduw van de abdij ontstond het Leuvense Klein-Begijnhof, wellicht als een gemeenschap van werkzusters in de abdij. Zeker is dat het Begijnhof nog tot in de 17de eeuw parochiaal afhing van de abdij."
+        ],
         "imageAlt": "Historisch beeld van de abdij en kerk"
       },
       "tower": {
         "title": "Toren zonder nagelen",
-        "body": "De kerk is gebouwd tussen de 13e en de 15e eeuw in Brabantse gotiekstijl. Zij kreeg in 1453 haar kenmerkende stenen torenspits, naar een ontwerp van architect Jan van Ruysbroeck. Dat de spits helemaal opgetrokken is in natuursteen, zorgde ervoor dat de kerk in latere tijden bekend werd als een van de Zeven Wonderen van Leuven, als de kerk zonder nagelen of spijkers en hout. De kerk, die nog altijd als parochiekerk dienstdoet, maar die ook voor tal van muzikale evenementen gebruikt wordt, is gelegen aan de Halfmaartstraat - zo genoemd naar de jaarlijkse markt voor huispersoneel die er onder het Ancien Regime gehouden werd.",
+        "body": [
+          "De kerk is gebouwd tussen de 13e en de 15e eeuw in Brabantse gotiekstijl. Zij kreeg in 1453 haar kenmerkende stenen torenspits, naar een ontwerp van architect Jan van Ruysbroeck. Dat de spits helemaal opgetrokken is in natuursteen, zorgde ervoor dat de kerk in latere tijden bekend werd als een van de Zeven Wonderen van Leuven, als de kerk zonder nagelen of spijkers en hout.",
+          "De kerk, die nog altijd als parochiekerk dienstdoet, maar die ook voor tal van muzikale evenementen gebruikt wordt, is gelegen aan de Halfmaartstraat - zo genoemd naar de jaarlijkse markt voor huispersoneel die er onder het Ancien Regime gehouden werd."
+        ],
         "imageAlt": "Detail van de Thierry-vleugel en abdijgebouwen"
       },
       "thierry": {
         "title": "Thierry-vleugel",
-        "body": "De abdij zelf, die ook politiek en institutioneel een belangrijke rol speelde in het hertogdom Brabant en voor de in 1425 opgerichte universiteit, werd door de Franse revolutionairen die de Zuidelijke Nederlanden eind 18de eeuw hadden geannexeerd, opgedoekt. De gebouwen werden verkocht en voor allerlei doeleinden gebruikt, tot kanunnik Armand Thierry er eind 19de eeuw een nieuw klooster in oprichtte en de oude gebouwen naar eigen inzicht restaureerde. Dezelfde kanunnik bouwde nog tijdens de Eerste Wereldoorlog een reeks bizarre gevels met brokstukken van de vernieling van veel historische gebouwen door Duitse militairen in 1914. Architect Paul Van Aerschot bouwde er in 1981 een reeks woningen achter.",
+        "body": [
+          "De abdij zelf, die ook politiek en institutioneel een belangrijke rol speelde in het hertogdom Brabant en voor de in 1425 opgerichte universiteit, werd door de Franse revolutionairen die de Zuidelijke Nederlanden eind 18de eeuw hadden geannexeerd, opgedoekt. De gebouwen werden verkocht en voor allerlei doeleinden gebruikt, tot kanunnik Armand Thierry er eind 19de eeuw een nieuw klooster in oprichtte en de oude gebouwen naar eigen inzicht restaureerde.",
+          "Dezelfde kanunnik bouwde nog tijdens de Eerste Wereldoorlog een reeks bizarre gevels met brokstukken van de vernieling van veel historische gebouwen door Duitse militairen in 1914.",
+          "Architect Paul Van Aerschot bouwde er in 1981 een reeks woningen achter."
+        ],
         "imageAlt": "De stenen torenspits van de Sint-Geertruikerk"
       },
       "cloister": {
         "title": "Pandgang",
-        "body": "Momenteel is een deel van de overblijvende abdijgebouwen in privehanden. De kerk zelf is eigendom van de Kerkfabriek van Sint-Geertrui. De rest is bezit van de stad Leuven. Dat geldt ook voor de ooit majestueuze pandgang die sinds mei 1944 grotendeels in puin ligt. De stad Leuven werkt wel aan plannen om mee het geheel te renoveren, met inbegrip van het majestueuze vroegere abtsgebouw. Op het terrein staat ook een neogotische kapel die gebruikt wordt als museum van het scoutswezen.",
+        "body": [
+          "Momenteel is een deel van de overblijvende abdijgebouwen in privehanden. De kerk zelf is eigendom van de Kerkfabriek van Sint-Geertrui. De rest is bezit van de stad Leuven. Dat geldt ook voor de ooit majestueuze pandgang die sinds mei 1944 grotendeels in puin ligt.",
+          "De stad Leuven werkt wel aan plannen om mee het geheel te renoveren, met inbegrip van het majestueuze vroegere abtsgebouw. Op het terrein staat ook een neogotische kapel die gebruikt wordt als museum van het scoutswezen."
+        ],
         "imageAlt": "Historisch beeld van de kerk na oorlogsschade en restauratie"
       },
       "bombardment": {
         "title": "Precisie-bombardement",
-        "body": "Een verkeerd gemikte Britse bom - bedoeld voor het Leuvense vormingsstation - vernielde in mei 1944 een deel van de kerk en diverse huizen en andere gebouwen in de omgeving. De kerk zelf werd tussen 1950 en 1953 snel heropgebouwd en ging opnieuw dienstdoen voor een katholieke parochie. Intussen is het gebouw aan een grondige restauratie toe (zie verder). Ze herbergt onder meer een zorgvuldig hersteld laatgotisch kerkgestoelte, dat ook zwaar onder het bombardement had geleden maar dat grotendeels in zijn oude glorie kon hersteld worden. Merkwaardig is ook het vakkundig gerestaureerde Penceler-orgel uit 1714 en een merkwaardige 18e-eeuwse Vanden Gheyn-beiaard - de oudste in Leuven. Die beiaard werd in 2025-2026 gerenoveerd en uitgebreid, met dank vooral aan beiaardier Marc Van Eyck. Als huisorganist kan de kerkgemeenschap een beroep doen op de gerenommeerde Wouter De Koninck, maar het instrument wordt ook druk gebruikt door de leerlingen van het Leuvense conservatorium.",
+        "body": [
+          "Een verkeerd gemikte Britse bom - bedoeld voor het Leuvense vormingsstation - vernielde in mei 1944 een deel van de kerk en diverse huizen en andere gebouwen in de omgeving. De kerk zelf werd tussen 1950 en 1953 snel heropgebouwd en ging opnieuw dienstdoen voor een katholieke parochie. Intussen is het gebouw aan een grondige restauratie toe (zie verder).",
+          "Ze herbergt onder meer een zorgvuldig hersteld laatgotisch kerkgestoelte, dat ook zwaar onder het bombardement had geleden maar dat grotendeels in zijn oude glorie kon hersteld worden. Merkwaardig is ook het vakkundig gerestaureerde Penceler-orgel uit 1714 en een merkwaardige 18e-eeuwse Vanden Gheyn-beiaard - de oudste in Leuven.",
+          "Die beiaard werd in 2025-2026 gerenoveerd en uitgebreid, met dank vooral aan beiaardier Marc Van Eyck. Als huisorganist kan de kerkgemeenschap een beroep doen op de gerenommeerde Wouter De Koninck, maar het instrument wordt ook druk gebruikt door de leerlingen van het Leuvense conservatorium."
+        ],
         "imageAlt": "Pandgang en overblijvende abdijstructuren"
       },
       "sources": "Bronnen: inventaris.onroerenderfgoed.be; www.studioroma.be"

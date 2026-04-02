@@ -73,27 +73,45 @@
       "title": "Abbey and parish church",
       "foundation": {
         "title": "Foundation and church construction",
-        "body": "Sint-Geertrui was originally the church of the abbey of the same name, founded in 1206 by Duke Henry I of Brabant and his wife Mathilde. The original priory grew into a wealthy and influential community of Augustinian canons regular. Church and abbey were dedicated to Saint Gertrude of Nivelles. The abbey owned many lands and farms and, within Leuven's 14th-century city walls, also vineyards with an associated wine press house that still exists. In the shadow of the abbey, Leuven's Small Beguinage emerged, likely as a community of working sisters linked to the abbey. It is certain that the Beguinage remained parish-dependent on the abbey until the 17th century.",
+        "body": [
+          "Sint-Geertrui was originally the church of the abbey of the same name, founded in 1206 by Duke Henry I of Brabant and his wife Mathilde. The original priory grew into a wealthy and influential community of Augustinian canons regular.",
+          "Church and abbey were dedicated to Saint Gertrude of Nivelles. The abbey owned many lands and farms and, within Leuven's 14th-century city walls, also vineyards with an associated wine press house that still exists.",
+          "In the shadow of the abbey, Leuven's Small Beguinage emerged, likely as a community of working sisters linked to the abbey. It is certain that the Beguinage remained parish-dependent on the abbey until the 17th century."
+        ],
         "imageAlt": "Historic view of the abbey and church"
       },
       "tower": {
         "title": "Nail-less tower",
-        "body": "The church was built between the 13th and 15th centuries in Brabantine Gothic style. In 1453 it received its characteristic stone spire, designed by architect Jan van Ruysbroeck. Because the spire is entirely built in natural stone, the church later became known as one of Leuven's Seven Wonders: the church without nails, spikes, or timber. The church, still in use as a parish church and also used for many musical events, is located on Halfmaartstraat, named after the annual servant market held there under the Ancien Regime.",
+        "body": [
+          "The church was built between the 13th and 15th centuries in Brabantine Gothic style. In 1453 it received its characteristic stone spire, designed by architect Jan van Ruysbroeck. Because the spire is entirely built in natural stone, the church later became known as one of Leuven's Seven Wonders: the church without nails, spikes, or timber.",
+          "The church, still in use as a parish church and also used for many musical events, is located on Halfmaartstraat, named after the annual servant market held there under the Ancien Regime."
+        ],
         "imageAlt": "Detail of the Thierry wing and abbey buildings"
       },
       "thierry": {
         "title": "Thierry wing",
-        "body": "The abbey itself, which also played an important political and institutional role in the Duchy of Brabant and for the university founded in 1425, was dissolved by the French revolutionaries who annexed the Southern Netherlands at the end of the 18th century. The buildings were sold and used for various purposes until Canon Armand Thierry founded a new monastery there in the late 19th century and restored the old buildings according to his own vision. During World War I, the same canon also built a series of unusual facades with fragments from the destruction of many historic buildings by German soldiers in 1914. Architect Paul Van Aerschot built a row of homes behind it in 1981.",
+        "body": [
+          "The abbey itself, which also played an important political and institutional role in the Duchy of Brabant and for the university founded in 1425, was dissolved by the French revolutionaries who annexed the Southern Netherlands at the end of the 18th century. The buildings were sold and used for various purposes until Canon Armand Thierry founded a new monastery there in the late 19th century and restored the old buildings according to his own vision.",
+          "During World War I, the same canon also built a series of unusual facades with fragments from the destruction of many historic buildings by German soldiers in 1914.",
+          "Architect Paul Van Aerschot built a row of homes behind it in 1981."
+        ],
         "imageAlt": "The stone spire of Sint-Geertruikerk"
       },
       "cloister": {
         "title": "Cloister",
-        "body": "Today, part of the remaining abbey buildings is in private hands. The church itself belongs to the Sint-Geertrui church board; the rest is owned by the city of Leuven. This also applies to the once majestic cloister, which has largely remained in ruins since May 1944. The city of Leuven is working on plans to help renovate the entire site, including the majestic former abbot's residence. The site also includes a neo-Gothic chapel used as a scouting museum.",
+        "body": [
+          "Today, part of the remaining abbey buildings is in private hands. The church itself belongs to the Sint-Geertrui church board; the rest is owned by the city of Leuven. This also applies to the once majestic cloister, which has largely remained in ruins since May 1944.",
+          "The city of Leuven is working on plans to help renovate the entire site, including the majestic former abbot's residence. The site also includes a neo-Gothic chapel used as a scouting museum."
+        ],
         "imageAlt": "Historic image of the church after war damage and restoration"
       },
       "bombardment": {
         "title": "Precision bombing",
-        "body": "A misdirected British bomb, intended for Leuven's railway marshalling yard, destroyed part of the church and many nearby houses and buildings in May 1944. The church was quickly rebuilt between 1950 and 1953 and resumed service as a Catholic parish church. The building is now in need of major restoration. It houses, among other things, a carefully restored late-Gothic choir stall, heavily damaged during the bombing but largely returned to its former glory. Notable features also include the expertly restored Penceler organ from 1714 and a remarkable 18th-century Vanden Gheyn carillon, the oldest in Leuven. This carillon was renovated and expanded in 2025-2026, thanks especially to carillonneur Marc Van Eyck. As resident organist, the church community relies on the renowned Wouter De Koninck, and the instrument is also widely used by students of Leuven's conservatory.",
+        "body": [
+          "A misdirected British bomb, intended for Leuven's railway marshalling yard, destroyed part of the church and many nearby houses and buildings in May 1944. The church was quickly rebuilt between 1950 and 1953 and resumed service as a Catholic parish church. The building is now in need of major restoration.",
+          "It houses, among other things, a carefully restored late-Gothic choir stall, heavily damaged during the bombing but largely returned to its former glory. Notable features also include the expertly restored Penceler organ from 1714 and a remarkable 18th-century Vanden Gheyn carillon, the oldest in Leuven.",
+          "This carillon was renovated and expanded in 2025-2026, thanks especially to carillonneur Marc Van Eyck. As resident organist, the church community relies on the renowned Wouter De Koninck, and the instrument is also widely used by students of Leuven's conservatory."
+        ],
         "imageAlt": "Cloister and remaining abbey structures"
       },
       "sources": "Sources: inventaris.onroerenderfgoed.be; www.studioroma.be"

@@ -73,27 +73,45 @@
       "title": "Abbaye et église paroissiale",
       "foundation": {
         "title": "Fondation et construction de l'église",
-        "body": "Sint-Geertrui était à l'origine l'église de l'abbaye du même nom, fondée en 1206 par le duc Henri Ier de Brabant et son épouse Mathilde. Le prieuré initial devint une communauté riche et influente de chanoines réguliers de saint Augustin. L'église et l'abbaye étaient dédiées à sainte Gertrude de Nivelles. L'abbaye possédait de nombreuses terres et fermes et, à l'intérieur des remparts du XIVe siècle de Louvain, des vignobles avec un pressoir qui existe encore aujourd'hui. À l'ombre de l'abbaye est né le Petit Béguinage de Louvain, probablement comme communauté de sœurs travailleuses liées à l'abbaye. Il est certain que le Béguinage dépendit paroissialement de l'abbaye jusqu'au XVIIe siècle.",
+        "body": [
+          "Sint-Geertrui était à l'origine l'église de l'abbaye du même nom, fondée en 1206 par le duc Henri Ier de Brabant et son épouse Mathilde. Le prieuré initial devint une communauté riche et influente de chanoines réguliers de saint Augustin.",
+          "L'église et l'abbaye étaient dédiées à sainte Gertrude de Nivelles. L'abbaye possédait de nombreuses terres et fermes et, à l'intérieur des remparts du XIVe siècle de Louvain, des vignobles avec un pressoir qui existe encore aujourd'hui.",
+          "À l'ombre de l'abbaye est né le Petit Béguinage de Louvain, probablement comme communauté de sœurs travailleuses liées à l'abbaye. Il est certain que le Béguinage dépendit paroissialement de l'abbaye jusqu'au XVIIe siècle."
+        ],
         "imageAlt": "Vue historique de l'abbaye et de l'église"
       },
       "tower": {
         "title": "Flèche sans clous",
-        "body": "L'église fut construite entre le XIIIe et le XVe siècle dans le style gothique brabançon. En 1453, elle reçut sa flèche de pierre caractéristique, conçue par l'architecte Jan van Ruysbroeck. Comme la flèche est entièrement en pierre naturelle, l'église fut plus tard connue comme l'une des Sept Merveilles de Louvain: l'église sans clous, sans pointes et sans bois. L'église, toujours en service paroissial et également utilisée pour de nombreux événements musicaux, est située dans la Halfmaartstraat, nommée d'après le marché annuel des domestiques qui s'y tenait sous l'Ancien Régime.",
+        "body": [
+          "L'église fut construite entre le XIIIe et le XVe siècle dans le style gothique brabançon. En 1453, elle reçut sa flèche de pierre caractéristique, conçue par l'architecte Jan van Ruysbroeck. Comme la flèche est entièrement en pierre naturelle, l'église fut plus tard connue comme l'une des Sept Merveilles de Louvain: l'église sans clous, sans pointes et sans bois.",
+          "L'église, toujours en service paroissial et également utilisée pour de nombreux événements musicaux, est située dans la Halfmaartstraat, nommée d'après le marché annuel des domestiques qui s'y tenait sous l'Ancien Régime."
+        ],
         "imageAlt": "Détail de l'aile Thierry et des bâtiments abbatiaux"
       },
       "thierry": {
         "title": "Aile Thierry",
-        "body": "L'abbaye elle-même, qui jouait aussi un rôle politique et institutionnel important dans le duché de Brabant et pour l'université fondée en 1425, fut supprimée par les révolutionnaires français qui annexèrent les Pays-Bas méridionaux à la fin du XVIIIe siècle. Les bâtiments furent vendus et utilisés à diverses fins, jusqu'à ce que le chanoine Armand Thierry y fonde un nouveau monastère à la fin du XIXe siècle et restaure les anciens bâtiments selon sa propre vision. Pendant la Première Guerre mondiale, le même chanoine construisit aussi une série de façades insolites avec des fragments de la destruction de nombreux bâtiments historiques par des soldats allemands en 1914. L'architecte Paul Van Aerschot construisit une rangée de maisons derrière en 1981.",
+        "body": [
+          "L'abbaye elle-même, qui jouait aussi un rôle politique et institutionnel important dans le duché de Brabant et pour l'université fondée en 1425, fut supprimée par les révolutionnaires français qui annexèrent les Pays-Bas méridionaux à la fin du XVIIIe siècle. Les bâtiments furent vendus et utilisés à diverses fins, jusqu'à ce que le chanoine Armand Thierry y fonde un nouveau monastère à la fin du XIXe siècle et restaure les anciens bâtiments selon sa propre vision.",
+          "Pendant la Première Guerre mondiale, le même chanoine construisit aussi une série de façades insolites avec des fragments de la destruction de nombreux bâtiments historiques par des soldats allemands en 1914.",
+          "L'architecte Paul Van Aerschot construisit une rangée de maisons derrière en 1981."
+        ],
         "imageAlt": "La flèche en pierre de Sint-Geertruikerk"
       },
       "cloister": {
         "title": "Cloître",
-        "body": "Aujourd'hui, une partie des bâtiments abbatiaux restants est en mains privées. L'église elle-même appartient à la fabrique d'église de Sint-Geertrui; le reste appartient à la ville de Louvain. Cela vaut aussi pour le cloître autrefois majestueux, en grande partie en ruines depuis mai 1944. La ville de Louvain travaille à des plans pour restaurer l'ensemble du site, y compris l'ancienne résidence abbatiale. Le site comprend aussi une chapelle néogothique utilisée comme musée du scoutisme.",
+        "body": [
+          "Aujourd'hui, une partie des bâtiments abbatiaux restants est en mains privées. L'église elle-même appartient à la fabrique d'église de Sint-Geertrui; le reste appartient à la ville de Louvain. Cela vaut aussi pour le cloître autrefois majestueux, en grande partie en ruines depuis mai 1944.",
+          "La ville de Louvain travaille à des plans pour restaurer l'ensemble du site, y compris l'ancienne résidence abbatiale. Le site comprend aussi une chapelle néogothique utilisée comme musée du scoutisme."
+        ],
         "imageAlt": "Image historique de l'église après les dégâts de guerre et la restauration"
       },
       "bombardment": {
         "title": "Bombardement de précision",
-        "body": "Une bombe britannique mal dirigée, destinée au triage de Louvain, détruisit une partie de l'église ainsi que des maisons et bâtiments voisins en mai 1944. L'église fut rapidement reconstruite entre 1950 et 1953 et reprit son rôle d'église paroissiale catholique. Le bâtiment nécessite aujourd'hui une restauration en profondeur. Il abrite notamment des stalles gothiques tardives soigneusement restaurées, gravement endommagées pendant le bombardement mais largement rendues à leur splendeur d'origine. On y trouve aussi l'orgue Penceler de 1714 restauré avec soin et un remarquable carillon Vanden Gheyn du XVIIIe siècle, le plus ancien de Louvain. Ce carillon a été rénové et agrandi en 2025-2026, notamment grâce au carillonneur Marc Van Eyck. Comme organiste titulaire, la communauté paroissiale peut compter sur le réputé Wouter De Koninck, et l'instrument est également largement utilisé par les étudiants du conservatoire de Louvain.",
+        "body": [
+          "Une bombe britannique mal dirigée, destinée au triage de Louvain, détruisit une partie de l'église ainsi que des maisons et bâtiments voisins en mai 1944. L'église fut rapidement reconstruite entre 1950 et 1953 et reprit son rôle d'église paroissiale catholique. Le bâtiment nécessite aujourd'hui une restauration en profondeur.",
+          "Il abrite notamment des stalles gothiques tardives soigneusement restaurées, gravement endommagées pendant le bombardement mais largement rendues à leur splendeur d'origine. On y trouve aussi l'orgue Penceler de 1714 restauré avec soin et un remarquable carillon Vanden Gheyn du XVIIIe siècle, le plus ancien de Louvain.",
+          "Ce carillon a été rénové et agrandi en 2025-2026, notamment grâce au carillonneur Marc Van Eyck. Comme organiste titulaire, la communauté paroissiale peut compter sur le réputé Wouter De Koninck, et l'instrument est également largement utilisé par les étudiants du conservatoire de Louvain."
+        ],
         "imageAlt": "Cloître et structures abbatiales restantes"
       },
       "sources": "Sources: inventaris.onroerenderfgoed.be; www.studioroma.be"

@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 
 type HistorySectionProps = {
   title: string;
-  description: string;
+  description: string | string[];
   image: {
     alt: string;
     src: string;
@@ -23,6 +23,10 @@ function HistorySection({
   toneClass = "bg-transparent",
   imageMaxWidthClass = "md:max-w-[20rem]",
 }: HistorySectionProps) {
+  const paragraphs = Array.isArray(description)
+    ? description
+    : [description];
+
   return (
     <section className={`-mx-8 mt-10 sm:-mx-10 sm:mt-12 lg:-mx-12 ${toneClass}`}>
       <div className="px-8 py-8 sm:px-10 sm:py-10 lg:px-12">
@@ -31,9 +35,11 @@ function HistorySection({
             <h2 className="mb-4 text-xl font-semibold tracking-tight sm:text-2xl">
               {title}
             </h2>
-            <p className="text-pretty text-base leading-relaxed sm:text-lg">
-              {description}
-            </p>
+            <div className="space-y-4 text-pretty text-base leading-relaxed sm:text-lg">
+              {paragraphs.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
           </div>
 
           <figure className={reverse ? "md:order-1" : ""}>
@@ -54,6 +60,10 @@ function HistorySection({
   );
 }
 
+function asParagraphs(raw: unknown): string[] {
+  return Array.isArray(raw) ? raw.map(String) : [String(raw)];
+}
+
 export async function HistoryArticle() {
   const t = await getTranslations("history");
 
@@ -64,7 +74,7 @@ export async function HistoryArticle() {
       </h1>
 
       <HistorySection
-        description={t("article.foundation.body")}
+        description={asParagraphs(t.raw("article.foundation.body"))}
         image={{
           alt: t("article.foundation.imageAlt"),
           height: 291,
@@ -75,7 +85,7 @@ export async function HistoryArticle() {
       />
 
       <HistorySection
-        description={t("article.tower.body")}
+        description={asParagraphs(t.raw("article.tower.body"))}
         image={{
           alt: t("article.tower.imageAlt"),
           height: 540,
@@ -89,7 +99,7 @@ export async function HistoryArticle() {
       />
 
       <HistorySection
-        description={t("article.thierry.body")}
+        description={asParagraphs(t.raw("article.thierry.body"))}
         image={{
           alt: t("article.thierry.imageAlt"),
           height: 550,
@@ -100,7 +110,7 @@ export async function HistoryArticle() {
       />
 
       <HistorySection
-        description={t("article.cloister.body")}
+        description={asParagraphs(t.raw("article.cloister.body"))}
         image={{
           alt: t("article.cloister.imageAlt"),
           height: 480,
@@ -113,7 +123,7 @@ export async function HistoryArticle() {
       />
 
       <HistorySection
-        description={t("article.bombardment.body")}
+        description={asParagraphs(t.raw("article.bombardment.body"))}
         image={{
           alt: t("article.bombardment.imageAlt"),
           height: 590,
