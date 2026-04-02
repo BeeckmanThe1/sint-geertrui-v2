@@ -1,0 +1,181 @@
+{
+  "nav": {
+    "brandLine1": "Sint-Geertruikerk",
+    "brandLine2": "Leuven",
+    "ariaMain": "Main navigation",
+    "home": "Home",
+    "agenda": "Agenda",
+    "restauratie": "Restoration",
+    "history": "History",
+    "contact": "Contact"
+  },
+  "pages": {
+    "home": "Home",
+    "agenda": "Agenda",
+    "restauratie": "Restoration",
+    "history": "History",
+    "contact": "Contact",
+    "privacy": "Privacy policy",
+    "cookies": "Cookies"
+  },
+  "home": {
+    "metaTitle": "Sint-Geertruikerk Leuven",
+    "metaDescription": "Discover the history, restoration, and activities of Sint-Geertruikerk in Leuven.",
+    "hero": {
+      "imageAlt": "Exterior of Sint-Geertruikerk",
+      "missionTitle": "Our mission",
+      "missionBody": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+    },
+    "newsletter": {
+      "cta": "Stay informed via our newsletter"
+    },
+    "events": {
+      "title": "Upcoming events",
+      "imageAlt": "Event atmosphere photo",
+      "nextEventsAria": "View more events",
+      "emptyUpcoming": "There are no upcoming events to show right now. See the agenda for the full list."
+    },
+    "youtube": {
+      "title": "Video",
+      "iframeTitle": "Embedded Sint-Geertruikerk video on YouTube",
+      "posterAlt": "Video preview thumbnail; playback starts when you scroll here",
+      "embedSrc": "https://www.youtube.com/embed/n8djATdBNUY?rel=0&playsinline=1&modestbranding=1"
+    },
+    "panorama": {
+      "title": "360° tour",
+      "iframeTitle": "Virtual tour of the church",
+      "fallbackHint": "The virtual tour will load here once the embed URL is available.",
+      "embedSrc": "https://kerkenleuven.storygraaf.be/sintgeertrui.html"
+    }
+  },
+  "history": {
+    "metaTitle": "History | Sint-Geertruikerk Leuven",
+    "metaDescription": "Discover the history of Sint-Geertruikerk and the abbey in Leuven.",
+    "heroAlt": "Interior of Sint-Geertruikerk with woodwork and vaulting",
+    "heading": "History",
+    "intro": "The <abdij>Sint-Geertrui Abbey</abdij> and its surroundings tell a story of centuries of prayer, music, and city life in <leuven>Leuven</leuven>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent semper feugiat nibh sed pulvinar.",
+    "section1Title": "Early Middle Ages",
+    "section1p1": "In the early Middle Ages, <kanunniken>regular canons</kanunniken> formed the core of the religious community. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa.",
+    "section1p2": "Under <hendrik>Henry I of Brabant</hendrik>, the foundation gained greater political and cultural weight. Integer enim neque volutpat ac tincidunt vitae semper quis lectus.",
+    "section2Title": "City and church",
+    "section2p1": "The bond between the monastery and the urban fabric remained strong for centuries. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet non curabitur.",
+    "section2p2": "Today the ensemble bears witness to late Gothic and Baroque. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque.",
+    "bookSectionLabel": "Archive images",
+    "bookTeaserAlt": "Open book with a historic photograph of the church",
+    "bookOpenLabel": "Open archive image gallery",
+    "bookEmptyFallback": "No images are available yet.",
+    "dialogTitle": "Archive images",
+    "closeLabel": "Close",
+    "prevLabel": "Previous",
+    "nextLabel": "Next",
+    "carouselImageAlt": "Archive image {current} of {total}",
+    "article": {
+      "title": "Abbey and parish church",
+      "foundation": {
+        "title": "Foundation and church construction",
+        "body": [
+          "Sint-Geertrui was originally the church of the abbey of the same name, founded in 1206 by Duke Henry I of Brabant and his wife Mathilde. The original priory grew into a wealthy and influential community of Augustinian canons regular.",
+          "Church and abbey were dedicated to Saint Gertrude of Nivelles. The abbey owned many lands and farms and, within Leuven's 14th-century city walls, also vineyards with an associated wine press house that still exists.",
+          "In the shadow of the abbey, Leuven's Small Beguinage emerged, likely as a community of working sisters linked to the abbey. It is certain that the Beguinage remained parish-dependent on the abbey until the 17th century."
+        ],
+        "imageAlt": "Historic view of the abbey and church"
+      },
+      "tower": {
+        "title": "Nail-less tower",
+        "body": [
+          "The church was built between the 13th and 15th centuries in Brabantine Gothic style. In 1453 it received its characteristic stone spire, designed by architect Jan van Ruysbroeck. Because the spire is entirely built in natural stone, the church later became known as one of Leuven's Seven Wonders: the church without nails, spikes, or timber.",
+          "The church, still in use as a parish church and also used for many musical events, is located on Halfmaartstraat, named after the annual servant market held there under the Ancien Regime."
+        ],
+        "imageAlt": "Detail of the Thierry wing and abbey buildings"
+      },
+      "thierry": {
+        "title": "Thierry wing",
+        "body": [
+          "The abbey itself, which also played an important political and institutional role in the Duchy of Brabant and for the university founded in 1425, was dissolved by the French revolutionaries who annexed the Southern Netherlands at the end of the 18th century. The buildings were sold and used for various purposes until Canon Armand Thierry founded a new monastery there in the late 19th century and restored the old buildings according to his own vision.",
+          "During World War I, the same canon also built a series of unusual facades with fragments from the destruction of many historic buildings by German soldiers in 1914.",
+          "Architect Paul Van Aerschot built a row of homes behind it in 1981."
+        ],
+        "imageAlt": "The stone spire of Sint-Geertruikerk"
+      },
+      "cloister": {
+        "title": "Cloister",
+        "body": [
+          "Today, part of the remaining abbey buildings is in private hands. The church itself belongs to the Sint-Geertrui church board; the rest is owned by the city of Leuven. This also applies to the once majestic cloister, which has largely remained in ruins since May 1944.",
+          "The city of Leuven is working on plans to help renovate the entire site, including the majestic former abbot's residence. The site also includes a neo-Gothic chapel used as a scouting museum."
+        ],
+        "imageAlt": "Historic image of the church after war damage and restoration"
+      },
+      "bombardment": {
+        "title": "Precision bombing",
+        "body": [
+          "A misdirected British bomb, intended for Leuven's railway marshalling yard, destroyed part of the church and many nearby houses and buildings in May 1944. The church was quickly rebuilt between 1950 and 1953 and resumed service as a Catholic parish church. The building is now in need of major restoration.",
+          "It houses, among other things, a carefully restored late-Gothic choir stall, heavily damaged during the bombing but largely returned to its former glory. Notable features also include the expertly restored Penceler organ from 1714 and a remarkable 18th-century Vanden Gheyn carillon, the oldest in Leuven.",
+          "This carillon was renovated and expanded in 2025-2026, thanks especially to carillonneur Marc Van Eyck. As resident organist, the church community relies on the renowned Wouter De Koninck, and the instrument is also widely used by students of Leuven's conservatory."
+        ],
+        "imageAlt": "Cloister and remaining abbey structures"
+      },
+      "sources": "Sources: inventaris.onroerenderfgoed.be; www.studioroma.be"
+    }
+  },
+  "agenda": {
+    "metaTitle": "Agenda | Sint-Geertruikerk Leuven",
+    "metaDescription": "Concerts, services, and activities at Sint-Geertruikerk in Leuven.",
+    "imageAlt": "Atmosphere photo for an activity",
+    "empty": "There are no activities in this category.",
+    "filters": {
+      "aria": "Filter activities",
+      "agenda": "Agenda",
+      "concerts": "Concerts",
+      "community": "Community"
+    },
+    "pagination": {
+      "aria": "Pagination"
+    }
+  },
+  "footer": {
+    "ariaNav": "Footer navigation",
+    "onzeMissie": "Our mission",
+    "addressLine1": "Sint-Geertruiabdij 1",
+    "addressLine2": "3000 Leuven"
+  },
+  "restoration": {
+    "title": "Restoration of Sint-Geertrui church",
+    "intro": "In May 1944, Sint-Geertrui church was hit by a stray British bomb intended for Leuven's railway marshalling yard. The damage was significant. The church was quickly rebuilt, but 75 years later it once again needs serious restoration.",
+    "sections": {
+      "spire": {
+        "title": "Spire",
+        "body": "The unique spire (the nail-less tower and one of Leuven's so-called Wonders) was already thoroughly restored more than twenty years ago.",
+        "imageAlt": "Restoration image of the spire"
+      },
+      "towerBody": {
+        "title": "Tower body",
+        "body": "In 2024, small fragments were found falling from the underlying tower body. For safety reasons, debris nets were installed. In agreement with the city, the Sint-Geertrui church board - the institution responsible for the church building among other things - is planning restoration in the coming years, before Leuven becomes European Capital of Culture in 2030.",
+        "imageAlt": "Restoration image of the tower body"
+      },
+      "humidity": {
+        "title": "Moisture",
+        "body": "Stability and rising damp: the entire church building must be protected against rising moisture, especially in the outer walls. Many exterior windows also need repair and reinforcement. Leuven is a wet area, crossed by waterways, primarily branches of the Dijle that flow past the church.",
+        "imageAlt": "Restoration image related to moisture issues"
+      },
+      "heatingStability": {
+        "title": "Heating and stability",
+        "body": "Heating: the church has not been heated for decades, except during services with terrace heaters. With an unexpected subsidy from the Flemish government, the church board now wants to install minimal heating in the building, hoping to use alternative energy in a later phase, ideally for the wider neighborhood. Parts of the attic will also be insulated. This restoration phase starts in October 2026 and will likely last six months. Two rear pillars in the choir will also be reinforced against subsidence during this phase.",
+        "imageAlt": "Restoration image of heating and stability works"
+      },
+      "roof": {
+        "title": "Roof",
+        "body": "The church roof needs replacement. In agreement with the city, works were carried out at the end of 2025 to make the roof watertight. Once watertight, insulation can be placed on the vaults, reducing roughly half of the church's heat loss. These insulation works will take place in 2026-2027 together with installation of a heating system.",
+        "imageAlt": "Restoration image of the roof"
+      },
+      "carillon": {
+        "title": "Carillon",
+        "body": "The carillon was under restoration in mid-2005. By the end of that year, works were expected to be completed and a new octave added. It is the oldest carillon in the city, which has four others. The core of the Vanden Gheyn carillon in Sint-Geertrui church dates back to the 18th century.",
+        "imageAlt": "Restoration image of the carillon"
+      }
+    },
+    "outro": {
+      "title": "Interior",
+      "body": "The interior of the church also needs attention. The most urgent area is the Chapel of the Seven Sorrows, on the right when entering through the portal. In the longer term, the church board also wants to restore the connection to the abbey wing that is still largely in ruins."
+    }
+  }
+}

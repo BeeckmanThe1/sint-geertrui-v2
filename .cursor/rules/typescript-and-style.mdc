@@ -1,0 +1,18 @@
+---
+description: TypeScript and naming/style conventions
+globs: **/*.{ts,tsx,mts}
+alwaysApply: false
+---
+
+# TypeScript and Style
+
+- Use TypeScript-first patterns; avoid `any` unless explicitly justified.
+- Keep strict typing at boundaries (props, function params/returns, public helpers).
+- Use 2 spaces indentation.
+- Use semicolons.
+- Prefer double quotes.
+- Naming conventions are required:
+  - `PascalCase` for React components and component files.
+  - `camelCase` for variables and functions.
+  - `kebab-case` for route segments and URL-like file names where applicable.
+- Keep components and helpers focused; extract repeated logic into `lib` or hooks.

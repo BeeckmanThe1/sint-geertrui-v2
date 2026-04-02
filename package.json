@@ -11,10 +11,12 @@
     "typecheck": "tsc --noEmit",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:ci": "jest --ci --coverage --watchAll=false"
+    "test:ci": "jest --ci --coverage --watchAll=false",
+    "agenda:build": "node scripts/build-concerts-from-csv.mjs"
   },
   "dependencies": {
     "next": "16.2.1",
+    "next-intl": "^4.8.3",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
