@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
+type FigureSize = "default" | "prominent" | "prominentPlus";
+
 type HistorySectionProps = {
   title: string;
   description: string | string[];
@@ -13,7 +15,30 @@ type HistorySectionProps = {
   reverse?: boolean;
   toneClass?: string;
   imageMaxWidthClass?: string;
+  /** default: sections 2 & 4 (tower + cloister, equal width); prominent: 1 & 3; prominentPlus: 5 (bombardement). */
+  figureSize?: FigureSize;
 };
+
+function imageClassName(figureSize: FigureSize, imageMaxWidthClass: string): string {
+  switch (figureSize) {
+    case "prominentPlus":
+      return "h-auto w-full max-w-[20rem] object-contain sm:max-w-[23rem] md:max-w-[27rem] lg:max-w-[30rem]";
+    case "prominent":
+      return "h-auto w-full max-w-[19rem] object-contain sm:max-w-[22rem] md:max-w-[26rem] lg:max-w-[28rem]";
+    default:
+      return `h-auto w-full max-w-[16rem] object-contain sm:max-w-[18rem] ${imageMaxWidthClass}`;
+  }
+}
+
+function imageSizesAttr(figureSize: FigureSize): string {
+  if (figureSize === "default") {
+    return "(max-width: 768px) 80vw, 34vw";
+  }
+  if (figureSize === "prominentPlus") {
+    return "(max-width: 768px) 90vw, 44vw";
+  }
+  return "(max-width: 768px) 88vw, 42vw";
+}
 
 function HistorySection({
   title,
@@ -22,6 +47,7 @@ function HistorySection({
   reverse = false,
   toneClass = "bg-transparent",
   imageMaxWidthClass = "md:max-w-[20rem]",
+  figureSize = "default",
 }: HistorySectionProps) {
   const paragraphs = Array.isArray(description)
     ? description
@@ -46,9 +72,9 @@ function HistorySection({
             <div className="flex justify-center">
               <Image
                 alt={image.alt}
-                className={`h-auto w-full max-w-[16rem] object-contain sm:max-w-[18rem] ${imageMaxWidthClass}`}
+                className={imageClassName(figureSize, imageMaxWidthClass)}
                 height={image.height}
-                sizes="(max-width: 768px) 80vw, 34vw"
+                sizes={imageSizesAttr(figureSize)}
                 src={image.src}
                 width={image.width}
               />
@@ -75,6 +101,7 @@ export async function HistoryArticle() {
 
       <HistorySection
         description={asParagraphs(t.raw("article.foundation.body"))}
+        figureSize="prominent"
         image={{
           alt: t("article.foundation.imageAlt"),
           height: 291,
@@ -92,7 +119,6 @@ export async function HistoryArticle() {
           src: "/images/history/article/image3.jpg",
           width: 342,
         }}
-        imageMaxWidthClass="md:max-w-[17rem]"
         reverse
         title={t("article.tower.title")}
         toneClass="bg-[#c8c2b2]"
@@ -100,6 +126,7 @@ export async function HistoryArticle() {
 
       <HistorySection
         description={asParagraphs(t.raw("article.thierry.body"))}
+        figureSize="prominent"
         image={{
           alt: t("article.thierry.imageAlt"),
           height: 550,
@@ -124,6 +151,7 @@ export async function HistoryArticle() {
 
       <HistorySection
         description={asParagraphs(t.raw("article.bombardment.body"))}
+        figureSize="prominentPlus"
         image={{
           alt: t("article.bombardment.imageAlt"),
           height: 590,
