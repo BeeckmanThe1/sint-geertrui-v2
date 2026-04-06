@@ -4,10 +4,12 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useCallback, useEffect, useId, useState } from "react";
 import { HISTORY_GALLERY } from "@/lib/history-gallery";
+import bookDecor from "./book.png";
+import clsx from "clsx";
 
 const galleryList = [...HISTORY_GALLERY];
 
-export function HistoryBookCarousel() {
+export function HistoryBookCarousel({transform}: {transform: string}) {
   const t = useTranslations("history");
   const titleId = useId();
   const [open, setOpen] = useState(false);
@@ -58,7 +60,7 @@ export function HistoryBookCarousel() {
     return (
       <section
         aria-label={t("bookSectionLabel")}
-        className="border-t border-black/10 px-5 py-12 sm:px-8 sm:py-14"
+        className="border-t border-black/10 px-5 py-12 sm:px-8 sm:py-14 absolute"
       >
         <p className="mx-auto max-w-3xl text-center text-sm text-zinc-700">
           {t("bookEmptyFallback")}
@@ -66,35 +68,28 @@ export function HistoryBookCarousel() {
       </section>
     );
   }
-
   return (
     <section
       aria-label={t("bookSectionLabel")}
-      className="border-t border-black/10 px-5 py-12 sm:px-8 sm:py-16"
+      className="absolute left-0 top-0 h-[200px]"
     >
-      <div className="mx-auto flex max-w-5xl flex-col items-center gap-6 md:flex-row md:items-center md:justify-center md:gap-10 lg:gap-14">
+      <div className={clsx("mx-auto h-full flex max-w-5xl flex-col items-center gap-6 md:flex-row md:items-center md:justify-center md:gap-10 lg:gap-14 rounded-[15px] filter opacity-50 cursor-pointer", transform)}>
         <button
           aria-haspopup="dialog"
           aria-label={t("bookOpenLabel")}
-          className="group relative max-w-lg shrink-0 overflow-hidden rounded-sm shadow-lg ring-1 ring-black/15 transition hover:ring-black/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white disabled:pointer-events-none disabled:opacity-50"
+          className="border-4 border-black rounded-lg cursor-pointer h-full group relative max-w-lg shrink-0 overflow-hidden rounded-sm shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white disabled:pointer-events-none disabled:opacity-50"
           disabled={!hasImages}
           onClick={() => setOpen(true)}
           type="button"
         >
           <Image
             alt={t("bookTeaserAlt")}
-            className="h-auto w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+            className="h-auto max-h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
             height={360}
             src={previewSrc}
             width={560}
           />
         </button>
-        <p
-          aria-hidden
-          className="select-none text-3xl font-light tracking-widest text-zinc-500 md:text-5xl"
-        >
-          &gt;&gt;&gt;
-        </p>
       </div>
 
       {open ? (
@@ -160,5 +155,28 @@ export function HistoryBookCarousel() {
         </div>
       ) : null}
     </section>
+  );
+}
+
+export function HistoryBookCarouselWrapper() {
+  const t = useTranslations("history");
+
+  return (
+      <section
+          aria-label={t("bookSectionLabel")}
+          className="w-full relative block mx-auto justify-center max-w-[500px] overflow-hidden rounded-xl shadow-lg"
+      >
+        <Image
+            alt={t("bookTeaserAlt")}
+            className="h-auto w-full"
+            height={bookDecor.height}
+            src={bookDecor}
+            width={bookDecor.width}
+        />
+        <HistoryBookCarousel
+            transform="[transform:translateY(94px)_translateX(93px)_rotate(-39deg)_scale(0.75)_skew(0deg,13deg)]"/>
+        <HistoryBookCarousel
+            transform="[transform:translateY(31px)_translateX(236px)_rotate(-40deg)_scale(0.7)_skew(11deg,25deg)]"/>
+      </section>
   );
 }

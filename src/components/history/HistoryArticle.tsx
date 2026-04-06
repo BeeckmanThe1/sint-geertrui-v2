@@ -20,13 +20,14 @@ type HistorySectionProps = {
 };
 
 function imageClassName(figureSize: FigureSize, imageMaxWidthClass: string): string {
+  const radius = "rounded-lg";
   switch (figureSize) {
     case "prominentPlus":
-      return "h-auto w-full max-w-[20rem] object-contain sm:max-w-[23rem] md:max-w-[27rem] lg:max-w-[30rem]";
+      return `h-auto w-full max-w-[20rem] object-contain sm:max-w-[23rem] md:max-w-[27rem] lg:max-w-[30rem] ${radius}`;
     case "prominent":
-      return "h-auto w-full max-w-[19rem] object-contain sm:max-w-[22rem] md:max-w-[26rem] lg:max-w-[28rem]";
+      return `h-auto w-full max-w-[19rem] object-contain sm:max-w-[22rem] md:max-w-[26rem] lg:max-w-[28rem] ${radius}`;
     default:
-      return `h-auto w-full max-w-[16rem] object-contain sm:max-w-[18rem] ${imageMaxWidthClass}`;
+      return `h-auto w-full max-w-[16rem] object-contain sm:max-w-[18rem] ${imageMaxWidthClass} ${radius}`;
   }
 }
 
