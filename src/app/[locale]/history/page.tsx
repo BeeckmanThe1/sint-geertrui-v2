@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { HistoryArticle } from "@/components/history/HistoryArticle";
-import { HistoryBookCarousel, HistoryBookCarouselWrapper } from "@/components/history/HistoryBookCarousel";
+import { HistoryBookCarouselWrapper } from "@/components/history/HistoryBookCarousel";
 
 type HistoryPageProps = {
   params: Promise<{ locale: string }>;

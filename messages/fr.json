@@ -118,6 +118,61 @@
     },
     "albumTitle": "Feuilletez l'album photo"
   },
+  "contact": {
+    "metaTitle": "Contact | Sint-Geertruikerk Louvain",
+    "metaDescription": "Visitez l'église Sint-Geertruikerk, contactez l'équipe ou trouvez la bonne personne.",
+    "heroTitle": "Entrez. Nous serions ravis de vous entendre.",
+    "heroTagline": "Ce sont les personnes qui font vivre l'église — de l'orgue au café après la messe.",
+    "heroImageAlt": "Vue intérieure de l'église Sint-Geertruikerk",
+    "intro": "Que vous franchissiez le seuil pour la première fois, que vous soyez là depuis des années ou que vous ayez simplement une question, voici vers qui vous tourner. Ce sont des contacts fictifs pour ce site ; remplacez-les par de vraies personnes quand vous voulez.",
+    "visitTitle": "Venir sur place",
+    "visitBody": "L'église se trouve au cœur du quartier Sainte-Gertrude. Le stationnement est limité ; transports en commun et vélo sont idéaux.",
+    "addressLabel": "Adresse",
+    "addressLine1": "Sint-Geertruiabdij 1",
+    "addressLine2": "3000 Louvain, Belgique",
+    "timesTitle": "Moments habituels",
+    "timesBody": "Les fêtes et concerts suivent l'agenda. Pour funérailles ou mariages, contactez-nous à l'avance.",
+    "volunteersTitle": "L'équipe (exemple)",
+    "volunteersIntro": "Sept personnes qui — dans cet exemple — portent les facettes de la vie paroissiale.",
+    "disclaimer": "Noms et rôles fictifs, uniquement pour illustration.",
+    "volunteers": [
+      {
+        "name": "Père Rik Verhoeven",
+        "role": "Paroisse & animation pastorale",
+        "blurb": "Premier interlocuteur pour les questions de foi, les sacrements et la vie de la communauté."
+      },
+      {
+        "name": "Mieke Claes",
+        "role": "Liturgie & célébrations",
+        "blurb": "Coordonne lecteurs, ministres et l'ambiance autour de la célébration."
+      },
+      {
+        "name": "Thomas De Smet",
+        "role": "Orgue, musique & carillon",
+        "blurb": "Lien entre chœur, instrumentistes et acoustique de l'édifice."
+      },
+      {
+        "name": "Sara Nuyts",
+        "role": "Jeunesse & familles",
+        "blurb": "Organise les célébrations familiales, la catéchèse enfants et l'été paroissial."
+      },
+      {
+        "name": "Jan Peeters",
+        "role": "Accueil & sacristain",
+        "blurb": "Accueille les visiteurs, prépare les espaces et veille à la sécurité."
+      },
+      {
+        "name": "Hilde Martens",
+        "role": "Bénévoles & entretien",
+        "blurb": "Planifie les chantiers, les fleurs et le réseau autour du bâtiment."
+      },
+      {
+        "name": "Ann Vandenbroucke",
+        "role": "Fabrique & administration",
+        "blurb": "Contact pour permis, assurances et suivi pratique."
+      }
+    ]
+  },
   "agenda": {
     "metaTitle": "Agenda | Sint-Geertruikerk Louvain",
     "metaDescription": "Concerts, célébrations et activités à l'église Sint-Geertruikerk à Louvain.",

@@ -118,6 +118,61 @@
     },
     "albumTitle": "Blader door het fotoalbum"
   },
+  "contact": {
+    "metaTitle": "Contact | Sint-Geertruikerk Leuven",
+    "metaDescription": "Bezoek de Sint-Geertruikerk, neem contact op met het kernteam of spreek een aanspreekpunt aan.",
+    "heroTitle": "Kom binnen. We horen je graag.",
+    "heroTagline": "Mensen maken de kerk levend — van orgel tot koffie na de viering.",
+    "heroImageAlt": "Zicht op het interieur van de Sint-Geertruikerk",
+    "intro": "Of je nu voor het eerst over de drempel stapt, al jaren meedraait, of gewoon een vraag hebt: hieronder vind je wie je het best kunt aanspreken. Dit zijn fictieve aanspreekpunten voor de website; vervang ze gerust door echte namen.",
+    "visitTitle": "Langskomen",
+    "visitBody": "De kerk ligt in het hart van het Sint-Geertrui-kwartier. Parkeren is beperkt; het openbaar vervoer en de fiets zijn ideaal.",
+    "addressLabel": "Adres",
+    "addressLine1": "Sint-Geertruiabdij 1",
+    "addressLine2": "3000 Leuven, België",
+    "timesTitle": "Typische momenten",
+    "timesBody": "Hoogdagen en concerten volgen de agenda. Voor rouwvieringen of huwelijksintenties: neem tijdig contact op.",
+    "volunteersTitle": "Het team (voorbeeld)",
+    "volunteersIntro": "Zeven mensen die — in dit voorbeeld — de vele facetten van parochieleven dragen.",
+    "disclaimer": "Namen en rollen zijn fictief en dienen enkel ter illustratie voor deze website.",
+    "volunteers": [
+      {
+        "name": "Pastoor Rik Verhoeven",
+        "role": "Parochie & pastorale leiding",
+        "blurb": "Eerste aanspreekpunt voor geloofsvragen, dopelingen en wat er leeft in de gemeenschap."
+      },
+      {
+        "name": "Mieke Claes",
+        "role": "Liturgie & vieringen",
+        "blurb": "Coördineert lectoren, mijnstukken en de sfeer rond de eredienst."
+      },
+      {
+        "name": "Thomas De Smet",
+        "role": "Orgel, muziek & beiaard",
+        "blurb": "Brug tussen cantorij, instrumentalisten en de acoustiek van de kerk."
+      },
+      {
+        "name": "Sara Nuyts",
+        "role": "Jeugd & gezinnen",
+        "blurb": "Organiseert gezinsvieringen, kindernevendienst en zomerkampen."
+      },
+      {
+        "name": "Jan Peeters",
+        "role": "Koster & ontvangst",
+        "blurb": "Ontvangt bezoekers, bereidt de ruimte voor en zorgt dat alles veilig verloopt."
+      },
+      {
+        "name": "Hilde Martens",
+        "role": "Vrijwilligers & onderhoud",
+        "blurb": "Plant klusmomenten, bloemen en het netwerk rond het gebouw zelf."
+      },
+      {
+        "name": "Ann Vandenbroucke",
+        "role": "Kerkfabriek & administratie",
+        "blurb": "Aanspreekpunt voor vergunningen, verzekeringen en praktische opvolging."
+      }
+    ]
+  },
   "agenda": {
     "metaTitle": "Agenda | Sint-Geertruikerk Leuven",
     "metaDescription": "Concerten, vieringen en activiteiten in en rond de Sint-Geertruikerk in Leuven.",

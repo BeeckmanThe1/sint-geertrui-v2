@@ -118,6 +118,61 @@
     },
     "albumTitle": "Browse the photo album"
   },
+  "contact": {
+    "metaTitle": "Contact | Sint-Geertruikerk Leuven",
+    "metaDescription": "Visit Sint-Geertruikerk, reach out to the core team, or find the right volunteer contact.",
+    "heroTitle": "Step inside. We would love to hear from you.",
+    "heroTagline": "People bring the church to life—from the organ bench to coffee after Mass.",
+    "heroImageAlt": "Interior view of Sint-Geertruikerk",
+    "intro": "Whether you are crossing the threshold for the first time, have been part of the parish for years, or simply have a question, below you will find who to talk to. These are fictional contacts for this website; replace them with real people anytime.",
+    "visitTitle": "Visiting",
+    "visitBody": "The church sits at the heart of the Sint-Geertrui quarter. Parking is limited; public transport and bicycles work best.",
+    "addressLabel": "Address",
+    "addressLine1": "Sint-Geertruiabdij 1",
+    "addressLine2": "3000 Leuven, Belgium",
+    "timesTitle": "Typical moments",
+    "timesBody": "Solemnities and concerts follow the agenda. For funerals or weddings, please get in touch well in advance.",
+    "volunteersTitle": "The team (sample)",
+    "volunteersIntro": "Seven people who—in this example—carry the many facets of parish life.",
+    "disclaimer": "Names and roles are fictional and for illustration only.",
+    "volunteers": [
+      {
+        "name": "Fr. Rick Verhoeven",
+        "role": "Parish & pastoral lead",
+        "blurb": "First point of contact for faith questions, sacraments, and what is moving in the community."
+      },
+      {
+        "name": "Mieke Claes",
+        "role": "Liturgy & services",
+        "blurb": "Coordinates readers, ministers, and the atmosphere around worship."
+      },
+      {
+        "name": "Thomas De Smet",
+        "role": "Organ, music & carillon",
+        "blurb": "Bridge between choir, instrumentalists, and the acoustics of the building."
+      },
+      {
+        "name": "Sara Nuyts",
+        "role": "Youth & families",
+        "blurb": "Organises family services, children’s liturgy, and summer activities."
+      },
+      {
+        "name": "Jan Peeters",
+        "role": "Sexton & hospitality",
+        "blurb": "Welcomes visitors, prepares the space, and keeps things running safely."
+      },
+      {
+        "name": "Hilde Martens",
+        "role": "Volunteers & upkeep",
+        "blurb": "Plans work days, flowers, and the network around the building itself."
+      },
+      {
+        "name": "Ann Vandenbroucke",
+        "role": "Church board & admin",
+        "blurb": "Contact for permits, insurance, and practical follow-up."
+      }
+    ]
+  },
   "agenda": {
     "metaTitle": "Agenda | Sint-Geertruikerk Leuven",
     "metaDescription": "Concerts, services, and activities at Sint-Geertruikerk in Leuven.",
