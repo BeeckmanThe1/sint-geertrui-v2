@@ -23,11 +23,8 @@
     "metaDescription": "Discover the history, restoration, and activities of Sint-Geertruikerk in Leuven.",
     "hero": {
       "imageAlt": "Exterior of Sint-Geertruikerk",
-      "missionTitle": "Our mission",
-      "missionBody": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
-    },
-    "newsletter": {
-      "cta": "Stay informed via our newsletter"
+      "missionBody": "Those who lived before us have gone,\nYet this old house of wood and stone\nstill stands as a prayer to You.\nWe pray with them—hear us now.",
+      "missionAuthor": "W. Barnard"
     },
     "events": {
       "title": "Upcoming events",
@@ -120,58 +117,68 @@
   },
   "contact": {
     "metaTitle": "Contact | Sint-Geertruikerk Leuven",
-    "metaDescription": "Visit Sint-Geertruikerk, reach out to the core team, or find the right volunteer contact.",
-    "heroTitle": "Step inside. We would love to hear from you.",
-    "heroTagline": "People bring the church to life—from the organ bench to coffee after Mass.",
-    "heroImageAlt": "Interior view of Sint-Geertruikerk",
-    "intro": "Whether you are crossing the threshold for the first time, have been part of the parish for years, or simply have a question, below you will find who to talk to. These are fictional contacts for this website; replace them with real people anytime.",
-    "visitTitle": "Visiting",
-    "visitBody": "The church sits at the heart of the Sint-Geertrui quarter. Parking is limited; public transport and bicycles work best.",
-    "addressLabel": "Address",
-    "addressLine1": "Sint-Geertruiabdij 1",
-    "addressLine2": "3000 Leuven, Belgium",
-    "timesTitle": "Typical moments",
-    "timesBody": "Solemnities and concerts follow the agenda. For funerals or weddings, please get in touch well in advance.",
-    "volunteersTitle": "The team (sample)",
-    "volunteersIntro": "Seven people who—in this example—carry the many facets of parish life.",
-    "disclaimer": "Names and roles are fictional and for illustration only.",
-    "volunteers": [
-      {
-        "name": "Fr. Rick Verhoeven",
-        "role": "Parish & pastoral lead",
-        "blurb": "First point of contact for faith questions, sacraments, and what is moving in the community."
-      },
-      {
-        "name": "Mieke Claes",
-        "role": "Liturgy & services",
-        "blurb": "Coordinates readers, ministers, and the atmosphere around worship."
-      },
-      {
-        "name": "Thomas De Smet",
-        "role": "Organ, music & carillon",
-        "blurb": "Bridge between choir, instrumentalists, and the acoustics of the building."
-      },
-      {
-        "name": "Sara Nuyts",
-        "role": "Youth & families",
-        "blurb": "Organises family services, children’s liturgy, and summer activities."
-      },
-      {
-        "name": "Jan Peeters",
-        "role": "Sexton & hospitality",
-        "blurb": "Welcomes visitors, prepares the space, and keeps things running safely."
-      },
-      {
-        "name": "Hilde Martens",
-        "role": "Volunteers & upkeep",
-        "blurb": "Plans work days, flowers, and the network around the building itself."
-      },
-      {
-        "name": "Ann Vandenbroucke",
-        "role": "Church board & admin",
-        "blurb": "Contact for permits, insurance, and practical follow-up."
-      }
-    ]
+    "metaDescription": "Address, directions, and practical information for visiting Sint-Geertruikerk in Leuven.",
+    "hero": {
+      "imageAlt": "Interior of Sint-Geertruikerk with light from the tall windows",
+      "title": "Contact",
+      "lead": "Sint-Geertruikerk is in the heart of Leuven. Here you will find our address, how to get here, and tips for your visit."
+    },
+    "addressCard": {
+      "title": "Address & directions",
+      "line1": "Sint-Geertruiabdij 9",
+      "line2": "3000 Leuven",
+      "body": "The church is on Halfmaartstraat, near Klein-Begijnhof and the Dijle arms. Public transport and cycling bring you close by; on-street parking nearby is limited. The nearest car park is Parking Vaartkom.",
+      "mapLink": "Open in maps",
+      "mapUrl": "https://www.google.com/maps/place/Sint-Geertruikerk+%E2%9B%AA/@50.8840111,4.6990642,19.12z/data=!4m15!1m8!3m7!1s0x47c160dba16adb5f:0x131cdff3b2c73566!2sSint-Geertruiabdij+9,+3000+Leuven!3b1!8m2!3d50.8837896!4d4.6990003!16s%2Fg%2F11v3pzq68n!3m5!1s0x47c160db0a6d6081:0xa0d5ae1e1a4849ae!8m2!3d50.8841576!4d4.6992691!16s%2Fg%2F122vxkkq"
+    },
+    "visitCard": {
+      "title": "Visiting",
+      "p1": "Everyone is welcome in the church during services, concerts, or quiet visits whenever the doors are open.",
+      "p2": "See our agenda for concerts, services, and other activities in and around the church.",
+      "p3": "Sunday services at 11 a.m.",
+      "openingHours": "Open to the public: in winter on Saturday afternoons from 2 p.m. to 4.30 p.m., and in summer every day from 2 p.m. to 4.30 p.m., except Mondays."
+    },
+    "gemeenschapsploeg": {
+      "title": "Community team",
+      "body": "The community team (Gemeenschapsploeg) of the Geertrui community provides pastoral support for what used to be called “the parish”. The Geertrui community is now part of a wider Leuven–Dijle “zone”, in which all former parishes within the ramparts of the old city work together. The community team leads or supports, for example, Masses and liturgies of the Word in our church.",
+      "membersHeading": "Members",
+      "members": [
+        "Greet Beerts",
+        "Chris Heremans",
+        "Wim Janssens",
+        "Bart Massart",
+        "Rita Merckx",
+        "Ingrid Meulemans",
+        "Lieve Vandeven",
+        "Mieke Vanderputte",
+        "Asha Mabel"
+      ]
+    },
+    "kerkfabriek": {
+      "title": "Church fabric & council",
+      "body": "The church fabric (kerkfabriek) is a public body responsible for managing the material resources needed to support public worship in a parish. The church council (kerkraad) is the governing body of the fabric — the people who decide on finances, maintenance, and other material matters related to worship. A council typically has five members and may also include a representative of the diocese and several advisors.",
+      "membersIntro": "The Sint-Geertrui church council consists of:",
+      "members": [
+        { "name": "Axel Buyse", "role": "Chair", "email": "axel.buyse@gmail.com", "phone": "0492 13 07 02" },
+        { "name": "Dirk Verheyen", "role": "Treasurer" },
+        { "name": "Jan Breuls", "role": "Member", "email": "jan.breuls1@telenet.be" },
+        { "name": "Luc Boghe", "role": "Member" },
+        { "name": "Grietje Van Mol", "role": "Secretary" },
+        { "name": "Juan Carlos Tinjaca ss.cc.", "role": "Representative of the bishop" },
+        { "name": "Bart Massart", "role": "Advisor" },
+        { "name": "Sabina De Geest", "role": "Advisor" },
+        { "name": "Suzanne Vandelaer", "role": "Advisor" },
+        { "name": "Wim Janssen", "role": "Advisor" }
+      ]
+    },
+    "reachCard": {
+      "title": "Questions about parish matters",
+      "body": "For questions, reservations, or parish matters you can reach us directly.",
+      "emailLabel": "Email",
+      "email": "sintgeertrui@kerkleuven.be",
+      "phoneLabel": "Phone",
+      "phone": "0474 45 78 93"
+    }
   },
   "agenda": {
     "metaTitle": "Agenda | Sint-Geertruikerk Leuven",
@@ -190,8 +197,7 @@
   },
   "footer": {
     "ariaNav": "Footer navigation",
-    "onzeMissie": "Our mission",
-    "addressLine1": "Sint-Geertruiabdij 1",
+    "addressLine1": "Sint-Geertruiabdij 9",
     "addressLine2": "3000 Leuven"
   },
   "restoration": {
@@ -226,7 +232,9 @@
       "carillon": {
         "title": "Carillon",
         "body": "The carillon was under restoration in mid-2005. By the end of that year, works were expected to be completed and a new octave added. It is the oldest carillon in the city, which has four others. The core of the Vanden Gheyn carillon in Sint-Geertrui church dates back to the 18th century.",
-        "imageAlt": "Restoration image of the carillon"
+        "imageAlt": "Restoration image of the carillon",
+        "videoTitle": "Video about the carillon",
+        "videoIframeTitle": "Embedded YouTube video about the carillon of Sint-Geertruikerk"
       }
     },
     "outro": {

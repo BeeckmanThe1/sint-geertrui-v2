@@ -20,5 +20,6 @@ export async function generateMetadata({
 
 export default async function ContactPage({ params }: ContactPageProps) {
   const { locale } = await params;
+
   return <ContactView locale={locale} />;
 }

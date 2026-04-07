@@ -22,7 +22,7 @@ export async function generateMetadata({
 export default async function HistoryPage() {
   return (
     <div className="bg-zinc-100">
-      <div className="mx-auto w-full max-w-[65rem] bg-[#bdb7a6] py-16">
+      <div className="mx-auto w-full max-w-[65rem] bg-[#bdb7a6] pt-16">
         <HistoryArticle/>
 
         <HistoryBookCarouselWrapper/>

@@ -72,6 +72,7 @@ function HistorySection({
           <figure className={reverse ? "md:order-1" : ""}>
             <div className="flex justify-center">
               <Image
+                unoptimized
                 alt={image.alt}
                 className={imageClassName(figureSize, imageMaxWidthClass)}
                 height={image.height}

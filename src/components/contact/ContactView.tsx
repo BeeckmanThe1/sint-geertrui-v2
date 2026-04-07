@@ -1,129 +1,200 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
-type Volunteer = {
-  name: string;
-  role: string;
-  blurb: string;
-};
+const CONTACT_HERO_SRC = "/images/contact/inside.png";
 
-function asVolunteers(raw: unknown): Volunteer[] {
-  if (!Array.isArray(raw)) {
-    return [];
+function belgianDisplayPhoneToTel(display: string): string {
+  const digits = display.replace(/\s/g, "");
+  if (digits.startsWith("0")) {
+    return `+32${digits.slice(1)}`;
   }
-  return raw.map((item) => {
-    const v = item as Record<string, unknown>;
-    return {
-      name: String(v.name ?? ""),
-      role: String(v.role ?? ""),
-      blurb: String(v.blurb ?? ""),
-    };
-  });
+  return digits;
 }
 
 type ContactViewProps = {
   locale: string;
 };
 
+type KerkraadMember = {
+  name: string;
+  role?: string;
+  email?: string;
+  phone?: string;
+};
+
 export async function ContactView({ locale }: ContactViewProps) {
   const t = await getTranslations({ locale, namespace: "contact" });
-  const volunteers = asVolunteers(t.raw("volunteers"));
+  const membersRaw = t.raw("gemeenschapsploeg.members");
+  const members = Array.isArray(membersRaw) ? (membersRaw as string[]) : [];
+  const kerkraadRaw = t.raw("kerkfabriek.members");
+  const kerkraadMembers: KerkraadMember[] = Array.isArray(kerkraadRaw)
+    ? (kerkraadRaw as KerkraadMember[])
+    : [];
 
   return (
-    <div className="bg-[#1a1814] text-zinc-100">
-      <section className="relative min-h-[88vh] w-full">
+    <>
+      <section className="relative isolate min-h-[min(55vh,520px)] w-full overflow-hidden bg-zinc-900 sm:min-h-[min(62vh,580px)]">
         <Image
-          alt={t("heroImageAlt")}
-          className="object-cover"
+          alt={t("hero.imageAlt")}
+          className="object-cover opacity-[0.93]"
           fill
           priority
           sizes="100vw"
-          src="/images/contact/inside.png"
+          src={CONTACT_HERO_SRC}
         />
         <div
           aria-hidden
-          className="absolute inset-0 bg-gradient-to-t from-[#1a1814] via-[#1a1814]/75 via-45% to-transparent"
+          className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/20 to-black/50"
         />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_20%,rgba(212,175,55,0.18),transparent_55%)]" />
-        <div className="relative z-10 flex min-h-[88vh] flex-col justify-end px-6 pb-16 pt-28 sm:px-10 sm:pb-20 lg:px-14">
-          <p className="mb-3 max-w-xl font-medium uppercase tracking-[0.35em] text-amber-200/90 text-xs sm:text-sm">
-            {t("heroTagline")}
-          </p>
-          <h1 className="max-w-4xl font-serif text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
-            {t("heroTitle")}
-          </h1>
+        <div className="relative z-10 mx-auto flex min-h-[min(55vh,520px)] w-full max-w-7xl flex-col justify-end px-5 pb-12 pt-24 sm:min-h-[min(62vh,580px)] sm:px-8 sm:pb-14 sm:pt-28">
+          <div className="max-w-2xl">
+            <h1 className="text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+              {t("hero.title")}
+            </h1>
+            <p className="mt-4 max-w-xl text-pretty text-base leading-relaxed text-white/90 sm:text-lg">
+              {t("hero.lead")}
+            </p>
+          </div>
         </div>
       </section>
 
-      <section className="relative z-20 -mt-8 rounded-t-3xl bg-[#f2e8d8] px-6 py-14 text-zinc-900 shadow-[0_-24px_60px_rgba(0,0,0,0.35)] sm:px-10 sm:py-16 lg:px-14">
-        <div className="mx-auto max-w-3xl text-center">
-          <p className="text-pretty text-base leading-relaxed sm:text-lg">{t("intro")}</p>
-        </div>
-
-        <div className="mx-auto mt-14 grid max-w-6xl gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] lg:items-start">
-          <div className="rounded-2xl border border-zinc-800/10 bg-white/60 p-8 shadow-lg backdrop-blur-sm">
-            <h2 className="font-serif text-2xl font-semibold tracking-tight text-zinc-900">
-              {t("visitTitle")}
-            </h2>
-            <p className="mt-4 text-pretty text-base leading-relaxed text-zinc-800">
-              {t("visitBody")}
-            </p>
-            <div className="mt-8 border-t border-zinc-800/10 pt-8">
-              <p className="text-xs font-semibold uppercase tracking-wider text-zinc-600">
-                {t("addressLabel")}
+      <div className="bg-zinc-100">
+        <div className="mx-auto max-w-6xl px-5 py-14 sm:px-8 sm:py-16 lg:py-20">
+          <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
+            <article className="rounded-xl bg-white p-8 shadow-sm ring-1 ring-black/5 sm:p-10">
+              <h2 className="text-xl font-semibold tracking-tight text-zinc-900 sm:text-2xl">
+                {t("addressCard.title")}
+              </h2>
+              <address className="not-italic mt-5 text-base leading-relaxed text-zinc-800">
+                <span className="block font-semibold">{t("addressCard.line1")}</span>
+                <span className="block font-semibold">{t("addressCard.line2")}</span>
+              </address>
+              <p className="mt-4 text-pretty text-sm leading-relaxed text-zinc-600 sm:text-base">
+                {t("addressCard.body")}
               </p>
-              <p className="mt-2 font-medium text-zinc-900">{t("addressLine1")}</p>
-              <p className="text-zinc-800">{t("addressLine2")}</p>
-            </div>
-          </div>
-
-          <div className="rounded-2xl border border-amber-900/15 bg-gradient-to-br from-[#c4a574]/25 to-[#8b6914]/10 p-8 shadow-lg">
-            <h2 className="font-serif text-2xl font-semibold tracking-tight text-zinc-900">
-              {t("timesTitle")}
-            </h2>
-            <p className="mt-4 text-pretty text-base leading-relaxed text-zinc-800">
-              {t("timesBody")}
-            </p>
-            <div
-              aria-hidden
-              className="mt-8 h-px w-full bg-gradient-to-r from-transparent via-amber-900/30 to-transparent"
-            />
-            <p className="mt-8 text-center text-xs italic text-zinc-600">{t("disclaimer")}</p>
-          </div>
-        </div>
-
-        <div className="mx-auto mt-20 max-w-6xl">
-          <h2 className="text-center font-serif text-3xl font-semibold tracking-tight text-zinc-900 sm:text-4xl">
-            {t("volunteersTitle")}
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-center text-pretty text-zinc-700">
-            {t("volunteersIntro")}
-          </p>
-
-          <ul className="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-            {volunteers.map((person, i) => (
-              <li
-                className="group relative overflow-hidden rounded-2xl border border-zinc-800/10 bg-white/80 p-6 shadow-md transition hover:border-amber-900/25 hover:shadow-xl"
-                key={`${person.name}-${i}`}
+              <a
+                className="mt-6 inline-flex rounded-full bg-[#a8a08c] px-5 py-2.5 text-sm font-semibold text-zinc-900 shadow-sm ring-1 ring-black/10 transition hover:bg-[#9c9480]"
+                href={t("addressCard.mapUrl")}
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                <span
-                  aria-hidden
-                  className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-amber-400/15 transition group-hover:bg-amber-400/25"
-                />
-                <p className="relative text-xs font-semibold uppercase tracking-widest text-amber-900/80">
-                  {person.role}
-                </p>
-                <p className="relative mt-3 font-serif text-xl font-semibold text-zinc-900">
-                  {person.name}
-                </p>
-                <p className="relative mt-3 text-pretty text-sm leading-relaxed text-zinc-700">
-                  {person.blurb}
-                </p>
-              </li>
-            ))}
-          </ul>
+                {t("addressCard.mapLink")}
+              </a>
+            </article>
+
+            <article className="rounded-xl bg-[#bdb7a6] p-8 shadow-sm ring-1 ring-black/10 sm:p-10">
+              <h2 className="text-xl font-semibold tracking-tight text-zinc-900 sm:text-2xl">
+                {t("visitCard.title")}
+              </h2>
+              <div className="mt-5 space-y-4 text-pretty text-base leading-relaxed text-zinc-800">
+                <p>{t("visitCard.p1")}</p>
+                <p>{t("visitCard.p2")}</p>
+                <p className="font-semibold text-zinc-900">{t("visitCard.p3")}</p>
+                <p>{t("visitCard.openingHours")}</p>
+              </div>
+            </article>
+          </div>
+
+          <section className="mt-12 rounded-xl bg-white p-8 shadow-sm ring-1 ring-black/5 sm:mt-14 sm:p-10">
+            <h2 className="text-xl font-semibold tracking-tight text-zinc-900 sm:text-2xl">
+              {t("gemeenschapsploeg.title")}
+            </h2>
+            <p className="mt-4 max-w-3xl text-pretty text-base leading-relaxed text-zinc-800 sm:text-lg">
+              {t("gemeenschapsploeg.body")}
+            </p>
+            <h3 className="mt-8 text-xs font-semibold uppercase tracking-wide text-zinc-500">
+              {t("gemeenschapsploeg.membersHeading")}
+            </h3>
+            <ul className="mt-4 grid list-none gap-x-8 gap-y-2 sm:grid-cols-2" role="list">
+              {members.map((name) => (
+                <li key={name} className="text-base text-zinc-800">
+                  {name}
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="mt-12 rounded-xl bg-[#bdb7a6] p-8 shadow-sm ring-1 ring-black/10 sm:mt-14 sm:p-10">
+            <h2 className="text-xl font-semibold tracking-tight text-zinc-900 sm:text-2xl">
+              {t("kerkfabriek.title")}
+            </h2>
+            <p className="mt-4 max-w-3xl text-pretty text-base leading-relaxed text-zinc-800 sm:text-lg">
+              {t("kerkfabriek.body")}
+            </p>
+            <p className="mt-6 font-medium text-zinc-900">{t("kerkfabriek.membersIntro")}</p>
+            <ul className="mt-4 border-t border-black/10" role="list">
+              {kerkraadMembers.map((member) => (
+                <li
+                  key={member.name}
+                  className="border-b border-black/10 py-4 last:border-b-0"
+                >
+                  <span className="font-medium text-zinc-900">{member.name}</span>
+                  {member.role ? (
+                    <span className="mt-0.5 block text-sm text-zinc-700">{member.role}</span>
+                  ) : null}
+                  {member.email || member.phone ? (
+                    <span className="mt-1 flex flex-col gap-1">
+                      {member.email ? (
+                        <a
+                          className="inline-block w-fit text-sm font-medium text-zinc-900 underline decoration-zinc-600 underline-offset-4 transition hover:decoration-zinc-900"
+                          href={`mailto:${member.email}`}
+                        >
+                          {member.email}
+                        </a>
+                      ) : null}
+                      {member.phone ? (
+                        <a
+                          className="inline-block w-fit text-sm font-medium text-zinc-900 underline decoration-zinc-600 underline-offset-4 transition hover:decoration-zinc-900"
+                          href={`tel:${belgianDisplayPhoneToTel(member.phone)}`}
+                        >
+                          {member.phone}
+                        </a>
+                      ) : null}
+                    </span>
+                  ) : null}
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="mt-12 rounded-xl border border-black/10 bg-white/90 px-8 py-8 backdrop-blur-sm sm:mt-14 sm:px-10 sm:py-10">
+            <h2 className="text-lg font-semibold text-zinc-900 sm:text-xl">
+              {t("reachCard.title")}
+            </h2>
+            <p className="mt-3 max-w-3xl text-pretty text-sm leading-relaxed text-zinc-700 sm:text-base">
+              {t("reachCard.body")}
+            </p>
+            <dl className="mt-6 grid max-w-xl gap-5 sm:grid-cols-2 sm:gap-8">
+              <div>
+                <dt className="text-xs font-semibold uppercase tracking-wide text-zinc-500">
+                  {t("reachCard.emailLabel")}
+                </dt>
+                <dd className="mt-1.5">
+                  <a
+                    className="text-base font-medium text-zinc-900 underline decoration-zinc-400 underline-offset-4 transition hover:decoration-zinc-700"
+                    href={`mailto:${t("reachCard.email")}`}
+                  >
+                    {t("reachCard.email")}
+                  </a>
+                </dd>
+              </div>
+              <div>
+                <dt className="text-xs font-semibold uppercase tracking-wide text-zinc-500">
+                  {t("reachCard.phoneLabel")}
+                </dt>
+                <dd className="mt-1.5">
+                  <a
+                    className="text-base font-medium text-zinc-900 underline decoration-zinc-400 underline-offset-4 transition hover:decoration-zinc-700"
+                    href={`tel:${belgianDisplayPhoneToTel(t("reachCard.phone"))}`}
+                  >
+                    {t("reachCard.phone")}
+                  </a>
+                </dd>
+              </div>
+            </dl>
+          </section>
         </div>
-      </section>
-    </div>
+      </div>
+    </>
   );
 }

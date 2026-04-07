@@ -1,6 +1,10 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
+/** Sint-Geertruikerk carillon — https://www.youtube.com/watch?v=9lWuVFcJBM4 */
+const CARILLON_YOUTUBE_EMBED_SRC =
+  "https://www.youtube.com/embed/9lWuVFcJBM4?rel=0&playsinline=1&modestbranding=1";
+
 type RestorationSectionProps = {
   title: string;
   description: string;
@@ -83,7 +87,7 @@ export default async function RestorationPage({ params }: RestorationPageProps) 
             src: "/images/restoration/article/image3.jpg",
             width: 462,
           }}
-          toneClass=""
+          toneClass="bg-[#c8c2b2]"
           title={t("sections.spire.title")}
         />
 
@@ -96,7 +100,7 @@ export default async function RestorationPage({ params }: RestorationPageProps) 
             width: 480,
           }}
           reverse
-          toneClass="bg-[#c8c2b2]"
+          toneClass=""
           title={t("sections.towerBody.title")}
         />
 
@@ -108,7 +112,7 @@ export default async function RestorationPage({ params }: RestorationPageProps) 
             src: "/images/restoration/article/image4.jpg",
             width: 480,
           }}
-          toneClass=""
+          toneClass="bg-[#c8c2b2]"
           title={t("sections.humidity.title")}
         />
 
@@ -121,7 +125,7 @@ export default async function RestorationPage({ params }: RestorationPageProps) 
             width: 480,
           }}
           reverse
-          toneClass="bg-[#c8c2b2]"
+          toneClass=""
           title={t("sections.heatingStability.title")}
         />
 
@@ -134,7 +138,7 @@ export default async function RestorationPage({ params }: RestorationPageProps) 
             width: 861,
           }}
           imageMaxWidthClass="md:max-w-[20rem]"
-          toneClass=""
+          toneClass="bg-[#c8c2b2]"
           title={t("sections.roof.title")}
         />
 
@@ -147,9 +151,31 @@ export default async function RestorationPage({ params }: RestorationPageProps) 
             width: 480,
           }}
           reverse
-          toneClass="bg-[#c8c2b2]"
+          toneClass=""
           title={t("sections.carillon.title")}
         />
+
+        <section
+          aria-labelledby="restoration-carillon-video-heading"
+          className="mt-10 sm:mt-12"
+        >
+          <h2
+            className="mb-4 text-center text-lg font-semibold tracking-tight text-zinc-900 sm:text-xl"
+            id="restoration-carillon-video-heading"
+          >
+            {t("sections.carillon.videoTitle")}
+          </h2>
+          <div className="relative mx-auto aspect-video w-full max-w-3xl overflow-hidden rounded-lg bg-zinc-900 shadow-lg ring-1 ring-black/10">
+            <iframe
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="absolute inset-0 h-full w-full border-0"
+              referrerPolicy="strict-origin-when-cross-origin"
+              src={CARILLON_YOUTUBE_EMBED_SRC}
+              title={t("sections.carillon.videoIframeTitle")}
+            />
+          </div>
+        </section>
 
         <section className="mt-12">
           <h2 className="mb-5 text-xl font-semibold tracking-tight sm:mb-6 sm:text-2xl">

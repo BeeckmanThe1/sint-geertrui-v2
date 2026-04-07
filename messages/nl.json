@@ -23,11 +23,8 @@
     "metaDescription": "Ontdek geschiedenis, restauratie en activiteiten van de Sint-Geertruikerk in Leuven.",
     "hero": {
       "imageAlt": "Exterieur van de Sint-Geertruikerk",
-      "missionTitle": "Onze missie",
-      "missionBody": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
-    },
-    "newsletter": {
-      "cta": "Blijf op de hoogte via onze nieuwsbrief"
+      "missionBody": "Wie voor ons leefden, gingen heen,\nMaar dit oude huis van hout en steen\nbleef staan als een gebed tot U,\nWij bidden mee, verhoor ons nu",
+      "missionAuthor": "W. Barnard"
     },
     "events": {
       "title": "Aankomende evenementen",
@@ -120,58 +117,68 @@
   },
   "contact": {
     "metaTitle": "Contact | Sint-Geertruikerk Leuven",
-    "metaDescription": "Bezoek de Sint-Geertruikerk, neem contact op met het kernteam of spreek een aanspreekpunt aan.",
-    "heroTitle": "Kom binnen. We horen je graag.",
-    "heroTagline": "Mensen maken de kerk levend — van orgel tot koffie na de viering.",
-    "heroImageAlt": "Zicht op het interieur van de Sint-Geertruikerk",
-    "intro": "Of je nu voor het eerst over de drempel stapt, al jaren meedraait, of gewoon een vraag hebt: hieronder vind je wie je het best kunt aanspreken. Dit zijn fictieve aanspreekpunten voor de website; vervang ze gerust door echte namen.",
-    "visitTitle": "Langskomen",
-    "visitBody": "De kerk ligt in het hart van het Sint-Geertrui-kwartier. Parkeren is beperkt; het openbaar vervoer en de fiets zijn ideaal.",
-    "addressLabel": "Adres",
-    "addressLine1": "Sint-Geertruiabdij 1",
-    "addressLine2": "3000 Leuven, België",
-    "timesTitle": "Typische momenten",
-    "timesBody": "Hoogdagen en concerten volgen de agenda. Voor rouwvieringen of huwelijksintenties: neem tijdig contact op.",
-    "volunteersTitle": "Het team (voorbeeld)",
-    "volunteersIntro": "Zeven mensen die — in dit voorbeeld — de vele facetten van parochieleven dragen.",
-    "disclaimer": "Namen en rollen zijn fictief en dienen enkel ter illustratie voor deze website.",
-    "volunteers": [
-      {
-        "name": "Pastoor Rik Verhoeven",
-        "role": "Parochie & pastorale leiding",
-        "blurb": "Eerste aanspreekpunt voor geloofsvragen, dopelingen en wat er leeft in de gemeenschap."
-      },
-      {
-        "name": "Mieke Claes",
-        "role": "Liturgie & vieringen",
-        "blurb": "Coördineert lectoren, mijnstukken en de sfeer rond de eredienst."
-      },
-      {
-        "name": "Thomas De Smet",
-        "role": "Orgel, muziek & beiaard",
-        "blurb": "Brug tussen cantorij, instrumentalisten en de acoustiek van de kerk."
-      },
-      {
-        "name": "Sara Nuyts",
-        "role": "Jeugd & gezinnen",
-        "blurb": "Organiseert gezinsvieringen, kindernevendienst en zomerkampen."
-      },
-      {
-        "name": "Jan Peeters",
-        "role": "Koster & ontvangst",
-        "blurb": "Ontvangt bezoekers, bereidt de ruimte voor en zorgt dat alles veilig verloopt."
-      },
-      {
-        "name": "Hilde Martens",
-        "role": "Vrijwilligers & onderhoud",
-        "blurb": "Plant klusmomenten, bloemen en het netwerk rond het gebouw zelf."
-      },
-      {
-        "name": "Ann Vandenbroucke",
-        "role": "Kerkfabriek & administratie",
-        "blurb": "Aanspreekpunt voor vergunningen, verzekeringen en praktische opvolging."
-      }
-    ]
+    "metaDescription": "Adres, bereikbaarheid en praktische informatie voor een bezoek aan de Sint-Geertruikerk in Leuven.",
+    "hero": {
+      "imageAlt": "Interieur van de Sint-Geertruikerk met licht door de hoge ramen",
+      "title": "Contact",
+      "lead": "De Sint-Geertruikerk staat in het hart van Leuven. Hier vindt u ons adres, een routebeschrijving en tips voor uw bezoek."
+    },
+    "addressCard": {
+      "title": "Adres & route",
+      "line1": "Sint-Geertruiabdij 9",
+      "line2": "3000 Leuven",
+      "body": "De kerk ligt aan de Halfmaartstraat, nabij het Klein-Begijnhof en de Dijle-armen. Openbaar vervoer en de fiets brengen u dichtbij; parkeerplaatsen in de directe omgeving zijn beperkt. De dichtstbijzijnde parking is parking Vaartkom.",
+      "mapLink": "Open in kaarten",
+      "mapUrl": "https://www.google.com/maps/place/Sint-Geertruikerk+%E2%9B%AA/@50.8840111,4.6990642,19.12z/data=!4m15!1m8!3m7!1s0x47c160dba16adb5f:0x131cdff3b2c73566!2sSint-Geertruiabdij+9,+3000+Leuven!3b1!8m2!3d50.8837896!4d4.6990003!16s%2Fg%2F11v3pzq68n!3m5!1s0x47c160db0a6d6081:0xa0d5ae1e1a4849ae!8m2!3d50.8841576!4d4.6992691!16s%2Fg%2F122vxkkq"
+    },
+    "visitCard": {
+      "title": "Bezoek",
+      "p1": "Iedereen is welkom in de kerk: tijdens erediensten, concerten of wanneer de deuren openstaan.",
+      "p2": "Bekijk onze agenda voor concerten, vieringen en andere activiteiten in en rond de kerk.",
+      "p3": "Zondagdiensten om 11 uur.",
+      "openingHours": "Open voor het publiek: in de winter op zaterdagmiddag van 14 tot 16.30 uur en in de zomer elke dag van 14 tot 16.30 uur, behalve op maandag."
+    },
+    "gemeenschapsploeg": {
+      "title": "Gemeenschapsploeg",
+      "body": "De Gemeenschapsploeg van de Geertrui-gemeenschap staat in voor de religieuze begeleiding van wat vroeger 'de parochie' werd genoemd. De Geertrui-gemeenschap maakt intussen deel uit van een bredere 'zone' Leuven-Dijle, waarin alle vroegere parochies binnen de 'vesten' van de oude stad samenwerken. De Gemeenschapsploeg verzorgt of begeleidt bijvoorbeeld de missen en woorddiensten in onze kerk.",
+      "membersHeading": "Leden",
+      "members": [
+        "Greet Beerts",
+        "Chris Heremans",
+        "Wim Janssens",
+        "Bart Massart",
+        "Rita Merckx",
+        "Ingrid Meulemans",
+        "Lieve Vandeven",
+        "Mieke Vanderputte",
+        "Asha Mabel"
+      ]
+    },
+    "kerkfabriek": {
+      "title": "Kerkfabriek & kerkraad",
+      "body": "De kerkfabriek is een openbare instelling die verantwoordelijk is voor het beheer van materiële middelen die nodig zijn voor de uitoefening van de eredienst in een parochie. De kerkraad is het bestuursorgaan dat de kerkfabriek beheert — de mensen dus — en beslissingen neemt over financiën, onderhoud en andere materiële zaken gerelateerd aan de eredienst. De kerkraad bestaat doorgaans uit vijf leden en kan ook een vertegenwoordiger van het bisdom en een aantal raadgevers bevatten.",
+      "membersIntro": "De kerkraad van Sint-Geertrui bestaat uit:",
+      "members": [
+        { "name": "Axel Buyse", "role": "Voorzitter", "email": "axel.buyse@gmail.com", "phone": "0492 13 07 02" },
+        { "name": "Dirk Verheyen", "role": "Penningmeester" },
+        { "name": "Jan Breuls", "role": "Lid", "email": "jan.breuls1@telenet.be" },
+        { "name": "Luc Boghe", "role": "Lid" },
+        { "name": "Grietje Van Mol", "role": "Secretaris" },
+        { "name": "Juan Carlos Tinjaca ss.cc.", "role": "Vertegenwoordiger van de bisschop" },
+        { "name": "Bart Massart", "role": "Raadgever" },
+        { "name": "Sabina De Geest", "role": "Raadgever" },
+        { "name": "Suzanne Vandelaer", "role": "Raadgever" },
+        { "name": "Wim Janssen", "role": "Raadgever" }
+      ]
+    },
+    "reachCard": {
+      "title": "Vragen over parochiezaken",
+      "body": "Voor vragen, reservaties of parochiezaken kunt u ons rechtstreeks contacteren.",
+      "emailLabel": "E-mail",
+      "email": "sintgeertrui@kerkleuven.be",
+      "phoneLabel": "Telefoon",
+      "phone": "0474 45 78 93"
+    }
   },
   "agenda": {
     "metaTitle": "Agenda | Sint-Geertruikerk Leuven",
@@ -190,8 +197,7 @@
   },
   "footer": {
     "ariaNav": "Footer navigatie",
-    "onzeMissie": "Onze missie",
-    "addressLine1": "Sint-Geertruiabdij 1",
+    "addressLine1": "Sint-Geertruiabdij 9",
     "addressLine2": "3000 Leuven"
   },
   "restoration": {
@@ -226,7 +232,9 @@
       "carillon": {
         "title": "Beiaard",
         "body": "De beiaard (carillon) was midden 2005 volop in herstelling. Tegen eind van dat jaar moest de herstelling rond zijn en zou er een nieuw octaaf worden bijgevoegd. Het gaat om de oudste beiaard van de stad, die er nog een viertal andere telt. De Vanden Gheyn-beiaard van de Geertruikerk dateert in haar kern nog uit de 18de eeuw.",
-        "imageAlt": "Restauratiebeeld beiaard"
+        "imageAlt": "Restauratiebeeld beiaard",
+        "videoTitle": "Video over de beiaard",
+        "videoIframeTitle": "Ingesloten YouTube-video over de beiaard van de Sint-Geertruikerk"
       }
     },
     "outro": {
