@@ -24,7 +24,8 @@ export async function HomePanorama({ locale }: HomePanoramaProps) {
           {t("panorama.title")}
         </h2>
         <div className="relative mt-8 w-full overflow-hidden rounded-sm bg-zinc-300/80 shadow-inner ring-1 ring-black/5">
-          <div className="aspect-video w-full">
+          {/* Narrow viewports: 16:9 from width alone is too short for the embed + copy; cap a floor, md+ use pure aspect-video. */}
+          <div className="aspect-video min-h-[min(22rem,92vw)] w-full md:min-h-0">
             {embedSrc ? (
               <iframe
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"

@@ -10,6 +10,10 @@ import clsx from "clsx";
 
 const galleryList = [...HISTORY_GALLERY];
 
+/** Layout matches the book graphic at this viewport width; narrower viewports scale the teaser down proportionally. */
+const BOOK_TEASER_REF_VIEWPORT_PX = 860;
+const BOOK_TEASER_BASE_SCALE = 1.1;
+
 export function HistoryBookCarousel({transform}: {transform: string}) {
   const t = useTranslations("history");
   const titleId = useId();
@@ -72,7 +76,10 @@ export function HistoryBookCarousel({transform}: {transform: string}) {
   return (
     <section
       aria-label={t("bookSectionLabel")}
-      className="absolute left-1/2 top-1/2 transform-[translate(-41%,-46%)_rotate(-18deg)_scale(1.1)]"
+      className="absolute left-1/2 top-1/2"
+      style={{
+        transform: `translate(-41%, -46%) rotate(-18deg) scale(calc(${BOOK_TEASER_BASE_SCALE} * min(1, 100vw / ${BOOK_TEASER_REF_VIEWPORT_PX}px)))`,
+      }}
     >
       <div className={clsx("mx-auto h-full flex max-w-5xl flex-col items-center gap-6 md:flex-row md:items-center md:justify-center md:gap-10 lg:gap-14 rounded-[15px] filter opacity-50 cursor-pointer", transform)}>
         <button
