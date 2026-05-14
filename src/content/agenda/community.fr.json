@@ -1,0 +1,267 @@
+{
+  "pageSize": 9,
+  "events": [
+    {
+      "id": "2025-11-11-0",
+      "category": "community",
+      "title": "Célébration interreligieuse",
+      "description": "De nombreuses communautés de conviction se réunissent pour la paix et l'humanité à l'église Saint-Pierre. Thème : « L'humanité, plus que jamais ».",
+      "date": "2025-11-11"
+    },
+    {
+      "id": "2025-11-09-1",
+      "category": "community",
+      "title": "Célébration de la Parole et de la communion",
+      "description": "Présidée par Marc Michiels.",
+      "date": "2025-11-09"
+    },
+    {
+      "id": "2025-11-16-2",
+      "category": "community",
+      "title": "Célébration eucharistique",
+      "description": "Présidée par le père Castro.",
+      "date": "2025-11-16"
+    },
+    {
+      "id": "2025-11-23-3",
+      "category": "community",
+      "title": "Célébration de la Parole et de la communion",
+      "description": "Animateur de prière : Tomas Bruyland.",
+      "date": "2025-11-23"
+    },
+    {
+      "id": "2025-11-30-4",
+      "category": "community",
+      "title": "Célébration eucharistique",
+      "description": "Présidée par le père Castro. Premier dimanche de l'Avent, avec table de solidarité pour la Banque alimentaire.",
+      "date": "2025-11-30"
+    },
+    {
+      "id": "2026-01-25-5",
+      "category": "community",
+      "title": "Pas de célébration (messe radio à Saint-Pierre)",
+      "description": "Nous suivons la messe radio depuis l'église Saint-Pierre où notre chœur Gertro, avec le chœur Gaudeamus, assure l'animation musicale.",
+      "date": "2026-01-25"
+    },
+    {
+      "id": "2026-02-01-6",
+      "category": "community",
+      "title": "Célébration de la Parole et de la communion (Chandeleur)",
+      "description": "Présidée par Dirk Verheyen. Pendant la célébration, les enfants baptisés au cours de l'année écoulée reçoivent la bénédiction des enfants.",
+      "date": "2026-02-01"
+    },
+    {
+      "id": "2026-02-08-7",
+      "category": "community",
+      "title": "Conversation de foi 2",
+      "description": "9 h 30 à la presbytère avec le père Castro, autour des lectures du dimanche.",
+      "date": "2026-02-08"
+    },
+    {
+      "id": "2026-02-08-8",
+      "category": "community",
+      "title": "Célébration eucharistique",
+      "description": "Présidée par le père Arnold Castro.",
+      "date": "2026-02-08"
+    },
+    {
+      "id": "2026-02-15-9",
+      "category": "community",
+      "title": "Célébration de la Parole et de la communion",
+      "description": "Animateur de prière : Tomas Bruyland.",
+      "date": "2026-02-15"
+    },
+    {
+      "id": "2026-02-18-10",
+      "category": "community",
+      "title": "Mercredi des Cendres",
+      "description": "Pas de célébration des Cendres dans notre église ; vous pouvez vous rendre à 11 h à Saint-Pierre ou le soir dans une des autres communautés.",
+      "date": "2026-02-18"
+    },
+    {
+      "id": "2026-02-22-11",
+      "category": "community",
+      "title": "Célébration eucharistique",
+      "description": "Présidée par le père Arnold Castro.",
+      "date": "2026-02-22"
+    },
+    {
+      "id": "2026-02-24-12",
+      "category": "community",
+      "title": "Geertrui-café",
+      "description": "19 h 30 au Geertruihof. Invité : l'aumônier des jeunes Robin Bovy, sur la foi et l'avenir.",
+      "date": "2026-02-24"
+    },
+    {
+      "id": "2026-03-01-13",
+      "category": "community",
+      "title": "Célébration de la Parole et de la communion",
+      "description": "À 11 h, animateur de prière : Marc Michiels.",
+      "date": "2026-03-01"
+    },
+    {
+      "id": "2026-03-07-14",
+      "category": "community",
+      "title": "Portie Gemengd",
+      "description": "Activité autour du lien, de la rencontre et de l'égalité entre toutes les convictions. À partir de 17 h au Hall 5, Locomotievenstraat 104, 3010 Kessel-Lo. Formule potluck.",
+      "date": "2026-03-07"
+    },
+    {
+      "id": "2026-03-08-15",
+      "category": "community",
+      "title": "Célébration africaine",
+      "description": "À 11 h, selon le rite congolais, présidée par le père Joseph Imama et animée par le chœur Elikya, suivie du repas solidaire pour Broederlijk Delen au Geertruihof.",
+      "date": "2026-03-08"
+    },
+    {
+      "id": "2026-03-15-16",
+      "category": "community",
+      "title": "Célébration eucharistique",
+      "description": "À 11 h, présidée par le père Arnold Castro.",
+      "date": "2026-03-15"
+    },
+    {
+      "id": "2026-03-22-17",
+      "category": "community",
+      "title": "Célébration de la Parole et de la communion",
+      "description": "Animateur de prière : Bart Massart.",
+      "date": "2026-03-22"
+    },
+    {
+      "id": "2026-03-29-18",
+      "category": "community",
+      "title": "Célébration eucharistique avec bénédiction des rameaux (Dimanche des Rameaux)",
+      "description": "À 11 h, présidée par le père Arnold Castro ; par beau temps, départ depuis le jardin de l'abbaye Sainte-Gertrude.",
+      "date": "2026-03-29"
+    },
+    {
+      "id": "2026-03-30-19",
+      "category": "community",
+      "title": "Messe chrismale",
+      "description": "À 19 h 30, présidée par l'archevêque Luc Terlinden en la cathédrale Saint-Rombaut de Malines.",
+      "date": "2026-03-30"
+    },
+    {
+      "id": "2026-03-31-20",
+      "category": "community",
+      "title": "Célébration de réconciliation",
+      "description": "À 19 h pour la zone pastorale Louvain-Dyle à l'église Saint-Joseph.",
+      "date": "2026-03-31"
+    },
+    {
+      "id": "2026-04-03-21",
+      "category": "community",
+      "title": "Célébration du Vendredi saint avec vénération de la Croix",
+      "description": "À 20 h dans notre église. Les fleurs apportées serviront à la décoration de l'église.",
+      "date": "2026-04-03"
+    },
+    {
+      "id": "2026-04-04-22",
+      "category": "community",
+      "title": "Veillée pascale",
+      "description": "À 21 h, présidée par le père Castro.",
+      "date": "2026-04-04"
+    },
+    {
+      "id": "2026-04-05-23",
+      "category": "community",
+      "title": "Solennité de Pâques (célébration eucharistique)",
+      "description": "À 11 h, présidée par le père Castro et solennisée par le chœur Gertro.",
+      "date": "2026-04-05"
+    },
+    {
+      "id": "2026-04-19-24",
+      "category": "community",
+      "title": "Troisième conversation de foi",
+      "description": "Le père Castro sera à nouveau animateur, en dialogue sur les lectures du dimanche.",
+      "date": "2026-04-19"
+    },
+    {
+      "id": "2026-05-03-25",
+      "category": "community",
+      "title": "Conversation de foi",
+      "description": "À 9 h 30 à la presbytère. Le père Castro modère ; ensemble autour des lectures du dimanche.",
+      "date": "2026-05-03"
+    },
+    {
+      "id": "2026-05-03-26",
+      "category": "community",
+      "title": "Célébration eucharistique",
+      "description": "À 11 h, présidée par le père Castro.",
+      "date": "2026-05-03"
+    },
+    {
+      "id": "2026-05-10-27",
+      "category": "community",
+      "title": "Célébration de la Parole et de la communion",
+      "description": "À 11 h, présidée par Marc Michiels.",
+      "date": "2026-05-10"
+    },
+    {
+      "id": "2026-05-14-28",
+      "category": "community",
+      "title": "Célébration eucharistique (Ascension du Seigneur)",
+      "description": "Présidée par le père Arnold Castro.",
+      "date": "2026-05-14"
+    },
+    {
+      "id": "2026-05-17-29",
+      "category": "community",
+      "title": "Célébration de la Parole et de la communion",
+      "description": "Animateur de prière : Mia Bertmans.",
+      "date": "2026-05-17"
+    },
+    {
+      "id": "2026-05-19-30",
+      "category": "community",
+      "title": "Geertrui-café avec conférencière",
+      "description": "Mardi 19 mai à 19 h 30 au Geertruihof. Invitée : Kris Gelaude.\n\nKris écrit des textes poétiques et liturgiques, des chroniques et des articles ; elle a déjà publié plusieurs livres et donne des conférences sur la religion et le sens de la vie.\n\nPour ce Geertrui-café elle parle de croire aujourd'hui : « Comment, dans le monde d'aujourd'hui avec tant de nouvelles sombres, pouvons-nous ensemble trouver de nouveaux chemins et créer des lieux d'espérance ? »\n\nAprès la conférence, possibilité de prolonger la conversation autour d'une boisson.",
+      "date": "2026-05-19"
+    },
+    {
+      "id": "2026-05-19-31",
+      "category": "community",
+      "title": "Remerciements : dons pour la ferme-assistance Rimpeling",
+      "description": "Les dons au profit de la ferme-assistance Rimpeling de Greet Herkes et Katja à Baal s'élèvent déjà à 2 585 euros ; d'autres dons peuvent porter le total à 2 750 euros. Un très grand merci !",
+      "date": "2026-05-19"
+    },
+    {
+      "id": "2026-05-24-32",
+      "category": "community",
+      "title": "Célébration eucharistique (Pentecôte)",
+      "description": "À 11 h, présidée par le père Arnold Castro.",
+      "date": "2026-05-24"
+    },
+    {
+      "id": "2026-05-31-34",
+      "category": "community",
+      "title": "Célébration de la Parole et de la communion",
+      "description": "À 11 h, animateur de prière : Toon Quaghebeur.",
+      "date": "2026-05-31"
+    },
+    {
+      "id": "2026-06-21-35",
+      "category": "community",
+      "title": "Bénédiction du nouveau carillon — clôture d'année",
+      "description": "Le 21 juin notre doyen, Patrick Maervoet, bénira les nouvelles cloches de notre carillon entièrement renouvelé et agrandi, pendant la célébration dominicale dans notre église. Dirk Vansina nous adressera la parole ; après la messe, auberge espagnole au Geertruihof, puis un temps d'échange au même lieu.\n\nLes jours suivants, les cloches seront hissées dans la tour.\n\nTout le monde est le bienvenu.",
+      "date": "2026-06-21",
+      "highlighted": true
+    },
+    {
+      "id": "2026-07-12-33",
+      "category": "community",
+      "title": "Inauguration solennelle du carillon de Sint-Geertrui",
+      "description": "Le dimanche 12 juillet notre carillonneur, Marc Van Eyck, inaugure festivement le carillon. Cet après-midi, réception festive ; par beau temps sur la cour de l'abbaye.\n\nTout le monde est le bienvenu les 21 juin et 12 juillet, et en particulier les généreux donateurs qui ont rendu possible l'agrandissement du carillon.",
+      "date": "2026-07-12",
+      "highlighted": true
+    },
+    {
+      "id": "2026-10-01-36",
+      "category": "community",
+      "title": "Église temporairement fermée — culte chez les Assomptionnistes",
+      "description": "Si vous lisez sur ce site les textes sur la restauration, vous constaterez qu'une grande partie des travaux sur le bâtiment a déjà été réalisée, et qu'il en reste encore beaucoup pour les années à venir.\n\nÀ partir d'octobre 2026, des travaux de stabilité seront entrepris sur certains piliers dans l'église et tout sera préparé pour installer un système de chauffage. Pour cela l'église devra malheureusement rester fermée au culte public pendant six mois. Notre communauté de foi sera alors accueillie par les pères assomptionnistes, tout près de notre église, dans la Halve Straat. Pendant toute cette période nous pourrons nous réunir pour les messes dominicales dans la chapelle du couvent.",
+      "date": "2026-10-01",
+      "highlighted": true
+    }
+  ]
+}

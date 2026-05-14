@@ -1,0 +1,267 @@
+{
+  "pageSize": 9,
+  "events": [
+    {
+      "id": "2025-11-11-0",
+      "category": "community",
+      "title": "Interfaith celebration",
+      "description": "A broad range of philosophical and religious communities gather for peace and humanity at St Peter’s Church. Theme: “Humanity, now more than ever”.",
+      "date": "2025-11-11"
+    },
+    {
+      "id": "2025-11-09-1",
+      "category": "community",
+      "title": "Service of the Word and Communion",
+      "description": "Led by Marc Michiels.",
+      "date": "2025-11-09"
+    },
+    {
+      "id": "2025-11-16-2",
+      "category": "community",
+      "title": "Eucharistic celebration",
+      "description": "Led by Father Castro.",
+      "date": "2025-11-16"
+    },
+    {
+      "id": "2025-11-23-3",
+      "category": "community",
+      "title": "Service of the Word and Communion",
+      "description": "Prayer leader: Tomas Bruyland.",
+      "date": "2025-11-23"
+    },
+    {
+      "id": "2025-11-30-4",
+      "category": "community",
+      "title": "Eucharistic celebration",
+      "description": "Led by Father Castro. First Sunday of Advent, with solidarity table for the food bank.",
+      "date": "2025-11-30"
+    },
+    {
+      "id": "2026-01-25-5",
+      "category": "community",
+      "title": "No Mass (radio Mass at St Peter’s)",
+      "description": "We join the radio Mass from St Peter’s Church, where our Gertrokoor together with the Gaudeamus choir provides the music.",
+      "date": "2026-01-25"
+    },
+    {
+      "id": "2026-02-01-6",
+      "category": "community",
+      "title": "Service of the Word and Communion (Candlemas)",
+      "description": "Led by Dirk Verheyen. During the celebration, children baptised in the past year receive a blessing.",
+      "date": "2026-02-01"
+    },
+    {
+      "id": "2026-02-08-7",
+      "category": "community",
+      "title": "Faith conversation 2",
+      "description": "9.30 a.m. in the presbytery with Father Castro, reflecting on the readings of the Sunday.",
+      "date": "2026-02-08"
+    },
+    {
+      "id": "2026-02-08-8",
+      "category": "community",
+      "title": "Eucharistic celebration",
+      "description": "Led by Father Arnold Castro.",
+      "date": "2026-02-08"
+    },
+    {
+      "id": "2026-02-15-9",
+      "category": "community",
+      "title": "Service of the Word and Communion",
+      "description": "Prayer leader: Tomas Bruyland.",
+      "date": "2026-02-15"
+    },
+    {
+      "id": "2026-02-18-10",
+      "category": "community",
+      "title": "Ash Wednesday",
+      "description": "No Ash Wednesday service in our church; you are welcome at 11 a.m. at St Peter’s or in the evening in one of the other communities.",
+      "date": "2026-02-18"
+    },
+    {
+      "id": "2026-02-22-11",
+      "category": "community",
+      "title": "Eucharistic celebration",
+      "description": "Led by Father Arnold Castro.",
+      "date": "2026-02-22"
+    },
+    {
+      "id": "2026-02-24-12",
+      "category": "community",
+      "title": "Geertrui café",
+      "description": "7.30 p.m. in Geertruihof. Guest speaker: youth chaplain Robin Bovy, on faith and the future.",
+      "date": "2026-02-24"
+    },
+    {
+      "id": "2026-03-01-13",
+      "category": "community",
+      "title": "Service of the Word and Communion",
+      "description": "11 a.m., prayer leader: Marc Michiels.",
+      "date": "2026-03-01"
+    },
+    {
+      "id": "2026-03-07-14",
+      "category": "community",
+      "title": "Portie Gemengd",
+      "description": "An activity on connection, encounter and equality across all worldviews. From 5 p.m. in Hall 5, Locomotievenstraat 104, 3010 Kessel-Lo. Potluck format.",
+      "date": "2026-03-07"
+    },
+    {
+      "id": "2026-03-08-15",
+      "category": "community",
+      "title": "African celebration",
+      "description": "11 a.m., Congolese rite, led by Father Joseph Imama and music by choir Elikya, followed by a solidarity meal for Broederlijk Delen in Geertruihof.",
+      "date": "2026-03-08"
+    },
+    {
+      "id": "2026-03-15-16",
+      "category": "community",
+      "title": "Eucharistic celebration",
+      "description": "11 a.m., led by Father Arnold Castro.",
+      "date": "2026-03-15"
+    },
+    {
+      "id": "2026-03-22-17",
+      "category": "community",
+      "title": "Service of the Word and Communion",
+      "description": "Prayer leader: Bart Massart.",
+      "date": "2026-03-22"
+    },
+    {
+      "id": "2026-03-29-18",
+      "category": "community",
+      "title": "Eucharistic celebration with blessing of palms (Palm Sunday)",
+      "description": "11 a.m., led by Father Arnold Castro; if the weather is fine, gathering from the garden of St Gertrude’s Abbey.",
+      "date": "2026-03-29"
+    },
+    {
+      "id": "2026-03-30-19",
+      "category": "community",
+      "title": "Chrism Mass",
+      "description": "7.30 p.m., led by Archbishop Luc Terlinden in St Rumbold’s Cathedral, Mechelen.",
+      "date": "2026-03-30"
+    },
+    {
+      "id": "2026-03-31-20",
+      "category": "community",
+      "title": "Reconciliation service",
+      "description": "7 p.m. for the pastoral zone Leuven on the Dyle at St Joseph’s Church.",
+      "date": "2026-03-31"
+    },
+    {
+      "id": "2026-04-03-21",
+      "category": "community",
+      "title": "Good Friday service with veneration of the Cross",
+      "description": "8 p.m. in our church. Flowers you bring will be used in the church decoration.",
+      "date": "2026-04-03"
+    },
+    {
+      "id": "2026-04-04-22",
+      "category": "community",
+      "title": "Easter Vigil",
+      "description": "9 p.m., led by Father Castro.",
+      "date": "2026-04-04"
+    },
+    {
+      "id": "2026-04-05-23",
+      "category": "community",
+      "title": "Easter Sunday (Eucharistic celebration)",
+      "description": "11 a.m., led by Father Castro, with festive music by the Gertrokoor.",
+      "date": "2026-04-05"
+    },
+    {
+      "id": "2026-04-19-24",
+      "category": "community",
+      "title": "Third faith conversation",
+      "description": "Father Castro will again lead the conversation in dialogue on the readings of the Sunday.",
+      "date": "2026-04-19"
+    },
+    {
+      "id": "2026-05-03-25",
+      "category": "community",
+      "title": "Faith conversation",
+      "description": "9.30 a.m. in the presbytery. Father Castro moderates; together we reflect on the readings of the Sunday.",
+      "date": "2026-05-03"
+    },
+    {
+      "id": "2026-05-03-26",
+      "category": "community",
+      "title": "Eucharistic celebration",
+      "description": "11 a.m., led by Father Castro.",
+      "date": "2026-05-03"
+    },
+    {
+      "id": "2026-05-10-27",
+      "category": "community",
+      "title": "Service of the Word and Communion",
+      "description": "11 a.m., led by Marc Michiels.",
+      "date": "2026-05-10"
+    },
+    {
+      "id": "2026-05-14-28",
+      "category": "community",
+      "title": "Eucharistic celebration (Ascension of the Lord)",
+      "description": "Led by Father Arnold Castro.",
+      "date": "2026-05-14"
+    },
+    {
+      "id": "2026-05-17-29",
+      "category": "community",
+      "title": "Service of the Word and Communion",
+      "description": "Prayer leader: Mia Bertmans.",
+      "date": "2026-05-17"
+    },
+    {
+      "id": "2026-05-19-30",
+      "category": "community",
+      "title": "Geertrui café with guest speaker",
+      "description": "Tuesday 19 May at 7.30 p.m. in Geertruihof. Guest speaker: Kris Gelaude.\n\nKris writes poetic and liturgical texts, columns and articles; she has published several books and gives talks on religious and existential themes.\n\nFor this Geertrui café she speaks on believing today: “How can we, in today’s world with so much bad news, find new paths together and create places of hope?”\n\nAfter the talk there is time to continue the conversation over a soft drink.",
+      "date": "2026-05-19"
+    },
+    {
+      "id": "2026-05-19-31",
+      "category": "community",
+      "title": "Thank you: donations for care farm Rimpeling",
+      "description": "Donations for the Rimpeling care farm of Greet Herkes and Katja in Baal now total €2,585; further donations may bring the total to €2,750. A very warm thank you!",
+      "date": "2026-05-19"
+    },
+    {
+      "id": "2026-05-24-32",
+      "category": "community",
+      "title": "Eucharistic celebration (Pentecost)",
+      "description": "11 a.m., led by Father Arnold Castro.",
+      "date": "2026-05-24"
+    },
+    {
+      "id": "2026-05-31-34",
+      "category": "community",
+      "title": "Service of the Word and Communion",
+      "description": "11 a.m., prayer leader: Toon Quaghebeur.",
+      "date": "2026-05-31"
+    },
+    {
+      "id": "2026-06-21-35",
+      "category": "community",
+      "title": "Blessing of the new carillon — end-of-year celebration",
+      "description": "On 21 June our dean, Patrick Maervoet, will bless the new bells of our fully renewed and enlarged carillon during the Sunday celebration in our church. Dirk Vansina will address us, and after the service there is an auberge espagnole in Geertruihof, followed by a meeting on the same spot.\n\nIn the following days the bells will be hoisted into the tower.\n\nEveryone is welcome.",
+      "date": "2026-06-21",
+      "highlighted": true
+    },
+    {
+      "id": "2026-07-12-33",
+      "category": "community",
+      "title": "Solemn inauguration of the St Gertrude carillon",
+      "description": "On Sunday 12 July our carillonneur, Marc Van Eyck, will festively play in the carillon. That afternoon there is a festive reception; in fine weather on the abbey courtyard.\n\nEveryone is welcome on 21 June and 12 July, and especially the generous donors who made the enlargement of the carillon possible.",
+      "date": "2026-07-12",
+      "highlighted": true
+    },
+    {
+      "id": "2026-10-01-36",
+      "category": "community",
+      "title": "Church temporarily closed — worship with the Assumptionists",
+      "description": "If you read the texts about the restoration on this website, you will see that a great deal of work has already been carried out on the building, and that much more is planned in the coming years.\n\nFrom October 2026 stability work will be carried out on several pillars in the church and everything will be prepared for installing a heating system. For that reason the church will unfortunately have to be closed for public worship for six months. During that time our faith community is kindly hosted by the Assumptionist fathers, close to our church in Halve Straat. Throughout that period we can gather for Sunday services together in the monastery chapel.",
+      "date": "2026-10-01",
+      "highlighted": true
+    }
+  ]
+}

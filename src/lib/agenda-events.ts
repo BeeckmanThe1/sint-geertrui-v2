@@ -1,7 +1,32 @@
-/** Concert rows from `concerts.json`; community rows from `community.json`. Optional `imageUrl` per event. */
-import concertsData from "@/content/agenda/concerts.json";
-/** Parish / community programme: edit `community.json` (`category` must be `community`). */
-import communityData from "@/content/agenda/community.json";
+/** Concert rows; community parish programme. Per-locale copies: `.en.json` / `.fr.json`; Dutch in `*.json`. */
+import concertsEn from "@/content/agenda/concerts.en.json";
+import concertsFr from "@/content/agenda/concerts.fr.json";
+import concertsNl from "@/content/agenda/concerts.json";
+import communityEn from "@/content/agenda/community.en.json";
+import communityFr from "@/content/agenda/community.fr.json";
+import communityNl from "@/content/agenda/community.json";
+
+type AgendaJsonBundle = typeof communityNl;
+
+function getCommunityBundle(locale: string): AgendaJsonBundle {
+  if (locale === "en") {
+    return communityEn;
+  }
+  if (locale === "fr") {
+    return communityFr;
+  }
+  return communityNl;
+}
+
+function getConcertsBundle(locale: string): AgendaJsonBundle {
+  if (locale === "en") {
+    return concertsEn;
+  }
+  if (locale === "fr") {
+    return concertsFr;
+  }
+  return concertsNl;
+}
 
 export type AgendaCategory = "agenda" | "concerts" | "community";
 
@@ -24,8 +49,10 @@ export function isAgendaCategory(value: string | undefined): value is AgendaCate
   return value != null && CATEGORY_SET.has(value);
 }
 
-export function getAgendaPageSize(): number {
-  return communityData.pageSize ?? concertsData.pageSize ?? 9;
+export function getAgendaPageSize(locale: string = "nl"): number {
+  const community = getCommunityBundle(locale);
+  const concerts = getConcertsBundle(locale);
+  return community.pageSize ?? concerts.pageSize ?? 9;
 }
 
 function mapRow(row: {
@@ -49,9 +76,9 @@ function mapRow(row: {
   };
 }
 
-export function getAllAgendaItems(): AgendaEventItem[] {
-  const community = communityData.events.map(mapRow);
-  const concerts = concertsData.events.map(mapRow);
+export function getAllAgendaItems(locale: string = "nl"): AgendaEventItem[] {
+  const community = getCommunityBundle(locale).events.map(mapRow);
+  const concerts = getConcertsBundle(locale).events.map(mapRow);
   return [...community, ...concerts];
 }
 
@@ -119,14 +146,14 @@ function selectUpcomingBand(
 }
 
 /** Next `limit` soonest events on or after today (Belgium), displayed newest-first like the agenda archive. */
-export function getUpcomingAgendaItems(limit: number): AgendaEventItem[] {
-  return selectUpcomingBand(getAllAgendaItems(), limit);
+export function getUpcomingAgendaItems(limit: number, locale: string = "nl"): AgendaEventItem[] {
+  return selectUpcomingBand(getAllAgendaItems(locale), limit);
 }
 
 /** Highlighted rows (JSON `highlighted: true`), same ordering cap as the home preview strip. */
-export function getHighlightedAgendaItems(limit: number): AgendaEventItem[] {
+export function getHighlightedAgendaItems(limit: number, locale: string = "nl"): AgendaEventItem[] {
   return selectUpcomingBand(
-    getAllAgendaItems().filter((item) => item.highlighted === true),
+    getAllAgendaItems(locale).filter((item) => item.highlighted === true),
     limit,
   );
 }
@@ -135,13 +162,13 @@ export function getHighlightedAgendaItems(limit: number): AgendaEventItem[] {
  * Home preview: highlighted strip first; upcoming strip excludes those ids so cards are not
  * duplicated.
  */
-export function getHomeAgendaPreviewRows(): {
+export function getHomeAgendaPreviewRows(locale: string = "nl"): {
   highlighted: AgendaEventItem[];
   upcoming: AgendaEventItem[];
 } {
-  const highlighted = getHighlightedAgendaItems(AGENDA_FUTURE_CAP);
+  const highlighted = getHighlightedAgendaItems(AGENDA_FUTURE_CAP, locale);
   const excludeIds = new Set(highlighted.map((h) => h.id));
-  const upcoming = selectUpcomingBand(getAllAgendaItems(), AGENDA_FUTURE_CAP, excludeIds);
+  const upcoming = selectUpcomingBand(getAllAgendaItems(locale), AGENDA_FUTURE_CAP, excludeIds);
   return { highlighted, upcoming };
 }
 

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations, setRequestLocale } from "next-intl/server";
 import { HomeEventsPreview } from "@/components/home/HomeEventsPreview";
 import { HomeHero } from "@/components/home/HomeHero";
 import { HomeHighlightedEvents } from "@/components/home/HomeHighlightedEvents";
@@ -15,7 +15,8 @@ export async function generateMetadata({
   params,
 }: LocaleHomePageProps): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "home" });
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale: await getLocale(), namespace: "home" });
 
   return {
     title: t("metaTitle"),
@@ -25,15 +26,17 @@ export async function generateMetadata({
 
 export default async function LocaleHomePage({ params }: LocaleHomePageProps) {
   const { locale } = await params;
-  const { highlighted, upcoming } = getHomeAgendaPreviewRows();
+  setRequestLocale(locale);
+  const resolvedLocale = await getLocale();
+  const { highlighted, upcoming } = getHomeAgendaPreviewRows(resolvedLocale);
 
   return (
     <>
-      <HomeHero locale={locale} />
-      <HomeHighlightedEvents items={highlighted} locale={locale} />
-      <HomeEventsPreview items={upcoming} locale={locale} />
-      <HomeYouTube locale={locale} />
-      <HomePanorama locale={locale} />
+      <HomeHero locale={resolvedLocale} />
+      <HomeHighlightedEvents items={highlighted} locale={resolvedLocale} />
+      <HomeEventsPreview items={upcoming} locale={resolvedLocale} />
+      <HomeYouTube locale={resolvedLocale} />
+      <HomePanorama locale={resolvedLocale} />
     </>
   );
 }

@@ -1,0 +1,362 @@
+{
+  "pageSize": 9,
+  "events": [
+    {
+      "id": "2025-01-12-c0",
+      "category": "concerts",
+      "title": "Répétition Dejans",
+      "description": "Heure : 20 h. Répétition Dejans. Organisation : Jan",
+      "date": "2025-01-12"
+    },
+    {
+      "id": "2025-02-09-c1",
+      "category": "concerts",
+      "title": "Répétition Dejans",
+      "description": "Heure : 20 h. Répétition Dejans. Organisation : Jan",
+      "date": "2025-02-09"
+    },
+    {
+      "id": "2025-03-09-c2",
+      "category": "concerts",
+      "title": "Répétition Dejans",
+      "description": "Heure : 20 h. Répétition Dejans. Organisation : Jan",
+      "date": "2025-03-09"
+    },
+    {
+      "id": "2025-03-14-c3",
+      "category": "concerts",
+      "title": "Forum Musicale, Luc Ponnet présente un orgue Hammond",
+      "description": "Heure : 13 h. Forum Musicale, Luc Ponnet présente un orgue Hammond. Organisation : Jan",
+      "date": "2025-03-14"
+    },
+    {
+      "id": "2025-03-17-c4",
+      "category": "concerts",
+      "title": "Répétition",
+      "description": "Heure : 16–22 h. Répétition. Organisation : Jan",
+      "date": "2025-03-17"
+    },
+    {
+      "id": "2025-03-18-c5",
+      "category": "concerts",
+      "title": "Répétition",
+      "description": "Heure : 15 h. Répétition. Organisation : Jan",
+      "date": "2025-03-18"
+    },
+    {
+      "id": "2025-03-18-c6",
+      "category": "concerts",
+      "title": "Concert",
+      "description": "Heure : 21 h 30. Concert. Organisation : Jan",
+      "date": "2025-03-18"
+    },
+    {
+      "id": "2025-03-19-c7",
+      "category": "concerts",
+      "title": "Currende, répétition",
+      "description": "Heure : 15–22 h. Currende, répétition. Organisation : Jan",
+      "date": "2025-03-19"
+    },
+    {
+      "id": "2025-03-20-c8",
+      "category": "concerts",
+      "title": "Currende, répétition",
+      "description": "Heure : 15–22 h. Currende, répétition. Organisation : Jan",
+      "date": "2025-03-20"
+    },
+    {
+      "id": "2025-04-15-c9",
+      "category": "concerts",
+      "title": "Currende, répétition",
+      "description": "Heure : 15–22 h. Currende, répétition. Organisation : Jan",
+      "date": "2025-04-15"
+    },
+    {
+      "id": "2025-04-30-c10",
+      "category": "concerts",
+      "title": "SLAC Dido & Énée : répétition ouverte",
+      "description": "Heure : 19 h à 20 h 30. SLAC Dido & Énée : répétition ouverte. Organisation : Jan Contact : Floris De Rycker",
+      "date": "2025-04-30"
+    },
+    {
+      "id": "2025-05-05-c11",
+      "category": "concerts",
+      "title": "Accord général de l’orgue",
+      "description": "Accord général de l’orgue. Organisation : Jan",
+      "date": "2025-05-05"
+    },
+    {
+      "id": "2025-05-06-c12",
+      "category": "concerts",
+      "title": "SLAC répétition Dido & Énée",
+      "description": "Heure : à partir de 18 h. SLAC répétition Dido & Énée. Organisation : Jan Contact : Floris De Rycker",
+      "date": "2025-05-06"
+    },
+    {
+      "id": "2025-05-12-c13",
+      "category": "concerts",
+      "title": "Église réservée pour Wouter",
+      "description": "Heure : de 10 h à 14 h. Église réservée pour Wouter",
+      "date": "2025-05-12"
+    },
+    {
+      "id": "2025-05-13-c14",
+      "category": "concerts",
+      "title": "SLAC examens",
+      "description": "Heure : à partir de 16 h. SLAC examens. Organisation : Grietje",
+      "date": "2025-05-13"
+    },
+    {
+      "id": "2025-05-13-c15",
+      "category": "concerts",
+      "title": "Concert Dido & Énée",
+      "description": "Heure : 20 h. Concert Dido & Énée. Organisation : Grietje",
+      "date": "2025-05-13"
+    },
+    {
+      "id": "2025-05-15-c16",
+      "category": "concerts",
+      "title": "Visite d’un groupe hispanophone au chemin de croix d’Esquivel, dir. Paula Peeters",
+      "description": "Heure : 13 h 30. Visite d’un groupe hispanophone au chemin de croix d’Esquivel, dir. Paula Peeters. Organisation : Grietje",
+      "date": "2025-05-15"
+    },
+    {
+      "id": "2025-05-16-c17",
+      "category": "concerts",
+      "title": "Église réservée pour Wouter",
+      "description": "Église réservée pour Wouter",
+      "date": "2025-05-16"
+    },
+    {
+      "id": "2025-05-17-c18",
+      "category": "concerts",
+      "title": "Église réservée pour Wouter",
+      "description": "Église réservée pour Wouter",
+      "date": "2025-05-17"
+    },
+    {
+      "id": "2025-05-18-c19",
+      "category": "concerts",
+      "title": "Présentation du CD avec concert de Wouter Dekoninck",
+      "description": "Heure : 15 h. Présentation du CD avec concert de Wouter Dekoninck",
+      "date": "2025-05-18"
+    },
+    {
+      "id": "2025-05-22-c20",
+      "category": "concerts",
+      "title": "Visite congrès Ards pour les stalles du chœur, dir. Hannah De Moor",
+      "description": "Heure : 9 h 00. Visite congrès Ards pour les stalles du chœur, dir. Hannah De Moor. Organisation : Grietje",
+      "date": "2025-05-22"
+    },
+    {
+      "id": "2025-05-22-c21",
+      "category": "concerts",
+      "title": "Examen public d’orgue",
+      "description": "Heure : 14 h. Examen public d’orgue",
+      "date": "2025-05-22"
+    },
+    {
+      "id": "2025-05-22-c22",
+      "category": "concerts",
+      "title": "Kooruwel : répétition générale",
+      "description": "Heure : 19 h. Kooruwel : répétition générale",
+      "date": "2025-05-22"
+    },
+    {
+      "id": "2025-05-23-c23",
+      "category": "concerts",
+      "title": "Kooruwel : livraison des chaises et éclairage Contact : Bart Vanreusel 0478 24 00 18",
+      "description": "Kooruwel : livraison des chaises et éclairage Contact : Bart Vanreusel 0478 24 00 18",
+      "date": "2025-05-23"
+    },
+    {
+      "id": "2025-05-24-c24",
+      "category": "concerts",
+      "title": "Préparation de l’église",
+      "description": "Heure : 16 h. Préparation de l’église",
+      "date": "2025-05-24"
+    },
+    {
+      "id": "2025-05-24-c25",
+      "category": "concerts",
+      "title": "Kooruwel : concert",
+      "description": "Heure : 20 h. Kooruwel : concert",
+      "date": "2025-05-24"
+    },
+    {
+      "id": "2025-05-26-c26",
+      "category": "concerts",
+      "title": "Enlèvement du matériel",
+      "description": "Enlèvement du matériel",
+      "date": "2025-05-26"
+    },
+    {
+      "id": "2025-06-07-c27",
+      "category": "concerts",
+      "title": "Florilegium : répétition, Contact : Fried Buelens 0472 49 69 64",
+      "description": "Heure : 15 h. Florilegium : répétition, Contact : Fried Buelens 0472 49 69 64",
+      "date": "2025-06-07"
+    },
+    {
+      "id": "2025-06-08-c28",
+      "category": "concerts",
+      "title": "Concert Florilegium, boisson modeste dans l’église après le concert",
+      "description": "Heure : 15 h. Concert Florilegium, boisson modeste dans l’église après le concert",
+      "date": "2025-06-08"
+    },
+    {
+      "id": "2025-06-21-c29",
+      "category": "concerts",
+      "title": "Répétition concert Vocaal Ensemble De Corde contact : Dries.fonteyn@gmail.com",
+      "description": "Heure : 16 h. Répétition concert Vocaal Ensemble De Corde contact : Dries.fonteyn@gmail.com",
+      "date": "2025-06-21"
+    },
+    {
+      "id": "2025-06-21-c30",
+      "category": "concerts",
+      "title": "Concert",
+      "description": "Heure : 20 h. concert",
+      "date": "2025-06-21"
+    },
+    {
+      "id": "2025-07-03-c31",
+      "category": "concerts",
+      "title": "Auditions d’orgue, masterclasse et concert de la Contiusfoundation",
+      "description": "Auditions d’orgue, masterclasse et concert de la Contiusfoundation (Veerle Braem, Anna Wood)",
+      "date": "2025-07-03"
+    },
+    {
+      "id": "2025-07-04-c32",
+      "category": "concerts",
+      "title": "Répétition Brigitta Petropavlova",
+      "description": "Heure : 8 h 30 à 9 h 30. Répétition Brigitta Petropavlova",
+      "date": "2025-07-04"
+    },
+    {
+      "id": "2025-07-07-c33",
+      "category": "concerts",
+      "title": "Répétitions et cours individuels",
+      "description": "Heure : 8 h 30 à 13 h 30. Répétitions et cours individuels",
+      "date": "2025-07-07"
+    },
+    {
+      "id": "2025-07-08-c34",
+      "category": "concerts",
+      "title": "Répétition cantantes Much",
+      "description": "Heure : 10 h à 19 h. Répétition cantantes Much",
+      "date": "2025-07-08"
+    },
+    {
+      "id": "2025-07-09-c35",
+      "category": "concerts",
+      "title": "Répétition cantantes Much",
+      "description": "Heure : 10 h à 13 h. Répétition cantantes Much",
+      "date": "2025-07-09"
+    },
+    {
+      "id": "2025-07-09-c36",
+      "category": "concerts",
+      "title": "Cours individuels",
+      "description": "Heure : 14 h à 18 h 30. Cours individuels",
+      "date": "2025-07-09"
+    },
+    {
+      "id": "2025-07-10-c37",
+      "category": "concerts",
+      "title": "Répétition cantantes Much",
+      "description": "Heure : 10 h à 13 h. Répétition cantantes Much",
+      "date": "2025-07-10"
+    },
+    {
+      "id": "2025-07-10-c38",
+      "category": "concerts",
+      "title": "Cours individuels",
+      "description": "Heure : 14 h 30 à 16 h 30. Cours individuels",
+      "date": "2025-07-10"
+    },
+    {
+      "id": "2025-07-24-c39",
+      "category": "concerts",
+      "title": "Livraison d’instruments à clavier par Musica Gloria",
+      "description": "Heure : après-midi/soir. Livraison d’instruments à clavier par Musica Gloria",
+      "date": "2025-07-24"
+    },
+    {
+      "id": "2025-07-25-c40",
+      "category": "concerts",
+      "title": "Accord le matin et répétition l’après-midi",
+      "description": "Heure : de 9 h à 21 h. Accord le matin et répétition l’après-midi",
+      "date": "2025-07-25"
+    },
+    {
+      "id": "2025-07-26-c41",
+      "category": "concerts",
+      "title": "Enlèvement des instruments à clavier, cérémonie de mariage",
+      "description": "Heure : avant 9 h. Enlèvement des instruments à clavier, cérémonie de mariage",
+      "date": "2025-07-26"
+    },
+    {
+      "id": "2025-08-13-c42",
+      "category": "concerts",
+      "title": "Répétition Currende",
+      "description": "Heure : 15 à 22 h. Répétition Currende",
+      "date": "2025-08-13"
+    },
+    {
+      "id": "2025-08-14-c43",
+      "category": "concerts",
+      "title": "Répétition Currende",
+      "description": "Heure : 15 à 22 h. Répétition Currende",
+      "date": "2025-08-14"
+    },
+    {
+      "id": "2025-08-24-c44",
+      "category": "concerts",
+      "title": "Chœur XL, courte répétition et 3 petits concerts contact : cecilesarlet@gmail.com",
+      "description": "Heure : 13 h à 17 h. Chœur XL, courte répétition et 3 petits concerts contact : cecilesarlet@gmail.com",
+      "date": "2025-08-24"
+    },
+    {
+      "id": "2025-09-24-c45",
+      "category": "concerts",
+      "title": "Répétition et enregistrement CD",
+      "description": "Heure : 10 à 13 h. Répétition et enregistrement CD",
+      "date": "2025-09-24"
+    },
+    {
+      "id": "2025-09-24-c46",
+      "category": "concerts",
+      "title": "Concert Old Persian Music - Farid Kheradmand",
+      "description": "Heure : 20 h 30. Concert Old Persian Music - Farid Kheradmand",
+      "date": "2025-09-24"
+    },
+    {
+      "id": "2025-10-09-c47",
+      "category": "concerts",
+      "title": "Concert Festival 20/21",
+      "description": "Concert Festival 20/21",
+      "date": "2025-10-09"
+    },
+    {
+      "id": "2025-10-14-c48",
+      "category": "concerts",
+      "title": "Concert Festival 20/21 (Blindman)",
+      "description": "Concert Festival 20/21 (Blindman)",
+      "date": "2025-10-14"
+    },
+    {
+      "id": "2025-10-31-c49",
+      "category": "concerts",
+      "title": "Concert « Musica Gloria » dir. Nele Vertommen",
+      "description": "Concert « Musica Gloria » dir. Nele Vertommen",
+      "date": "2025-10-31"
+    },
+    {
+      "id": "2025-11-02-c50",
+      "category": "concerts",
+      "title": "Concert de requiem Sotto Voce dir. Stef Conings",
+      "description": "Concert de requiem Sotto Voce dir. Stef Conings",
+      "date": "2025-11-02"
+    }
+  ]
+}

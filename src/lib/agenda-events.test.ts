@@ -1,6 +1,7 @@
 import {
   AGENDA_FUTURE_CAP,
   buildAgendaTabOrder,
+  getAllAgendaItems,
   getHomeAgendaPreviewRows,
   type AgendaEventItem,
 } from "./agenda-events";
@@ -46,6 +47,20 @@ describe("buildAgendaTabOrder", () => {
   });
 });
 
+describe("getAllAgendaItems", () => {
+  it("loads French copy for locale fr", () => {
+    const items = getAllAgendaItems("fr");
+    const interfaith = items.find((i) => i.id === "2025-11-11-0");
+    expect(interfaith?.title).toBe("Célébration interreligieuse");
+  });
+
+  it("loads English copy for locale en", () => {
+    const items = getAllAgendaItems("en");
+    const interfaith = items.find((i) => i.id === "2025-11-11-0");
+    expect(interfaith?.title).toBe("Interfaith celebration");
+  });
+});
+
 describe("getHomeAgendaPreviewRows", () => {
   beforeEach(() => {
     jest.useFakeTimers();
@@ -57,7 +72,7 @@ describe("getHomeAgendaPreviewRows", () => {
   });
 
   it("never repeats highlighted ids in the upcoming band", () => {
-    const { highlighted, upcoming } = getHomeAgendaPreviewRows();
+    const { highlighted, upcoming } = getHomeAgendaPreviewRows("nl");
     const hi = new Set(highlighted.map((h) => h.id));
     expect(highlighted.length).toBeLessThanOrEqual(AGENDA_FUTURE_CAP);
     expect(upcoming.length).toBeLessThanOrEqual(AGENDA_FUTURE_CAP);
@@ -67,7 +82,7 @@ describe("getHomeAgendaPreviewRows", () => {
   });
 
   it("includes highlighted rows from fixture when they are still upcoming", () => {
-    const { highlighted } = getHomeAgendaPreviewRows();
+    const { highlighted } = getHomeAgendaPreviewRows("nl");
     const ids = highlighted.map((h) => h.id);
     expect(ids).toEqual(
       expect.arrayContaining(["2026-10-01-36", "2026-07-12-33", "2026-06-21-35"]),
