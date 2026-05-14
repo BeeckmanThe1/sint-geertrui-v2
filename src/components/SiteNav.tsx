@@ -1,7 +1,7 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
-import { getPathname, Link, usePathname } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 
 const navItems = [
   { href: "/agenda", key: "agenda" as const },
@@ -20,9 +20,9 @@ const localeItems = [
 
 function linkClassName(active: boolean) {
   if (active) {
-    return "text-base font-bold text-white underline decoration-white/70 underline-offset-[6px] sm:text-lg";
+    return "border-b-2 border-white pb-0.5 text-base font-bold text-white sm:text-lg";
   }
-  return "text-base font-semibold text-white hover:opacity-90 transition-opacity sm:text-lg";
+  return "border-b-2 border-transparent pb-0.5 text-base font-semibold text-white/80 transition-colors hover:border-white/45 hover:text-white sm:text-lg";
 }
 
 function localeClassName(active: boolean) {
@@ -38,10 +38,12 @@ export function SiteNav() {
   const locale = useLocale();
 
   const pathActive = (canonicalHref: MainNavHref) => {
-    const localized = getPathname({ href: canonicalHref, locale });
-    return (
-      pathname === localized || pathname.startsWith(`${localized}/`)
-    );
+    if (!pathname) {
+      return false;
+    }
+    // `usePathname()` from next-intl is already the internal pathname (e.g. `/history`), not the
+    // localized URL segment — so compare to `canonicalHref`, not `getPathname(...)`.
+    return pathname === canonicalHref || pathname.startsWith(`${canonicalHref}/`);
   };
 
   return (
@@ -64,15 +66,19 @@ export function SiteNav() {
             aria-label={t("ariaMain")}
             className="flex flex-wrap items-center justify-end gap-x-5 sm:gap-x-8 md:gap-x-10"
           >
-            {navItems.map((item) => (
-              <Link
-                className={linkClassName(pathActive(item.href))}
-                href={item.href}
-                key={item.key}
-              >
-                {t(item.key)}
-              </Link>
-            ))}
+            {navItems.map((item) => {
+              const active = pathActive(item.href);
+              return (
+                <Link
+                  aria-current={active ? "page" : undefined}
+                  className={linkClassName(active)}
+                  href={item.href}
+                  key={item.key}
+                >
+                  {t(item.key)}
+                </Link>
+              );
+            })}
           </nav>
 
           <div
