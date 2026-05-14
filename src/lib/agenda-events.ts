@@ -1,16 +1,9 @@
-/** Generated from `concerts-and-events.csv` — run `npm run agenda:build`. */
+/** Concert rows from `concerts.json`; community rows from `community.json`. Optional `imageUrl` per event. */
 import concertsData from "@/content/agenda/concerts.json";
 /** Parish / community programme: edit `community.json` (`category` must be `community`). */
 import communityData from "@/content/agenda/community.json";
 
 export type AgendaCategory = "agenda" | "concerts" | "community";
-
-/** Picsum seed per category (one stable image per filter tab). */
-export const AGENDA_CATEGORY_IMAGE_SEEDS: Record<AgendaCategory, string> = {
-  agenda: "lorem-ipsum-dolor-sit-amet-agenda",
-  concerts: "lorem-ipsum-dolor-sit-amet-concerts",
-  community: "lorem-ipsum-dolor-sit-amet-community",
-};
 
 export type AgendaEventItem = {
   id: string;
@@ -19,6 +12,10 @@ export type AgendaEventItem = {
   description: string;
   /** ISO YYYY-MM-DD */
   date: string;
+  /** Optional: public path (`/images/...`) or `https://` URL; if omitted, cards show no image. */
+  imageUrl?: string;
+  /** When true, eligible for the home “highlighted” strip (future dates only). */
+  highlighted?: boolean;
 };
 
 const CATEGORY_SET = new Set<string>(["agenda", "concerts", "community"]);
@@ -37,13 +34,18 @@ function mapRow(row: {
   title: string;
   description: string;
   date: string;
+  imageUrl?: string | null;
+  highlighted?: boolean | null;
 }): AgendaEventItem {
+  const imageUrl = row.imageUrl?.trim();
   return {
     id: row.id,
     category: row.category as AgendaCategory,
     title: row.title,
     description: row.description,
     date: row.date,
+    ...(imageUrl ? { imageUrl } : {}),
+    ...(row.highlighted === true ? { highlighted: true } : {}),
   };
 }
 
@@ -99,15 +101,48 @@ function sortDateAscIdAsc(a: AgendaEventItem, b: AgendaEventItem): number {
   return a.id.localeCompare(b.id);
 }
 
-/** Next `limit` soonest events on or after today (Belgium), displayed newest-first like the agenda archive. */
-export function getUpcomingAgendaItems(limit: number): AgendaEventItem[] {
+function selectUpcomingBand(
+  source: AgendaEventItem[],
+  limit: number,
+  excludeIds?: Set<string>,
+): AgendaEventItem[] {
   const today = getTodayIsoInAgendaTimezone();
   const todayKey = agendaDateKey(today);
-  const upcoming = getAllAgendaItems().filter((item) => agendaDateKey(item.date) >= todayKey);
+  let candidates = source.filter((item) => agendaDateKey(item.date) >= todayKey);
+  if (excludeIds?.size) {
+    candidates = candidates.filter((item) => !excludeIds.has(item.id));
+  }
   const cap = Math.max(0, limit);
-  const soonest = [...upcoming].sort(sortDateAscIdAsc).slice(0, cap);
+  const soonest = [...candidates].sort(sortDateAscIdAsc).slice(0, cap);
   soonest.sort(sortDateDescIdAsc);
   return soonest;
+}
+
+/** Next `limit` soonest events on or after today (Belgium), displayed newest-first like the agenda archive. */
+export function getUpcomingAgendaItems(limit: number): AgendaEventItem[] {
+  return selectUpcomingBand(getAllAgendaItems(), limit);
+}
+
+/** Highlighted rows (JSON `highlighted: true`), same ordering cap as the home preview strip. */
+export function getHighlightedAgendaItems(limit: number): AgendaEventItem[] {
+  return selectUpcomingBand(
+    getAllAgendaItems().filter((item) => item.highlighted === true),
+    limit,
+  );
+}
+
+/**
+ * Home preview: highlighted strip first; upcoming strip excludes those ids so cards are not
+ * duplicated.
+ */
+export function getHomeAgendaPreviewRows(): {
+  highlighted: AgendaEventItem[];
+  upcoming: AgendaEventItem[];
+} {
+  const highlighted = getHighlightedAgendaItems(AGENDA_FUTURE_CAP);
+  const excludeIds = new Set(highlighted.map((h) => h.id));
+  const upcoming = selectUpcomingBand(getAllAgendaItems(), AGENDA_FUTURE_CAP, excludeIds);
+  return { highlighted, upcoming };
 }
 
 /**

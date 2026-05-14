@@ -32,6 +32,9 @@
       "nextEventsAria": "View more events",
       "emptyUpcoming": "There are no upcoming events to show right now. See the agenda for the full list."
     },
+    "highlighted": {
+      "title": "In the spotlight"
+    },
     "youtube": {
       "title": "Video",
       "iframeTitle": "Embedded Sint-Geertruikerk video on YouTube",
@@ -171,6 +174,11 @@
         { "name": "Wim Janssen", "role": "Advisor" }
       ]
     },
+    "koor": {
+      "title": "Gertrokoor",
+      "body": "Alongside the church fabric and the community team, the Gertrokoor is an important part of the Sint-Geertruikerk community. The choir supports the liturgy and contributes musically to services in the church.\n\nThe choir usually rehearses on Friday evenings.",
+      "imageAlt": "The Gertrokoor rehearsing in Sint-Geertruikerk, with conductor and singers in front of the Gothic choir screen."
+    },
     "reachCard": {
       "title": "Questions about parish matters",
       "body": "For questions, reservations, or parish matters you can reach us directly.",
@@ -180,11 +188,79 @@
       "phone": "0474 45 78 93"
     }
   },
+  "privacyPage": {
+    "metaTitle": "Privacy policy | Sint-Geertruikerk Leuven",
+    "metaDescription": "How we handle personal data on this website.",
+    "title": "Privacy policy",
+    "intro": "We respect your privacy. This website provides general information about Sint-Geertruikerk, the agenda, and how to contact us. We do not build marketing profiles and we do not sell personal data.",
+    "sections": [
+      {
+        "title": "Controller",
+        "body": "For data protection questions relating to this website, the faith community connected with Sint-Geertruikerk in Leuven is the appropriate contact. For practical matters, please use the contact page or email sintgeertrui@kerkleuven.be."
+      },
+      {
+        "title": "What data?",
+        "body": "Simply browsing these pages does not require registration and there is no on-site form that collects personal data by default.\n\nIf you voluntarily contact us by email or telephone (as listed on the contact page), we process only the information you provide in order to respond or to handle your request."
+      },
+      {
+        "title": "Purposes and legal basis",
+        "body": "We use data only to inform you or to answer your request. Where technical delivery of the website requires processing (for example standard server logs at the hosting provider), this may also rely on a legitimate interest in operating the site securely and reliably."
+      },
+      {
+        "title": "Retention",
+        "body": "We do not maintain a database of visitor behaviour for advertising. Information you send us directly is kept no longer than necessary to handle your enquiry."
+      },
+      {
+        "title": "Your rights",
+        "body": "Where applicable privacy law grants them, you may exercise rights of access, rectification or erasure, restriction of processing, and objection.\n\nYou may also lodge a complaint with the Belgian Data Protection Authority (Drukpersstraat 35, 1000 Brussels, www.dataprotectionauthority.be)."
+      },
+      {
+        "title": "Cookies",
+        "body": "For information about cookies, please see the separate Cookies page on this website."
+      },
+      {
+        "title": "Changes",
+        "body": "This statement may be updated when the website or the law changes. Please review it from time to time."
+      }
+    ],
+    "footnote": "This text is general information and does not constitute individual legal advice."
+  },
+  "cookiesPage": {
+    "metaTitle": "Cookies | Sint-Geertruikerk Leuven",
+    "metaDescription": "How this website uses cookies and similar technologies.",
+    "title": "Cookies",
+    "intro": "This page describes in general terms how cookies and similar technologies may occur in connection with this website. We do not use our own tracking cookies for advertising.",
+    "sections": [
+      {
+        "title": "What are cookies?",
+        "body": "Cookies are small text files that may be placed on your device when you visit a website. They are often used to make a site work correctly or to remember basic preferences."
+      },
+      {
+        "title": "What this site uses",
+        "body": "We do not set analytics or advertising cookies to measure or sell your browsing behaviour.\n\nThe technical software behind the website may use strictly necessary session or security cookies or similar storage to deliver the pages safely; these are typically limited in duration and purpose."
+      },
+      {
+        "title": "Third-party content",
+        "body": "Where a page embeds a video player from YouTube, that service may use its own cookies or similar technologies when you start or view the content. Google's privacy and cookie policies apply."
+      },
+      {
+        "title": "Your choices",
+        "body": "You can configure your browser to refuse or delete cookies. Some website features may then work less smoothly."
+      },
+      {
+        "title": "Changes",
+        "body": "This page may be updated if the website or embedded services change."
+      }
+    ],
+    "footnote": "This text is general information and does not constitute individual legal advice."
+  },
   "agenda": {
     "metaTitle": "Agenda | Sint-Geertruikerk Leuven",
     "metaDescription": "Concerts, services, and activities at Sint-Geertruikerk in Leuven.",
     "imageAlt": "Atmosphere photo for an activity",
     "empty": "There are no activities in this category.",
+    "readMore": "Read more",
+    "readLess": "Read less",
     "filters": {
       "aria": "Filter activities",
       "agenda": "Agenda",
@@ -198,7 +274,13 @@
   "footer": {
     "ariaNav": "Footer navigation",
     "addressLine1": "Sint-Geertruiabdij 9",
-    "addressLine2": "3000 Leuven"
+    "addressLine2": "3000 Leuven",
+    "ipLine1": "Text and images on this website are protected by applicable intellectual property rules. Reproduction, reprinting, or other use without prior permission is not allowed unless the law provides otherwise.",
+    "ipLine2Lead": "For questions or requests about text or images, please contact",
+    "ipContactName": "Axel Buyse",
+    "ipEmail": "axel.buyse@gmail.com",
+    "ipPhone": "0492 13 07 02",
+    "ipAria": "Intellectual property notice"
   },
   "restoration": {
     "title": "Restoration of Sint-Geertrui church",

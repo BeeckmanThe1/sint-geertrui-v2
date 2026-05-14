@@ -1,6 +1,7 @@
 import {
   AGENDA_FUTURE_CAP,
   buildAgendaTabOrder,
+  getHomeAgendaPreviewRows,
   type AgendaEventItem,
 } from "./agenda-events";
 
@@ -42,5 +43,34 @@ describe("buildAgendaTabOrder", () => {
       "2026-05-19-b",
       "2026-05-10-1",
     ]);
+  });
+});
+
+describe("getHomeAgendaPreviewRows", () => {
+  beforeEach(() => {
+    jest.useFakeTimers();
+    jest.setSystemTime(new Date("2026-05-14T12:00:00.000Z"));
+  });
+
+  afterEach(() => {
+    jest.useRealTimers();
+  });
+
+  it("never repeats highlighted ids in the upcoming band", () => {
+    const { highlighted, upcoming } = getHomeAgendaPreviewRows();
+    const hi = new Set(highlighted.map((h) => h.id));
+    expect(highlighted.length).toBeLessThanOrEqual(AGENDA_FUTURE_CAP);
+    expect(upcoming.length).toBeLessThanOrEqual(AGENDA_FUTURE_CAP);
+    upcoming.forEach((u) => {
+      expect(hi.has(u.id)).toBe(false);
+    });
+  });
+
+  it("includes highlighted rows from fixture when they are still upcoming", () => {
+    const { highlighted } = getHomeAgendaPreviewRows();
+    const ids = highlighted.map((h) => h.id);
+    expect(ids).toEqual(
+      expect.arrayContaining(["2026-10-01-36", "2026-07-12-33", "2026-06-21-35"]),
+    );
   });
 });

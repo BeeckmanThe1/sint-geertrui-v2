@@ -215,7 +215,7 @@
       "id": "2026-05-19-30",
       "category": "community",
       "title": "Geertruicafé met gastspreker",
-      "description": "Dinsdag 19 mei om 19.30 u. in Geertruihof. Gastspreker: Kris Gelaude. Kris schrijft poëtische en liturgische teksten, columns en artikels; ze heeft reeds meerdere boeken op haar naam staan en geeft voordrachten over religieuze en zingevingsthema's. Voor dit Geertruicafé spreekt ze over geloven vandaag: “Hoe kunnen we in de wereld van vandaag met zo veel onheilsberichten samen nieuwe wegen vinden en plekken van hoop creëren?” Na de voordracht is er de mogelijkheid om nog wat verder bij te praten bij een fris drankje.",
+      "description": "Dinsdag 19 mei om 19.30 u. in Geertruihof. Gastspreker: Kris Gelaude.\n\nKris schrijft poëtische en liturgische teksten, columns en artikels; ze heeft reeds meerdere boeken op haar naam staan en geeft voordrachten over religieuze en zingevingsthema's.\n\nVoor dit Geertruicafé spreekt ze over geloven vandaag: “Hoe kunnen we in de wereld van vandaag met zo veel onheilsberichten samen nieuwe wegen vinden en plekken van hoop creëren?”\n\nNa de voordracht is er de mogelijkheid om nog wat verder bij te praten bij een fris drankje.",
       "date": "2026-05-19"
     },
     {
@@ -242,16 +242,26 @@
     {
       "id": "2026-06-21-35",
       "category": "community",
-      "title": "Slotviering (einde werkjaar)",
-      "description": "Zondag 21 juni. We sluiten het werkjaar af met een 'Auberge Espagnole' of Potluck, gevolgd door een Geertruiberaad.",
-      "date": "2026-06-21"
+      "title": "Inzegenen nieuwe beiaard - slotviering werkjaar",
+      "description": "Op 21 juni komt onze deken, Patrick Maervoet, de nieuwe klokken van onze geheel en al vernieuwde en uitgebreide beiaard inzegenen, tijdens de zondagsviering in onze kerk. Dirk Vansina spreekt ons toe en na de dienst is er een Auberge espagnole in Geertruihof. Daarna volgt op diezelfde plek een beraad.\n\nIn de daaropvolgende dagen worden de klokken in de toren gehesen.\n\nIedereen is welkom.",
+      "date": "2026-06-21",
+      "highlighted": true
     },
     {
       "id": "2026-07-12-33",
       "category": "community",
       "title": "Plechtige inspeling Sint-Geertruibeiaard",
-      "description": "Zondag 12 juli 2026 vanaf 11 uur: misviering, inspeling van de vernieuwde Sint-Geertruibeiaard, toespraken, receptie en concert.",
-      "date": "2026-07-12"
+      "description": "Op zondag 12 juli speelt onze beiaardier, Marc Van Eyck, onze beiaard feestelijk in. Die middag is er een feestelijke receptie, bij mooi weer op het binnenplein van de abdij.\n\nZowel op 21 juni als op 12 juli is iedereen uiteraard welkom, maar zeker ook de milde schenkers die de uitbreiding van de beiaard mogelijk maken.",
+      "date": "2026-07-12",
+      "highlighted": true
+    },
+    {
+      "id": "2026-10-01-36",
+      "category": "community",
+      "title": "Kerk tijdelijk gesloten - eredienst bij de Assumptionisten",
+      "description": "Als je op deze website de teksten over de restauratie leest, merk je dat er al heel wat werkzaamheden aan het gebouw zijn uitgevoerd, maar dat er de komende jaren nog veel meer op stapel staat.\n\nVanaf oktober 2026 worden er in de kerk stabiliteitsproblemen met enkele pilaren aangepakt en wordt alles in gereedheid gebracht om een verwarmingssysteem te installeren. Daarvoor moet de kerk helaas een half jaar dicht voor de eredienst. Onze geloofsgemeenschap wordt in die tijd gastvrij opgevangen door de paters Assumptionisten, vlakbij onze kerk, in de Halve Straat. Die hele periode lang kunnen wij voor de zondagsdiensten samen komen in de kapel van het klooster.",
+      "date": "2026-10-01",
+      "highlighted": true
     }
   ]
 }

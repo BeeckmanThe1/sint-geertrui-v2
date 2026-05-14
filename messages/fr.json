@@ -32,6 +32,9 @@
       "nextEventsAria": "Voir plus d'événements",
       "emptyUpcoming": "Aucun événement à venir pour le moment. Consultez l'agenda pour l'aperçu complet."
     },
+    "highlighted": {
+      "title": "À la une"
+    },
     "youtube": {
       "title": "Vidéo",
       "iframeTitle": "Vidéo intégrée de l'église Sint-Geertruikerk sur YouTube",
@@ -171,6 +174,11 @@
         { "name": "Wim Janssen", "role": "Conseiller" }
       ]
     },
+    "koor": {
+      "title": "Chœur Gertro",
+      "body": "Outre la fabrique d'église et l'équipe communautaire, le chœur Gertro occupe une place importante dans la communauté de la Sint-Geertruikerk. Le chœur soutient la liturgie et enrichit musicalement les célébrations.\n\nEn principe, le chœur répète chaque vendredi soir.",
+      "imageAlt": "Le chœur Gertro en répétition dans l'église Sint-Geertruikerk, avec chef de chœur et choristes devant le jubé gothique."
+    },
     "reachCard": {
       "title": "Questions sur la paroisse",
       "body": "Pour des questions, réservations ou affaires paroissiales, contactez-nous directement.",
@@ -180,11 +188,79 @@
       "phone": "0474 45 78 93"
     }
   },
+  "privacyPage": {
+    "metaTitle": "Confidentialité | Sint-Geertruikerk Louvain",
+    "metaDescription": "Comment nous traitons les données personnelles sur ce site.",
+    "title": "Déclaration de confidentialité",
+    "intro": "Nous respectons votre vie privée. Ce site a pour but de donner des informations générales sur la Sint-Geertruikerk, l'agenda et les contacts. Nous ne constituons pas de profils marketing et ne vendons pas de données.",
+    "sections": [
+      {
+        "title": "Responsable du traitement",
+        "body": "Pour les questions relatives à la protection des données dans le cadre de ce site, la communauté de foi liée à la Sint-Geertruikerk à Louvain est l'interlocuteur approprié. Pour les questions pratiques, utilisez la page Contact ou l'adresse sintgeertrui@kerkleuven.be."
+      },
+      {
+        "title": "Quelles données ?",
+        "body": "La simple consultation de ces pages n'exige pas d'inscription et il n'y a pas de formulaire sur le site qui collecte par défaut des données personnelles.\n\nSi vous nous contactez volontairement par courriel ou par téléphone (comme indiqué sur la page Contact), nous ne traitons que les informations que vous fournissez pour répondre ou assurer un suivi pratique."
+      },
+      {
+        "title": "Finalités et base juridique",
+        "body": "Nous utilisons les données uniquement pour vous informer ou répondre à votre demande. Lorsque la mise en ligne du site implique un traitement technique (par exemple des journaux serveur standard chez l'hébergeur), cela peut également reposer sur un intérêt légitime à exploiter le site de manière sûre et stable."
+      },
+      {
+        "title": "Conservation",
+        "body": "Nous ne tenons pas de base de données de comportement des visiteurs à des fins publicitaires. Les informations que vous nous transmettez directement sont conservées le temps nécessaire au traitement de votre demande."
+      },
+      {
+        "title": "Vos droits",
+        "body": "Dans la mesure où la loi applicable le prévoit, vous pouvez exercer des droits d'accès, de rectification ou d'effacement, de limitation du traitement et d'opposition.\n\nVous pouvez également introduire une plainte auprès de l'Autorité de protection des données (rue de la Presse 35, 1000 Bruxelles, www.autoriteprotectiondonnees.be)."
+      },
+      {
+        "title": "Cookies",
+        "body": "Pour plus d'informations sur les cookies, voir la page Cookies sur ce site."
+      },
+      {
+        "title": "Modifications",
+        "body": "La présente déclaration peut être adaptée lorsque le site ou la législation évolue. Consultez-la régulièrement pour la version à jour."
+      }
+    ],
+    "footnote": "Ce texte vise à informer et ne constitue pas un conseil juridique personnalisé."
+  },
+  "cookiesPage": {
+    "metaTitle": "Cookies | Sint-Geertruikerk Louvain",
+    "metaDescription": "Comment ce site utilise les cookies et technologies similaires.",
+    "title": "Cookies",
+    "intro": "Cette page décrit en termes généraux comment des cookies et technologies similaires peuvent intervenir dans le cadre de ce site. Nous n'utilisons pas nos propres cookies pour vous suivre à des fins publicitaires.",
+    "sections": [
+      {
+        "title": "Qu'est-ce qu'un cookie ?",
+        "body": "Les cookies sont de petits fichiers texte qui peuvent être placés sur votre appareil lorsque vous visitez un site. Ils servent souvent au bon fonctionnement technique ou à mémoriser des préférences de base."
+      },
+      {
+        "title": "Cookies utilisés sur ce site",
+        "body": "Nous n'installons pas nous-mêmes de cookies d'analyse ou de publicité pour mesurer ou vendre votre navigation.\n\nLe logiciel technique derrière le site peut utiliser des cookies de session ou de sécurité strictement nécessaires, ou un stockage équivalent, pour diffuser les pages en toute sécurité ; leur durée et leur finalité sont en principe limitées."
+      },
+      {
+        "title": "Contenu tiers",
+        "body": "Lorsqu'une page intègre par exemple un lecteur vidéo YouTube, ce service peut utiliser ses propres cookies ou technologies similaires lorsque vous lancez ou consultez le contenu. Les règles de confidentialité et de cookies de Google s'appliquent."
+      },
+      {
+        "title": "Vos choix",
+        "body": "Vous pouvez configurer votre navigateur pour refuser ou supprimer les cookies. Certaines fonctions des sites peuvent alors être moins fluides."
+      },
+      {
+        "title": "Modifications",
+        "body": "Cette page peut être mise à jour si le site ou les services intégrés changent."
+      }
+    ],
+    "footnote": "Ce texte vise à informer et ne constitue pas un conseil juridique personnalisé."
+  },
   "agenda": {
     "metaTitle": "Agenda | Sint-Geertruikerk Louvain",
     "metaDescription": "Concerts, célébrations et activités à l'église Sint-Geertruikerk à Louvain.",
     "imageAlt": "Photo d'ambiance pour une activité",
     "empty": "Il n'y a pas d'activités dans cette catégorie.",
+    "readMore": "Lire la suite",
+    "readLess": "Réduire",
     "filters": {
       "aria": "Filtrer les activités",
       "agenda": "Agenda",
@@ -198,7 +274,13 @@
   "footer": {
     "ariaNav": "Navigation du pied de page",
     "addressLine1": "Sint-Geertruiabdij 9",
-    "addressLine2": "3000 Leuven"
+    "addressLine2": "3000 Leuven",
+    "ipLine1": "Les textes et images sur ce site relèvent des règles applicables en matière de propriété intellectuelle. Toute reproduction, réimpression ou autre usage sans autorisation préalable n'est pas autorisé, sauf disposition légale contraire.",
+    "ipLine2Lead": "Pour toute question ou demande concernant des textes ou des visuels, veuillez contacter",
+    "ipContactName": "Axel Buyse",
+    "ipEmail": "axel.buyse@gmail.com",
+    "ipPhone": "0492 13 07 02",
+    "ipAria": "Mention de propriété intellectuelle"
   },
   "restoration": {
     "title": "Restauration de l'église Sint-Geertrui",

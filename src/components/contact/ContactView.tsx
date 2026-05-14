@@ -2,6 +2,7 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
 const CONTACT_HERO_SRC = "/images/contact/inside.png";
+const CONTACT_KOOR_SRC = "/images/contact/gertrokoor.jpg";
 
 function belgianDisplayPhoneToTel(display: string): string {
   const digits = display.replace(/\s/g, "");
@@ -155,6 +156,28 @@ export async function ContactView({ locale }: ContactViewProps) {
                 </li>
               ))}
             </ul>
+          </section>
+
+          <section className="mt-12 overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-black/5 sm:mt-14">
+            <div className="lg:grid lg:grid-cols-2 lg:items-stretch">
+              <div className="relative aspect-[4/3] min-h-[220px] w-full lg:aspect-auto lg:min-h-[380px]">
+                <Image
+                  alt={t("koor.imageAlt")}
+                  className="object-cover"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  src={CONTACT_KOOR_SRC}
+                />
+              </div>
+              <div className="flex flex-col justify-center p-8 sm:p-10">
+                <h2 className="text-xl font-semibold tracking-tight text-zinc-900 sm:text-2xl">
+                  {t("koor.title")}
+                </h2>
+                <p className="mt-4 text-pretty text-base leading-relaxed text-zinc-800 sm:text-lg whitespace-pre-line">
+                  {t("koor.body")}
+                </p>
+              </div>
+            </div>
           </section>
 
           <section className="mt-12 rounded-xl border border-black/10 bg-white/90 px-8 py-8 backdrop-blur-sm sm:mt-14 sm:px-10 sm:py-10">

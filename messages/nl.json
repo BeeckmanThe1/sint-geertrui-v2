@@ -32,6 +32,9 @@
       "nextEventsAria": "Meer evenementen bekijken",
       "emptyUpcoming": "Er zijn momenteel geen geplande evenementen om te tonen. Bekijk de agenda voor het volledige overzicht."
     },
+    "highlighted": {
+      "title": "In de kijker"
+    },
     "youtube": {
       "title": "Video",
       "iframeTitle": "Geïntegreerde video van de Sint-Geertruikerk op YouTube",
@@ -171,6 +174,11 @@
         { "name": "Wim Janssen", "role": "Raadgever" }
       ]
     },
+    "koor": {
+      "title": "Gertro-koor",
+      "body": "Naast kerkfabriek en gemeenschapsploeg vormt ook het Gertro-koor een belangrijk onderdeel van de gemeenschap rond de Sint-Geertruikerk. Het koor draagt liturgisch en muzikaal bij aan de vieringen in de kerk.\n\nIn principe repeteert het koor elke vrijdagavond.",
+      "imageAlt": "Het Gertro-koor tijdens een repetitie in de Sint-Geertruikerk, met dirigent en koorleden voor het gotische doksaal."
+    },
     "reachCard": {
       "title": "Vragen over parochiezaken",
       "body": "Voor vragen, reservaties of parochiezaken kunt u ons rechtstreeks contacteren.",
@@ -180,11 +188,79 @@
       "phone": "0474 45 78 93"
     }
   },
+  "privacyPage": {
+    "metaTitle": "Privacyverklaring | Sint-Geertruikerk Leuven",
+    "metaDescription": "Informatie over de verwerking van persoonsgegevens op deze website.",
+    "title": "Privacyverklaring",
+    "intro": "Wij respecteren uw privacy. Deze website dient om algemene informatie te geven over de Sint-Geertruikerk, de agenda en het contact. Wij houden geen marketingprofielen bij en verkopen geen gegevens.",
+    "sections": [
+      {
+        "title": "Verantwoordelijke",
+        "body": "Voor vragen rond gegevensbescherming in het kader van deze website is de geloofsgemeenschap verbonden met de Sint-Geertruikerk te Leuven aanspreekbaar. Praktische vragen kunt u richten aan het parochiesecretariaat via de contactpagina of per e-mail aan sintgeertrui@kerkleuven.be."
+      },
+      {
+        "title": "Welke gegevens?",
+        "body": "Voor het gewoon bezoeken van deze pagina's hoeft u zich niet te registreren en vult u geen formulier in op de site zelf.\n\nAls u ons vrijwillig contacteren per e-mail of telefoon (zoals vermeld op de contactpagina), verwerken wij de gegevens die u daarbij meedeelt uitsluitend om uw vraag te behandelen of om praktische opvolging te verlenen."
+      },
+      {
+        "title": "Doeleinden en grondslag",
+        "body": "Wij gebruiken gegevens enkel om u te informeren of te antwoorden op uw verzoek. Waar sprake is van technische noodzakelijkheid bij het aanbieden van de website (zoals standaard serverlogging bij hosting kan voorkomen), steunt dit mede op een gerechtvaardigd belang om de site veilig en stabiel te laten werken."
+      },
+      {
+        "title": "Bewaring",
+        "body": "Wij bouwen geen eigen databank voor bezoekersgedrag voor reclamedoeleinden. Eventuele gegevens die u ons rechtstreeks toestuurt, bewaren wij niet langer dan nodig is voor de behandeling van uw vraag."
+      },
+      {
+        "title": "Uw rechten",
+        "body": "Voor zover de privacywetgeving daarvan toepassing geeft, kunt u rechten uitoefenen op inzage, rectificatie of wissing van uw gegevens, op beperking van de verwerking en op bezwaar.\n\nU kunt ook een klacht indienen bij de Gegevensbeschermingsautoriteit (Drukpersstraat 35, 1000 Brussel, www.dataprotectionauthority.be)."
+      },
+      {
+        "title": "Cookies",
+        "body": "Voor uitleg over cookies verwijzen wij naar de aparte pagina Cookies op deze website."
+      },
+      {
+        "title": "Wijzigingen",
+        "body": "Deze verklaring kan worden aangepast wanneer de website of de wetgeving wijzigt. Raadpleeg dit document van tijd tot tijd voor de actuele versie."
+      }
+    ],
+    "footnote": "Deze tekst is bedoeld als algemene informatie en vormt geen individueel juridisch advies."
+  },
+  "cookiesPage": {
+    "metaTitle": "Cookies | Sint-Geertruikerk Leuven",
+    "metaDescription": "Hoe deze website omgaat met cookies en vergelijkbare technieken.",
+    "title": "Cookiegegevens",
+    "intro": "Deze pagina beschrijft in algemene termen hoe cookies en vergelijkbare technieken kunnen voorkomen in het kader van deze website. Wij gebruiken geen eigen cookies om u te volgen voor advertenties.",
+    "sections": [
+      {
+        "title": "Wat zijn cookies?",
+        "body": "Cookies zijn kleine tekstbestanden die op uw apparaat kunnen worden geplaatst wanneer u een website bezoekt. Ze worden vaak gebruikt om een site technisch correct te laten werken of om basisvoorkeuren te onthouden."
+      },
+      {
+        "title": "Welke cookies gebruikt deze site?",
+        "body": "Wij zetten zelf geen analytics- of reclamecookies in om uw surfgedrag te meten of te verkopen.\n\nDe technische software achter de website kan strikt noodzakelijke sessie- of beveiligingscookies of vergelijkbare opslag gebruiken om de pagina veilig uit te leveren; die zijn doorgaans beperkt in duur en doel."
+      },
+      {
+        "title": "Inhoud van derden",
+        "body": "Waar een pagina bijvoorbeeld een geïntegreerde videospeler van YouTube toont, kan die dienst eigen cookies of vergelijkbare technieken gebruiken wanneer u de inhoud start of bekijkt. Daarvoor gelden het privacy- en cookiebeleid van Google."
+      },
+      {
+        "title": "Uw keuzes",
+        "body": "U kunt in uw browser instellen dat cookies geweigerd of verwijderd worden. Hou er rekening mee dat sommige functies van websites dan minder vlot werken."
+      },
+      {
+        "title": "Wijzigingen",
+        "body": "Deze pagina kan worden bijgewerkt als de website of ingebedde diensten wijzigt."
+      }
+    ],
+    "footnote": "Deze tekst is bedoeld als algemene informatie en vormt geen individueel juridisch advies."
+  },
   "agenda": {
     "metaTitle": "Agenda | Sint-Geertruikerk Leuven",
     "metaDescription": "Concerten, vieringen en activiteiten in en rond de Sint-Geertruikerk in Leuven.",
     "imageAlt": "Sfeerbeeld bij een activiteit",
     "empty": "Er zijn geen activiteiten in deze categorie.",
+    "readMore": "Lees meer",
+    "readLess": "Lees minder",
     "filters": {
       "aria": "Filter activiteiten",
       "agenda": "Agenda",
@@ -198,7 +274,13 @@
   "footer": {
     "ariaNav": "Footer navigatie",
     "addressLine1": "Sint-Geertruiabdij 9",
-    "addressLine2": "3000 Leuven"
+    "addressLine2": "3000 Leuven",
+    "ipLine1": "Teksten en beelden op deze website vallen onder de toepasselijke regels inzake intellectueel eigendom. Reproductie, herdruk of ander gebruik zonder voorafgaande toestemming is niet toegestaan, tenzij de wet anders bepaalt.",
+    "ipLine2Lead": "Voor vragen of verzoeken met betrekking tot teksten of beeldmateriaal kunt u contact opnemen met",
+    "ipContactName": "Axel Buyse",
+    "ipEmail": "axel.buyse@gmail.com",
+    "ipPhone": "0492 13 07 02",
+    "ipAria": "Disclaimer intellectueel eigendom"
   },
   "restoration": {
     "title": "Restauratie van de Geertrui-kerk",

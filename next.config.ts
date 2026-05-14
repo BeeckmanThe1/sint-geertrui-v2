@@ -8,11 +8,7 @@ const nextConfig: NextConfig = {
     // Omit `search` so local `src` may include `?v=` cache-bust (default pattern uses
     // search: "" and rejects any query string on `next/image`).
     localPatterns: [{ pathname: "**" }],
-    remotePatterns: [
-      { protocol: "https", hostname: "picsum.photos", pathname: "/**" },
-      { protocol: "https", hostname: "fastly.picsum.photos", pathname: "/**" },
-      { protocol: "https", hostname: "i.ytimg.com", pathname: "/**" },
-    ],
+    remotePatterns: [{ protocol: "https", hostname: "i.ytimg.com", pathname: "/**" }],
   },
 };
 
