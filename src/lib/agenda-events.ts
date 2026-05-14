@@ -55,6 +55,18 @@ export function getAllAgendaItems(): AgendaEventItem[] {
 
 const AGENDA_PREVIEW_TIMEZONE = "Europe/Brussels";
 
+/** Max upcoming rows on `/agenda` (same count as the home preview strip). */
+export const AGENDA_FUTURE_CAP = 3;
+
+function agendaDateKey(iso: string): number {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso.trim());
+  if (!match) {
+    return 0;
+  }
+  const [, y, mo, d] = match;
+  return Number(y) * 10000 + Number(mo) * 100 + Number(d);
+}
+
 function getTodayIsoInAgendaTimezone(): string {
   const parts = new Intl.DateTimeFormat("en-CA", {
     timeZone: AGENDA_PREVIEW_TIMEZONE,
@@ -71,24 +83,55 @@ function getTodayIsoInAgendaTimezone(): string {
   return `${y}-${m}-${d}`;
 }
 
-/** Next `limit` events on or after today (Belgium), soonest first. */
+function sortDateDescIdAsc(a: AgendaEventItem, b: AgendaEventItem): number {
+  const byKey = agendaDateKey(b.date) - agendaDateKey(a.date);
+  if (byKey !== 0) {
+    return byKey;
+  }
+  return a.id.localeCompare(b.id);
+}
+
+function sortDateAscIdAsc(a: AgendaEventItem, b: AgendaEventItem): number {
+  const byKey = agendaDateKey(a.date) - agendaDateKey(b.date);
+  if (byKey !== 0) {
+    return byKey;
+  }
+  return a.id.localeCompare(b.id);
+}
+
+/** Next `limit` soonest events on or after today (Belgium), displayed newest-first like the agenda archive. */
 export function getUpcomingAgendaItems(limit: number): AgendaEventItem[] {
   const today = getTodayIsoInAgendaTimezone();
-  const upcoming = getAllAgendaItems()
-    .filter((item) => item.date >= today)
-    .sort((a, b) => {
-      const byDate = a.date.localeCompare(b.date);
-      if (byDate !== 0) {
-        return byDate;
-      }
-      return a.id.localeCompare(b.id);
-    });
-  return upcoming.slice(0, Math.max(0, limit));
+  const todayKey = agendaDateKey(today);
+  const upcoming = getAllAgendaItems().filter((item) => agendaDateKey(item.date) >= todayKey);
+  const cap = Math.max(0, limit);
+  const soonest = [...upcoming].sort(sortDateAscIdAsc).slice(0, cap);
+  soonest.sort(sortDateDescIdAsc);
+  return soonest;
+}
+
+/**
+ * Pick the soonest `futureCap` upcoming events, then order that band and the archive with the
+ * same comparator: newest date first (new → old).
+ */
+export function buildAgendaTabOrder(
+  subset: AgendaEventItem[],
+  todayIso: string,
+  futureCap: number = AGENDA_FUTURE_CAP,
+): AgendaEventItem[] {
+  const todayKey = agendaDateKey(todayIso);
+  const upcoming = subset.filter((item) => agendaDateKey(item.date) >= todayKey);
+  const past = subset.filter((item) => agendaDateKey(item.date) < todayKey);
+  const cap = Math.max(0, futureCap);
+  const soonest = [...upcoming].sort(sortDateAscIdAsc).slice(0, cap);
+  soonest.sort(sortDateDescIdAsc);
+  past.sort(sortDateDescIdAsc);
+  return [...soonest, ...past];
 }
 
 /**
  * Items for the active agenda tab. `agenda` is the combined view (community + concerts);
- * other tabs show a single category only. Results are sorted by date, then id.
+ * other tabs show a single category only. See {@link buildAgendaTabOrder}.
  */
 export function filterAgendaItems(
   items: AgendaEventItem[],
@@ -103,25 +146,7 @@ export function filterAgendaItems(
   } else {
     subset = items.filter((item) => item.category === filter);
   }
-  return [...subset].sort((a, b) => {
-    const aUpcoming = a.date >= today;
-    const bUpcoming = b.date >= today;
-    if (aUpcoming !== bUpcoming) {
-      return aUpcoming ? -1 : 1;
-    }
-    if (aUpcoming && bUpcoming) {
-      const byDate = a.date.localeCompare(b.date);
-      if (byDate !== 0) {
-        return byDate;
-      }
-      return a.id.localeCompare(b.id);
-    }
-    const byDateDesc = b.date.localeCompare(a.date);
-    if (byDateDesc !== 0) {
-      return byDateDesc;
-    }
-    return b.id.localeCompare(a.id);
-  });
+  return buildAgendaTabOrder(subset, today, AGENDA_FUTURE_CAP);
 }
 
 export function paginateItems<T>(items: T[], page: number, pageSize: number): T[] {

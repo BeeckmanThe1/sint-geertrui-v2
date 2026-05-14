@@ -177,11 +177,81 @@
       "date": "2026-04-19"
     },
     {
-      "id": "2026-05-19-25",
+      "id": "2026-05-03-25",
+      "category": "community",
+      "title": "Geloofsgesprek",
+      "description": "Om 9.30 u. in de pastorie. Pater Castro is moderator; samen in gesprek rond de lezingen van die zondag.",
+      "date": "2026-05-03"
+    },
+    {
+      "id": "2026-05-03-26",
+      "category": "community",
+      "title": "Eucharistieviering",
+      "description": "Om 11 uur, voorgegaan door Pater Castro.",
+      "date": "2026-05-03"
+    },
+    {
+      "id": "2026-05-10-27",
+      "category": "community",
+      "title": "Dienst van Woord en Communie",
+      "description": "Om 11 uur, voorgegaan door Marc Michiels.",
+      "date": "2026-05-10"
+    },
+    {
+      "id": "2026-05-14-28",
+      "category": "community",
+      "title": "Eucharistieviering (O.L.H. Hemelvaart)",
+      "description": "Voorgegaan door pater Arnold Castro.",
+      "date": "2026-05-14"
+    },
+    {
+      "id": "2026-05-17-29",
+      "category": "community",
+      "title": "Dienst van Woord en Communie",
+      "description": "Gebedsleider: Mia Bertmans.",
+      "date": "2026-05-17"
+    },
+    {
+      "id": "2026-05-19-30",
       "category": "community",
       "title": "Geertruicafé met gastspreker",
-      "description": "Gastspreker: Kris Gelaude.",
+      "description": "Dinsdag 19 mei om 19.30 u. in Geertruihof. Gastspreker: Kris Gelaude. Kris schrijft poëtische en liturgische teksten, columns en artikels; ze heeft reeds meerdere boeken op haar naam staan en geeft voordrachten over religieuze en zingevingsthema's. Voor dit Geertruicafé spreekt ze over geloven vandaag: “Hoe kunnen we in de wereld van vandaag met zo veel onheilsberichten samen nieuwe wegen vinden en plekken van hoop creëren?” Na de voordracht is er de mogelijkheid om nog wat verder bij te praten bij een fris drankje.",
       "date": "2026-05-19"
+    },
+    {
+      "id": "2026-05-19-31",
+      "category": "community",
+      "title": "Bedanking: stortingen voor zorgboerderij Rimpeling",
+      "description": "De stortingen ten voordele van de zorgboerderij Rimpeling van Greet Herkes en Katja in Baal bedragen intussen 2585 euro; mogelijk volgen er nog stortingen tot een totaal van 2750 euro. Alvast een hele dikke dankjewel!",
+      "date": "2026-05-19"
+    },
+    {
+      "id": "2026-05-24-32",
+      "category": "community",
+      "title": "Eucharistieviering (Pinksteren)",
+      "description": "Om 11 uur, voorgegaan door pater Arnold Castro.",
+      "date": "2026-05-24"
+    },
+    {
+      "id": "2026-05-31-34",
+      "category": "community",
+      "title": "Dienst van Woord en Communie",
+      "description": "Om 11 uur, gebedsleider: Toon Quaghebeur.",
+      "date": "2026-05-31"
+    },
+    {
+      "id": "2026-06-21-35",
+      "category": "community",
+      "title": "Slotviering (einde werkjaar)",
+      "description": "Zondag 21 juni. We sluiten het werkjaar af met een 'Auberge Espagnole' of Potluck, gevolgd door een Geertruiberaad.",
+      "date": "2026-06-21"
+    },
+    {
+      "id": "2026-07-12-33",
+      "category": "community",
+      "title": "Plechtige inspeling Sint-Geertruibeiaard",
+      "description": "Zondag 12 juli 2026 vanaf 11 uur: misviering, inspeling van de vernieuwde Sint-Geertruibeiaard, toespraken, receptie en concert.",
+      "date": "2026-07-12"
     }
   ]
 }

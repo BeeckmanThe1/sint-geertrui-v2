@@ -1,9 +1,11 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { formatAgendaDate, getUpcomingAgendaItems } from "@/lib/agenda-events";
-
-const PREVIEW_LIMIT = 3;
+import {
+  AGENDA_FUTURE_CAP,
+  formatAgendaDate,
+  getUpcomingAgendaItems,
+} from "@/lib/agenda-events";
 
 type HomeEventsPreviewProps = {
   locale: string;
@@ -11,7 +13,7 @@ type HomeEventsPreviewProps = {
 
 export async function HomeEventsPreview({ locale }: HomeEventsPreviewProps) {
   const t = await getTranslations({ locale, namespace: "home" });
-  const upcoming = getUpcomingAgendaItems(PREVIEW_LIMIT);
+  const upcoming = getUpcomingAgendaItems(AGENDA_FUTURE_CAP);
 
   return (
     <section className="bg-[#d4d0c4] py-14 sm:py-20">
