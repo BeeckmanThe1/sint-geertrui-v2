@@ -165,11 +165,10 @@
         { "name": "Jan Breuls", "role": "Membre", "email": "jan.breuls1@telenet.be" },
         { "name": "Luc Boghe", "role": "Membre" },
         { "name": "Grietje Van Mol", "role": "Secrétaire" },
-        { "name": "Juan Carlos Tinjaca ss.cc.", "role": "Représentant de l’évêque" },
+        { "name": "P. Juan Carlos Tinjaca ss.cc.", "role": "Représentant de l’évêque" },
         { "name": "Bart Massart", "role": "Conseiller" },
-        { "name": "Sabina De Geest", "role": "Conseillère" },
         { "name": "Suzanne Vandelaer", "role": "Conseillère" },
-        { "name": "Wim Janssen", "role": "Conseiller" }
+        { "name": "Wim Janssens", "role": "Conseiller" }
       ]
     },
     "koor": {

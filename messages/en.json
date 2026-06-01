@@ -165,17 +165,16 @@
         { "name": "Jan Breuls", "role": "Member", "email": "jan.breuls1@telenet.be" },
         { "name": "Luc Boghe", "role": "Member" },
         { "name": "Grietje Van Mol", "role": "Secretary" },
-        { "name": "Juan Carlos Tinjaca ss.cc.", "role": "Representative of the bishop" },
+        { "name": "P. Juan Carlos Tinjaca ss.cc.", "role": "Representative of the bishop" },
         { "name": "Bart Massart", "role": "Advisor" },
-        { "name": "Sabina De Geest", "role": "Advisor" },
         { "name": "Suzanne Vandelaer", "role": "Advisor" },
-        { "name": "Wim Janssen", "role": "Advisor" }
+        { "name": "Wim Janssens", "role": "Advisor" }
       ]
     },
     "koor": {
-      "title": "Gertrokoor",
-      "body": "Together with the church fabric and the community team, the Gertrokoor is simply part of parish life here at Sint-Geertruikerk. For years the choir has been part of Sunday worship — music with heart for the liturgy — under chief conductor Jan Breuls.\n\nFancy joining? New singers are genuinely welcome. There is usually a rehearsal once a week, often on a Friday evening — ask the choir for the exact time.",
-      "imageAlt": "The Gertrokoor rehearsing in Sint-Geertruikerk, with chief conductor Jan Breuls and singers in front of the Gothic choir screen."
+      "title": "Gertro choir",
+      "body": "Together with the church fabric and the community team, the Gertro choir is simply part of parish life here at Sint-Geertruikerk. For years the choir has been part of Sunday worship — music with heart for the liturgy — under chief conductor Jan Breuls.\n\nFancy joining? New singers are genuinely welcome. There is usually a rehearsal once a week, often on a Friday evening — ask the choir for the exact time.",
+      "imageAlt": "The Gertro choir rehearsing in Sint-Geertruikerk, with chief conductor Jan Breuls and singers in front of the Gothic choir screen."
     },
     "reachCard": {
       "title": "Questions about parish matters",

@@ -165,17 +165,16 @@
         { "name": "Jan Breuls", "role": "Lid", "email": "jan.breuls1@telenet.be" },
         { "name": "Luc Boghe", "role": "Lid" },
         { "name": "Grietje Van Mol", "role": "Secretaris" },
-        { "name": "Juan Carlos Tinjaca ss.cc.", "role": "Vertegenwoordiger van de bisschop" },
+        { "name": "P. Juan Carlos Tinjaca ss.cc.", "role": "Vertegenwoordiger van de bisschop" },
         { "name": "Bart Massart", "role": "Raadgever" },
-        { "name": "Sabina De Geest", "role": "Raadgever" },
         { "name": "Suzanne Vandelaer", "role": "Raadgever" },
-        { "name": "Wim Janssen", "role": "Raadgever" }
+        { "name": "Wim Janssens", "role": "Raadgever" }
       ]
     },
     "koor": {
-      "title": "Gertro-koor",
-      "body": "Naast kerkfabriek en gemeenschapsploeg hoort ons Gertro-koor gewoon bij het levendige weefsel van de Geertrui-parochie. Al sinds jaar en dag luistert het koor de vieringen in de kerk op — met hart voor de liturgie — onder leiding van hoofddirigent Jan Breuls.\n\nWil je meedoen? Nieuwkomers zijn van harte welkom. Meestal is er wekelijks een repetitie, vaak op vrijdagavond; voor het precieze uur kun je best even navragen bij het koor.",
-      "imageAlt": "Het Gertro-koor tijdens een repetitie in de Sint-Geertruikerk, met hoofddirigent Jan Breuls en koorleden voor het gotische doksaal."
+      "title": "Gertrokoor",
+      "body": "Naast kerkfabriek en gemeenschapsploeg hoort ons Gertrokoor gewoon bij het levendige weefsel van de Geertrui-parochie. Al sinds jaar en dag luistert het koor de vieringen in de kerk op — met hart voor de liturgie — onder leiding van hoofddirigent Jan Breuls.\n\nWil je meedoen? Nieuwkomers zijn van harte welkom. Meestal is er wekelijks een repetitie, vaak op vrijdagavond; voor het precieze uur kun je best even navragen bij het koor.",
+      "imageAlt": "Het Gertrokoor tijdens een repetitie in de Sint-Geertruikerk, met hoofddirigent Jan Breuls en koorleden voor het gotische doksaal."
     },
     "reachCard": {
       "title": "Vragen over parochiezaken",
