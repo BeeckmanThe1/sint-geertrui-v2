@@ -3,6 +3,8 @@ import { getTranslations } from "next-intl/server";
 
 const CONTACT_HERO_SRC = "/images/contact/inside.png";
 const CONTACT_KOOR_SRC = "/images/contact/gertrokoor.jpg";
+const PASTORALE_ZONE_KERKNET_URL =
+  "https://www.kerknet.be/organisatie/pastorale-zone-leuven-aan-de-dijle";
 
 function belgianDisplayPhoneToTel(display: string): string {
   const digits = display.replace(/\s/g, "");
@@ -101,7 +103,18 @@ export async function ContactView({ locale }: ContactViewProps) {
               {t("gemeenschapsploeg.title")}
             </h2>
             <p className="mt-4 max-w-3xl text-pretty text-base leading-relaxed text-zinc-800 sm:text-lg">
-              {t("gemeenschapsploeg.body")}
+              {t.rich("gemeenschapsploeg.body", {
+                zone: (chunks) => (
+                  <a
+                    className="font-medium text-zinc-900 underline decoration-zinc-600 underline-offset-4 transition hover:decoration-zinc-900"
+                    href={PASTORALE_ZONE_KERKNET_URL}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    {chunks}
+                  </a>
+                ),
+              })}
             </p>
             <h3 className="mt-8 text-xs font-semibold uppercase tracking-wide text-zinc-500">
               {t("gemeenschapsploeg.membersHeading")}
