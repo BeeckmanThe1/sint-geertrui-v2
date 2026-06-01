@@ -5,19 +5,18 @@
  * Bump `CACHE_BUST` when JPEGs in /public/images/history/gallery/ are replaced
  * so browsers and CDNs fetch the new files instead of a stale cache entry.
  */
-export const HISTORY_GALLERY_CACHE_BUST = "1";
+export const HISTORY_GALLERY_CACHE_BUST = "2";
 
 const PATHS = [
-  "/images/history/gallery/IMG_1341.jpg",
-  "/images/history/gallery/IMG_1343.jpg",
-  "/images/history/gallery/IMG_1344.jpg",
-  "/images/history/gallery/IMG_1346.jpg",
-  "/images/history/gallery/IMG_1347.jpg",
-  "/images/history/gallery/IMG_1348.jpg",
-  "/images/history/gallery/IMG_1350.jpg",
-  "/images/history/gallery/IMG_1354.jpg",
-  "/images/history/gallery/IMG_1356.jpg",
-  "/images/history/gallery/IMG_1357.jpg",
+  "/images/history/gallery/IMG_1343.jpeg",
+  "/images/history/gallery/IMG_1344.jpeg",
+  "/images/history/gallery/IMG_1346.jpeg",
+  "/images/history/gallery/IMG_1347.jpeg",
+  "/images/history/gallery/IMG_1348.jpeg",
+  "/images/history/gallery/IMG_1350.jpeg",
+  "/images/history/gallery/IMG_1354.jpeg",
+  "/images/history/gallery/IMG_1356.jpeg",
+  "/images/history/gallery/IMG_1357.jpeg",
 ] as const;
 
 function withCacheBust(path: string): string {
