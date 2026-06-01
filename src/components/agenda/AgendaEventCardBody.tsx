@@ -45,7 +45,13 @@ export function AgendaEventCardBody({
         {title}
       </h3>
       <div className="mt-2.5 flex min-h-0 flex-1 flex-col">
-        <AgendaReadMoreDescription text={description} variant={variant} />
+        <AgendaReadMoreDescription
+          eventTitle={title}
+          formattedDate={formattedDate}
+          isoDate={isoDate}
+          text={description}
+          variant={variant}
+        />
       </div>
     </div>
   );

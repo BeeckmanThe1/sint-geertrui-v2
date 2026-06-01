@@ -1,5 +1,6 @@
 "use client";
 
+import { AgendaEventDescriptionDialog } from "@/components/agenda/AgendaEventDescriptionDialog";
 import { useTranslations } from "next-intl";
 import { useId, useState } from "react";
 
@@ -10,6 +11,9 @@ type AgendaReadMoreDescriptionProps = {
   text: string;
   /** Matches the card panel so the fade blends out. */
   variant: "agenda" | "home" | "homeHighlighted";
+  eventTitle: string;
+  formattedDate: string;
+  isoDate: string;
 };
 
 const fadeFromClass: Record<AgendaReadMoreDescriptionProps["variant"], string> = {
@@ -18,10 +22,16 @@ const fadeFromClass: Record<AgendaReadMoreDescriptionProps["variant"], string> =
   homeHighlighted: "from-[#d2b896]",
 };
 
-export function AgendaReadMoreDescription({ text, variant }: AgendaReadMoreDescriptionProps) {
+export function AgendaReadMoreDescription({
+  text,
+  variant,
+  eventTitle,
+  formattedDate,
+  isoDate,
+}: AgendaReadMoreDescriptionProps) {
   const t = useTranslations("agenda");
   const id = useId();
-  const [expanded, setExpanded] = useState(false);
+  const [dialogOpen, setDialogOpen] = useState(false);
   const collapsible = text.length >= READ_MORE_MIN_CHARS;
 
   if (!collapsible) {
@@ -34,53 +44,38 @@ export function AgendaReadMoreDescription({ text, variant }: AgendaReadMoreDescr
 
   const fade = fadeFromClass[variant];
 
-  if (expanded) {
-    return (
+  return (
+    <>
       <div className="flex min-h-0 w-full min-w-0 flex-1 flex-col">
-        <div className="min-h-0 min-w-0 flex-1">
+        <div className="relative min-h-0 flex-1 overflow-hidden">
           <p
-            className="max-w-prose text-pretty text-sm leading-relaxed text-zinc-800/95 whitespace-pre-line"
+            className="max-w-prose text-pretty text-sm leading-relaxed text-zinc-800/95 whitespace-pre-line line-clamp-5"
             id={`${id}-desc`}
           >
             {text}
           </p>
+          <div
+            aria-hidden
+            className={`pointer-events-none absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t to-transparent ${fade}`}
+          />
         </div>
         <button
-          aria-controls={`${id}-desc`}
-          aria-expanded
+          aria-haspopup="dialog"
           className="mt-1.5 shrink-0 cursor-pointer text-left text-sm font-semibold text-zinc-900 underline decoration-zinc-600/45 underline-offset-[3px] hover:decoration-zinc-900"
-          onClick={() => setExpanded(false)}
+          onClick={() => setDialogOpen(true)}
           type="button"
         >
-          {t("readLess")}
+          {t("readMore")}
         </button>
       </div>
-    );
-  }
-
-  return (
-    <div className="flex min-h-0 w-full min-w-0 flex-1 flex-col">
-      <div className="relative min-h-0 flex-1 overflow-hidden">
-        <p
-          className="max-w-prose text-pretty text-sm leading-relaxed text-zinc-800/95 whitespace-pre-line line-clamp-5"
-          id={`${id}-desc`}
-        >
-          {text}
-        </p>
-        <div
-          aria-hidden
-          className={`pointer-events-none absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t to-transparent ${fade}`}
-        />
-      </div>
-      <button
-        aria-controls={`${id}-desc`}
-        aria-expanded={false}
-        className="mt-1.5 shrink-0 cursor-pointer text-left text-sm font-semibold text-zinc-900 underline decoration-zinc-600/45 underline-offset-[3px] hover:decoration-zinc-900"
-        onClick={() => setExpanded(true)}
-        type="button"
-      >
-        {t("readMore")}
-      </button>
-    </div>
+      <AgendaEventDescriptionDialog
+        description={text}
+        formattedDate={formattedDate}
+        isoDate={isoDate}
+        onClose={() => setDialogOpen(false)}
+        open={dialogOpen}
+        title={eventTitle}
+      />
+    </>
   );
 }

@@ -261,6 +261,7 @@
     "empty": "Er zijn geen activiteiten in deze categorie.",
     "readMore": "Lees meer",
     "readLess": "Lees minder",
+    "closeLabel": "Sluiten",
     "filters": {
       "aria": "Filter activiteiten",
       "agenda": "Agenda",

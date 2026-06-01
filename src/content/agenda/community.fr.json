@@ -215,7 +215,7 @@
       "id": "2026-05-19-30",
       "category": "community",
       "title": "Geertrui-café avec conférencière",
-      "description": "Mardi 19 mai à 19 h 30 au Geertruihof. Invitée : Kris Gelaude.\n\nKris écrit des textes poétiques et liturgiques, des chroniques et des articles ; elle a déjà publié plusieurs livres et donne des conférences sur la religion et le sens de la vie.\n\nPour ce Geertrui-café elle parle de croire aujourd'hui : « Comment, dans le monde d'aujourd'hui avec tant de nouvelles sombres, pouvons-nous ensemble trouver de nouveaux chemins et créer des lieux d'espérance ? »\n\nAprès la conférence, possibilité de prolonger la conversation autour d'une boisson.",
+      "description": "Mardi 19 mai à 19 h 30 au Geertruihof. Invitée : Kris Gelaude.\n\nKris écrit des textes poétiques et liturgiques, des chroniques et des articles ; elle a déjà publié plusieurs livres et donne des conférences sur la religion et le sens de la vie.\n\nPour ce Geertrui-café elle a parlé de croire aujourd'hui : « Comment, dans le monde d'aujourd'hui avec tant de nouvelles sombres, pouvons-nous ensemble trouver de nouveaux chemins et créer des lieux d'espérance ? »\n\nUne cinquantaine de personnes étaient présentes ; Kris nous a captivés une heure durant avec des exemples inspirants. Ensuite, longues conversations autour d'une boisson.",
       "date": "2026-05-19"
     },
     {
@@ -240,10 +240,31 @@
       "date": "2026-05-31"
     },
     {
+      "id": "2026-06-07-37",
+      "category": "community",
+      "title": "Conversation de foi (dernière de l'année pastorale)",
+      "description": "À 9 h 30 à la presbytère. Le père Arnold Castro modère ; ensemble autour des lectures du dimanche.",
+      "date": "2026-06-07"
+    },
+    {
+      "id": "2026-06-07-38",
+      "category": "community",
+      "title": "Célébration eucharistique",
+      "description": "À 11 h, présidée par le père Arnold Castro.",
+      "date": "2026-06-07"
+    },
+    {
+      "id": "2026-06-14-39",
+      "category": "community",
+      "title": "Célébration de la Parole et de la communion",
+      "description": "À 11 h, animateur de prière : Tomas Bruyland.",
+      "date": "2026-06-14"
+    },
+    {
       "id": "2026-06-21-35",
       "category": "community",
-      "title": "Bénédiction du nouveau carillon — clôture d'année",
-      "description": "Le 21 juin notre doyen, Patrick Maervoet, bénira les nouvelles cloches de notre carillon entièrement renouvelé et agrandi, pendant la célébration dominicale dans notre église. Dirk Vansina nous adressera la parole ; après la messe, auberge espagnole au Geertruihof, puis un temps d'échange au même lieu.\n\nLes jours suivants, les cloches seront hissées dans la tour.\n\nTout le monde est le bienvenu.",
+      "title": "Célébration de clôture et de remerciement",
+      "description": "À 11 h, notre célébration de clôture et de remerciement : le doyen Patrick Maervoet bénit pendant la messe les cloches de notre carillon renouvelé. Après la messe nous clôturons l'année pastorale par une auberge espagnole (potluck) au Geertruihof.\n\nAu potluck, chacun apporte quelque chose à manger — soupe, tartines, salade, pâtes ou dessert ; nous partageons tout sur un même buffet. Apportez selon le nombre de personnes (seul : pour une personne ; famille de quatre : pour quatre). Vous préférez vos propres sandwichs ? C'est possible — tout le monde est le bienvenu. Merci de nous dire si vous participez au repas (pour l'organisation).\n\nAprès le repas, pour qui le souhaite, un temps Geertrui : écoute des suggestions et questions ; tout est repris lors de la journée d'équipe du samedi 27 juin.\n\nLes jours suivants, les cloches seront hissées dans la tour.",
       "date": "2026-06-21",
       "highlighted": true
     },
@@ -251,7 +272,7 @@
       "id": "2026-07-12-33",
       "category": "community",
       "title": "Inauguration solennelle du carillon de Sint-Geertrui",
-      "description": "Le dimanche 12 juillet notre carillonneur, Marc Van Eyck, inaugure festivement le carillon. Cet après-midi, réception festive ; par beau temps sur la cour de l'abbaye.\n\nTout le monde est le bienvenu les 21 juin et 12 juillet, et en particulier les généreux donateurs qui ont rendu possible l'agrandissement du carillon.",
+      "description": "À partir de 11 h : inauguration solennelle de notre carillon renouvelé — messe, allocutions, réception festive et musique. Le carillonneur Marc Van Eyck joue le carillon. Par beau temps sur la cour de l'abbaye.\n\nTout le monde est le bienvenu, en particulier les généreux donateurs qui ont rendu possible l'agrandissement du carillon.",
       "date": "2026-07-12",
       "highlighted": true
     },

@@ -261,6 +261,7 @@
     "empty": "There are no activities in this category.",
     "readMore": "Read more",
     "readLess": "Read less",
+    "closeLabel": "Close",
     "filters": {
       "aria": "Filter activities",
       "agenda": "Agenda",
