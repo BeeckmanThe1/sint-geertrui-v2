@@ -75,14 +75,6 @@ export async function ContactView({ locale }: ContactViewProps) {
               <p className="mt-4 text-pretty text-sm leading-relaxed text-zinc-600 sm:text-base">
                 {t("addressCard.body")}
               </p>
-              <a
-                className="mt-6 inline-flex rounded-full bg-[#a8a08c] px-5 py-2.5 text-sm font-semibold text-zinc-900 shadow-sm ring-1 ring-black/10 transition hover:bg-[#9c9480]"
-                href={t("addressCard.mapUrl")}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                {t("addressCard.mapLink")}
-              </a>
             </article>
 
             <article className="rounded-xl bg-[#bdb7a6] p-8 shadow-sm ring-1 ring-black/10 sm:p-10">
