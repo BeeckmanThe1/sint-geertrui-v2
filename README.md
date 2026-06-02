@@ -1,45 +1,35 @@
-This is the `sint-geertrui-v2` website project, built with Next.js.
+# sint-geertrui-v2
 
-## Getting Started
+Website for Sint-Geertruikerk in Leuven: history, restoration, agenda, and practical visitor information.
 
-First, run the development server:
+## Stack
+
+- Next.js (App Router), TypeScript, Tailwind CSS, Jest
+- `next-intl` for Dutch (default), French, and English
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) (redirects to `/nl`).
 
-You can start editing the page by modifying `src/app/page.tsx`. The page auto-updates as you edit the file.
+## Quality checks
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run typecheck
+npm run lint
+npm test
+```
 
-## Project Docs
+## Documentation
 
-Project-specific documentation lives in `docs/`:
+Project docs live in [`docs/`](docs/README.md) (product overview, page specs, design references).
 
-- `docs/product/overview.md`
-- `docs/pages/`
-- `docs/design/`
-- `docs/decisions/`
+## Content
 
-See `docs/README.md` for structure and workflow.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Learn Next.js](https://nextjs.org/learn)
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy
-
-Deployment approach is TBD for this project.
+- UI copy: `messages/*.json`
+- Agenda data: `src/content/agenda/`
+- Static images: `public/images/`

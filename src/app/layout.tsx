@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { SITE_DESCRIPTION_NL, SITE_NAME } from "@/lib/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Sint Geertrui",
-  description: "Next.js application",
+  title: SITE_NAME,
+  description: SITE_DESCRIPTION_NL,
 };
 
 export default function RootLayout({
