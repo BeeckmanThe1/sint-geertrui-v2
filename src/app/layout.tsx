@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { SITE_DESCRIPTION_NL, SITE_NAME } from "@/lib/site";
+import { getSiteUrl, SITE_DESCRIPTION_NL, SITE_NAME } from "@/lib/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(getSiteUrl()),
   title: SITE_NAME,
   description: SITE_DESCRIPTION_NL,
   verification: {
