@@ -5,6 +5,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: SITE_NAME,
   description: SITE_DESCRIPTION_NL,
+  verification: {
+    google: "YsxlVx8Q70FdW49F3dWdw-Vv87NX137NP6S5omzuku8",
+  },
 };
 
 export default function RootLayout({
