@@ -19,6 +19,7 @@ alwaysApply: false
 
 - CSV: `src/content/agenda/concerts-and-events.csv`
 - Build: `npm run agenda:build` → `concerts.json` (+ locale variants)
+- **Only add concerts with date + start time** (and location when needed); never generic “Beiaardconcert” placeholders.
 - Do not mix concert CSV workflow with community JSON edits.
 
 ## When Thomas pastes a parish email
@@ -36,6 +37,7 @@ Thomas may paste **one or several forwarded emails in a single message** — tre
 9. Dates: ISO `YYYY-MM-DD`; site uses `Europe/Brussels` for “today”.
 10. Run **`npm run agenda:check-community`** before finishing; fix all errors.
 11. Summarize: added / updated / skipped / **duplicates prevented**.
+12. **Only meaningful events** — skip vague concerts; split beiaard **zegening** and **inluiding** with milestone in **title**; use `highlighted: true` for both.
 
 ## Long-term direction (planned, not implemented)
 

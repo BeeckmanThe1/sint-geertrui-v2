@@ -14,17 +14,26 @@
 - `2026-06-14`: add Word & Communion if missing.
 - `2026-05-24`: leave unchanged if already correct.
 
-## Example 2: Special event with extra detail
+## Example 2: Beiaard zegening + slotviering same day
 
 **Email excerpt:**
 
-> Zondag 21 juni slotviering … Auberge Espagnole … deken Patrick Maervoet zegent de klokken …
+> 21 juni slotviering … deken Maervoet zegent de klokken … Auberge Espagnole …
 
 **Agent actions:**
 
-- Update existing `2026-06-21-*` row(s) in place with full potluck + Geertruiberaad text.
-- Set `"highlighted": true` on the main slotviering row.
-- NL canonical; translate EN/FR.
+- **`2026-06-21-35`** — title `"Zegening twaalf nieuwe beiaardklokken"`, zegening + klokken bekijken + drankje, `highlighted: true`.
+- **`2026-06-21-42`** — separate row for potluck/Geertruiberaad; title mentions Auberge Espagnole, **not** the zegening.
+- Do **not** use only `"Slot- en dankviering werkjaar"` as the zegening title.
+
+## Example 2b: Beiaard inluiding (different date)
+
+**Flyer:** 12 juli plechtige inluiding, 12–12.30 Van Eyck, receptie, luisterplekken.
+
+**Agent actions:**
+
+- **`2026-07-12-33`** — title `"Plechtige inluiding vernieuwde Sint-Geertruibeiaard"`, `highlighted: true`.
+- Keep separate from June zegening row — different date, different event.
 
 ## Example 3: Skip recap
 
@@ -95,3 +104,13 @@
 5. Geertruicafé from mail 2 → one row on that date; if mail 1 also mentioned the same café → **one row**, richer description if needed.
 6. **Single write** to all three locale files; **`npm run agenda:check-community`** once.
 7. Report: `Pasted mails processed: 3`.
+
+## Example 9: Skip vague concerts
+
+**Flyer:** “Jaarlijkse beiaardconcerten juli–augustus” with dates 19/07, 26/07, 2/08, 9/08 but **no times or exact locations**.
+
+**Agent actions:**
+
+- **Do not add** four generic `Beiaardconcert Sint-Geertruibeiaard` rows to `concerts.json`.
+- Report **Skipped** — needs per-date start time (and location if unclear).
+- If Thomas later provides “zondag 19 juli om 15 u., park abdij”, then add one concrete concert row.

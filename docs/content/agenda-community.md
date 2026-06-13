@@ -31,8 +31,26 @@ When processing pasted parish email(s), the agent should:
 - Keep the **same `id`** across all three locale files for each event.
 - Write NL from the email; draft EN/FR with similar length and meaning.
 - Set `highlighted: true` only for noteworthy future items when appropriate.
+- **Only meaningful events** — skip rows without actionable detail; see skill section “Only meaningful events”.
+- **Beiaard:** zegening (e.g. 21 June) and inluiding (e.g. 12 July) are **two separate** community rows; put the milestone in the **title**, both `highlighted: true`.
 
-## Current technical mechanism
+## Only meaningful events
+
+The agenda is for parishioners, not archive filler.
+
+- **Add** when you have date + clear purpose; routine Sundays stay one short line; rare events name the rare thing in the **title**.
+- **Skip** past recaps, duplicate rows, and concert series without **per-date time** (and location if not obvious).
+- **Never** add placeholder concerts like “Beiaardconcert Sint-Geertruibeiaard” with only a date.
+
+## Beiaard pattern (community)
+
+| Event | Example title (NL) |
+|-------|---------------------|
+| Zegening new bells | `Zegening twaalf nieuwe beiaardklokken` |
+| Potluck same day | separate row, e.g. `Slot- en dankviering werkjaar — Auberge Espagnole` |
+| Inluiding renovated carillon | `Plechtige inluiding vernieuwde Sint-Geertruibeiaard` |
+
+Zegening ≠ inluiding. Do not merge. Reference ids: `2026-06-21-35`, `2026-06-21-42`, `2026-07-12-33`.
 
 | What | Where |
 |------|--------|

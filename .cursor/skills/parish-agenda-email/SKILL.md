@@ -6,7 +6,8 @@ description: >-
   the user pastes forwarded parish mail, Dutch liturgical schedule text, or mentions
   community.json / gemeenschap agenda — even with no other instructions. Handles one or
   several pasted emails in a single message. Prevents duplicate events and keeps description
-  length consistent for the agenda card grid.
+  length consistent for the agenda card grid. Adds only meaningful events with clear
+  titles; splits rare beiaard zegening and inluiding into separate community rows.
 ---
 
 # Parish agenda from pasted email
@@ -21,7 +22,40 @@ Thomas pastes forwarded parish emails — **one or several in the same message**
 | EN | `src/content/agenda/community.en.json` |
 | FR | `src/content/agenda/community.fr.json` |
 
-Do **not** edit `concerts*.json` or run `agenda:build` unless the email is clearly about concerts/rehearsals.
+Do **not** edit `concerts*.json` unless the source gives **enough detail to be useful** (see [Only meaningful events](#only-meaningful-events)). Do not run `agenda:build` for vague flyer summaries alone.
+
+## Only meaningful events
+
+**Do not add rows that parishioners cannot act on.** When in doubt, **skip** and say so in the summary.
+
+| Add | Skip |
+|-----|------|
+| Date + **what** + usually **time** and/or **who/where** | Past recaps, tombola results, thank-you-only mail |
+| Rare milestones with the milestone **in the title** | Generic placeholder titles (“Beiaardconcert …”) |
+| Concerts/rehearsals with **time and place** in description | Concert series mentioned without per-date time/location |
+| Legitimate same-day pairs (9:30 Geloofsgesprek + 11:00 mis) | Duplicate of an existing row |
+
+**Concerts (`concerts*.json`):** only add when the mail/flyer/CSV gives a **specific date and start time** (and location if not obvious). A list of Sundays with no hour is **not** enough — note “needs time/location” and do not invent entries.
+
+**Community (`community*.json`):** routine Sunday lines stay short; exceptional items get the **exception in the title**, not buried in description only.
+
+## Beiaard: zegening and inluiding are two events
+
+The renovation has two **rare, separate** moments — **never merge into one row** or hide under generic “slotviering”:
+
+| Date (example) | Separate event | Title must say |
+|----------------|----------------|----------------|
+| First moment (e.g. 21 June) | **Zegening** of new bells during/after slotviering | `Zegening twaalf nieuwe beiaardklokken` — **not** only “Slot- en dankviering werkjaar” |
+| Second moment (e.g. 12 July) | **Inluiding** of renovated carillon | `Plechtige inluiding vernieuwde Sint-Geertruibeiaard` — **not** only “inspeling” without inluiding |
+
+Rules:
+
+- **`highlighted: true`** on both zegening and inluiding rows.
+- Same calendar day as slotviering/potluck → **two rows**: (1) zegening row, (2) potluck/slotafsluiting row with its own title.
+- Do **not** fold inluiding into the zegening row or vice versa.
+- Use **inluiding** in NL titles for the July-style ceremony; zegening ≠ inluiding.
+
+Reference rows in `community.json`: `2026-06-21-35` (zegening), `2026-06-21-42` (potluck same day), `2026-07-12-33` (inluiding).
 
 ## Workflow
 
@@ -106,7 +140,9 @@ Reference: `AgendaReadMoreDescription` clamps at **200** chars (`READ_MORE_MIN_C
 | Past-tense recap / thank-you / attendance report | **Skip** unless user asked to publish recaps |
 | Two events same day (e.g. 9:30 Geloofsgesprek + 11:00 mis) | **Two rows**, same date, different ids |
 | Off-site or "no service here" | Title/description must state location clearly |
-| Noteworthy future event (beiaard, slotviering, closure) | Consider `"highlighted": true` |
+| Noteworthy future event (beiaard zegening/inluiding, closure) | **`highlighted: true`**; milestone **in title** |
+| Beiaard zegening + potluck same Sunday | **Two rows** — zegening title + separate potluck/slot row |
+| Flyer lists concert dates without times | **Skip** concerts; report missing detail |
 
 ## Event shape
 
