@@ -57,6 +57,15 @@ Rules:
 
 Reference rows in `community.json`: `2026-06-21-35` (zegening), `2026-06-21-42` (potluck same day), `2026-07-12-33` (inluiding).
 
+**Images (already in `public/images/restoration/article/`):**
+
+| Event | `imageUrl` |
+|-------|------------|
+| Zegening (bells up close) | `/images/restoration/article/image2.jpg` |
+| Inluiding (tower / belfry) | `/images/restoration/article/image5.jpg` |
+
+Add `imageUrl` on highlighted beiaard rows in all three locale files (same path). Do not add images to routine Sunday lines without a relevant photo.
+
 ## Workflow
 
 1. **Read** all three `community*.json` files.
