@@ -1,0 +1,43 @@
+---
+description: Community agenda content workflow, files, and planned migration off JSON
+globs: src/content/agenda/**,src/lib/agenda-events.ts,scripts/build-concerts-from-csv.mjs,docs/content/**
+alwaysApply: false
+---
+
+# Agenda content (community & concerts)
+
+## Community events (Gemeenschap)
+
+- **Paste workflow:** `.cursor/skills/parish-agenda-email/SKILL.md` (full steps + examples). Trigger rule: `.cursor/rules/parish-email-intake.mdc`.
+- **Business intake:** Thomas receives **forwarded parish emails**, then **pastes them into Cursor** for agenda updates.
+- **Current authoring:** The **agent** generates/updates event JSON — NL in `community.json`, EN in `community.en.json`, FR in `community.fr.json`. Thomas reviews the diff; he does not hand-type entries.
+- **Source of truth (today):** those three JSON files (NL canonical from email text).
+- **Loader:** `src/lib/agenda-events.ts` — do not duplicate event logic elsewhere.
+- **Category:** `"community"`. Default agenda tab filter is `community`.
+
+## Concerts (separate pipeline)
+
+- CSV: `src/content/agenda/concerts-and-events.csv`
+- Build: `npm run agenda:build` → `concerts.json` (+ locale variants)
+- Do not mix concert CSV workflow with community JSON edits.
+
+## When Thomas pastes a parish email
+
+1. Read existing `community.json`, `community.en.json`, and `community.fr.json` first.
+2. **Duplicate audit:** for each date in the email, list existing rows; update in place — **never add a second row** for the same event intent.
+3. Reconcile by date + title/service type; legitimate same-day pairs only when type/time differ (e.g. Geloofsgesprek + Eucharist).
+4. Distinguish **upcoming invitation** vs **past recap** — skip recaps unless Thomas asks to publish them.
+5. Add new events with stable ids (`{date}-{sequence}`), **same id in all three files**.
+6. NL body from email; EN/FR translations with **similar description length**.
+7. **Routine** Sunday lines: ~60–140 chars. **Long** text only for exceptional items (≥200 chars → read-more UI).
+8. Use `highlighted: true` sparingly for notable **future** home-page items.
+9. Dates: ISO `YYYY-MM-DD`; site uses `Europe/Brussels` for “today”.
+10. Run **`npm run agenda:check-community`** before finishing; fix all errors.
+11. Summarize: added / updated / skipped / **duplicates prevented**.
+
+## Long-term direction (planned, not implemented)
+
+- Structured DB replaces JSON as system of record.
+- Automate intake (scheduled email read) — today intake is **paste into Cursor**.
+- Staging / pending diffs → Thomas approve → publish; no silent autonomous production writes until merge quality is proven.
+- Full context: `docs/content/agenda-community.md`, `docs/content/agenda-roadmap-todo.md`, `docs/decisions/2026-06-13-agenda-source-of-truth.md`.

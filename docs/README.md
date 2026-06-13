@@ -5,6 +5,7 @@ This folder captures product context, page-level acceptance criteria, and design
 ## Structure
 
 - `product/overview.md`: high-level product scope and constraints.
+- `content/`: how site content is sourced and maintained (e.g. agenda community events, roadmap TODOs).
 - `pages/`: one file per page with purpose, sections, and acceptance criteria.
 - `design/`: links/notes to design files and implementation details.
 - `decisions/`: short architecture/product decisions (optional, but recommended).

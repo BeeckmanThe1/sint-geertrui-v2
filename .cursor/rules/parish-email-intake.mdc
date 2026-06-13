@@ -1,0 +1,15 @@
+---
+description: When the user pastes a Sint-Geertrui parish email, run the parish-agenda-email skill without waiting for explicit instructions
+alwaysApply: true
+---
+
+# Parish email paste (intake)
+
+If the user message is **primarily a pasted email or bulletin** about Sint-Geertrui parish life — Dutch schedule text, Gemeenschapsploeg, *lichtflits*, Sunday services (*eucharistieviering*, *dienst van Woord en Communie*), *Geloofsgesprek*, *Geertruicafé*, beiaard, slotviering — and they are **not** asking an unrelated question only:
+
+1. Read and follow **`.cursor/skills/parish-agenda-email/SKILL.md`** immediately.
+2. Update `community.json`, `community.en.json`, and `community.fr.json`.
+3. Run **`npm run agenda:check-community`** before finishing.
+4. Do **not** ask Thomas to repeat instructions or confirm the workflow first.
+
+If the message mixes a pasted email **and** a clear unrelated question, answer the question and still run the agenda workflow when the email contains schedule updates.

@@ -12,7 +12,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:ci": "jest --ci --coverage --watchAll=false",
-    "agenda:build": "node scripts/build-concerts-from-csv.mjs"
+    "agenda:build": "node scripts/build-concerts-from-csv.mjs",
+    "agenda:check-community": "node scripts/check-community-agenda.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",
