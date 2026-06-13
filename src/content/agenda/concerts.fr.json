@@ -357,6 +357,34 @@
       "title": "Concert de requiem Sotto Voce dir. Stef Conings",
       "description": "Concert de requiem Sotto Voce dir. Stef Conings",
       "date": "2025-11-02"
+    },
+    {
+      "id": "2026-07-19-c51",
+      "category": "concerts",
+      "title": "Concert de carillon Sint-Geertrui",
+      "description": "Concert annuel de carillon (série juillet–août 2026). Écoute possible dans le parc de l'abbaye Sint-Geertrui, entre autres.",
+      "date": "2026-07-19"
+    },
+    {
+      "id": "2026-07-26-c52",
+      "category": "concerts",
+      "title": "Concert de carillon Sint-Geertrui",
+      "description": "Concert annuel de carillon (série juillet–août 2026). Écoute possible dans le parc de l'abbaye Sint-Geertrui, entre autres.",
+      "date": "2026-07-26"
+    },
+    {
+      "id": "2026-08-02-c53",
+      "category": "concerts",
+      "title": "Concert de carillon Sint-Geertrui",
+      "description": "Concert annuel de carillon (série juillet–août 2026). Écoute possible dans le parc de l'abbaye Sint-Geertrui, entre autres.",
+      "date": "2026-08-02"
+    },
+    {
+      "id": "2026-08-09-c54",
+      "category": "concerts",
+      "title": "Concert de carillon Sint-Geertrui",
+      "description": "Concert annuel de carillon (série juillet–août 2026). Écoute possible dans le parc de l'abbaye Sint-Geertrui, entre autres.",
+      "date": "2026-08-09"
     }
   ]
 }

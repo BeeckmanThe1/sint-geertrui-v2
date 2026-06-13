@@ -10,8 +10,8 @@ This is separate from **Concerten**, which come from a different source and upda
 
 1. The **Gemeenschapsploeg** (parish community team) plans events and communicates them.
 2. Thomas receives **forwarded emails** (parish mail, bulletin-style updates such as *lichtflits*, direct messages).
-3. Thomas **pastes the email into Cursor** and asks the agent to update the agenda.
-4. The **agent** reads the mail, reconciles against existing `community*.json` rows, and writes or updates JSON event objects in **Dutch (canonical)** plus **English and French** translations in the matching locale files.
+3. Thomas **pastes the email(s) into Cursor** and asks the agent to update the agenda (one or multiple forwards in one message).
+4. The **agent** reads all pasted blocks, merges candidates, reconciles against existing `community*.json` rows, and writes or updates JSON in **Dutch (canonical)** plus **English and French** translations in the matching locale files.
 5. Thomas **reviews** the diff (quick sanity check), then changes are **deployed** with a normal site release.
 
 There is no parish-facing editor, no external calendar sync, and no automated email intake today — the copy-paste step is still manual, but **JSON authoring and translation are agent-assisted**, not hand-typed by Thomas.
@@ -20,8 +20,9 @@ There is no parish-facing editor, no external calendar sync, and no automated em
 
 ### Agent task checklist (today)
 
-When processing a pasted parish email, the agent should:
+When processing pasted parish email(s), the agent should:
 
+- Accept **multiple forwarded emails in one paste** — split into blocks, extract all, **dedupe across mails**, then write JSON once.
 - Read `community.json` (and `.en.json` / `.fr.json`) before changing anything.
 - Run a **duplicate audit** by date + event intent; **update in place** — never add a second row for the same event.
 - Run **`npm run agenda:check-community`** after edits (blocks duplicate ids and date+title pairs).

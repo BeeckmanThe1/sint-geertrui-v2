@@ -81,3 +81,17 @@
 
 - **Special long** tier OK; structured `\n\n` paragraphs; `"highlighted": true`.
 - Do not use Special long for the following week's routine Eucharist.
+
+## Example 8: Multiple emails in one paste
+
+**User message:** three forwarded blocks — (1) June Sunday schedule, (2) Geertruicafé invite, (3) reminder that Pentecost is already listed.
+
+**Agent actions:**
+
+1. Split into 3 email blocks.
+2. Extract all candidates from all three.
+3. Pentecost / 24 May already in JSON → **Unchanged** (mail 3).
+4. June Sundays from mail 1 → add/update; **duplicate audit** against JSON and against mail 1 ↔ mail 2 overlap.
+5. Geertruicafé from mail 2 → one row on that date; if mail 1 also mentioned the same café → **one row**, richer description if needed.
+6. **Single write** to all three locale files; **`npm run agenda:check-community`** once.
+7. Report: `Pasted mails processed: 3`.

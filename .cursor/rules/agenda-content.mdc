@@ -23,6 +23,8 @@ alwaysApply: false
 
 ## When Thomas pastes a parish email
 
+Thomas may paste **one or several forwarded emails in a single message** — treat as one batch (split blocks → merge candidates → single JSON write).
+
 1. Read existing `community.json`, `community.en.json`, and `community.fr.json` first.
 2. **Duplicate audit:** for each date in the email, list existing rows; update in place — **never add a second row** for the same event intent.
 3. Reconcile by date + title/service type; legitimate same-day pairs only when type/time differ (e.g. Geloofsgesprek + Eucharist).

@@ -261,18 +261,32 @@
       "date": "2026-06-14"
     },
     {
+      "id": "2026-06-28-40",
+      "category": "community",
+      "title": "Célébration de la Parole et de la communion",
+      "description": "À 11 h, animateur de prière : Toon Quaghebeur.",
+      "date": "2026-06-28"
+    },
+    {
       "id": "2026-06-21-35",
       "category": "community",
       "title": "Célébration de clôture et de remerciement",
-      "description": "À 11 h, notre célébration de clôture et de remerciement : le doyen Patrick Maervoet bénit pendant la messe les cloches de notre carillon renouvelé. Après la messe nous clôturons l'année pastorale par une auberge espagnole (potluck) au Geertruihof.\n\nAu potluck, chacun apporte quelque chose à manger — soupe, tartines, salade, pâtes ou dessert ; nous partageons tout sur un même buffet. Apportez selon le nombre de personnes (seul : pour une personne ; famille de quatre : pour quatre). Vous préférez vos propres sandwichs ? C'est possible — tout le monde est le bienvenu. Merci de nous dire si vous participez au repas (pour l'organisation).\n\nAprès le repas, pour qui le souhaite, un temps Geertrui : écoute des suggestions et questions ; tout est repris lors de la journée d'équipe du samedi 27 juin.\n\nLes jours suivants, les cloches seront hissées dans la tour.",
+      "description": "À 11 h, célébration de clôture et de remerciement à l'église Sint-Geertrui : le doyen Patrick Maervoet bénit nos douze nouvelles cloches de carillon ; possibilité de voir les cloches de près. Après la messe, boisson offerte à l'arrière de l'église pour tous les présents.\n\nEnsuite auberge espagnole (potluck) au Geertruihof — apportez vos plats dès 10 h (conservation au frigo). Apportez selon le nombre de personnes ; tout le monde est le bienvenu. Inscription pour le repas : geertruifeesten@gmail.com ou 0474 72 83 60.\n\nAprès le repas : temps Geertrui pour qui le souhaite ; suggestions et questions sont reprises lors de la journée d'équipe du samedi 27 juin.",
       "date": "2026-06-21",
       "highlighted": true
+    },
+    {
+      "id": "2026-07-05-41",
+      "category": "community",
+      "title": "Pas de célébration dans notre église (rythme estival)",
+      "description": "Nous passons au rythme estival : célébration dans notre église toutes les deux semaines ; les autres dimanches nous rejoignons la messe à 10 h à l'église Saint-Pierre.",
+      "date": "2026-07-05"
     },
     {
       "id": "2026-07-12-33",
       "category": "community",
       "title": "Inauguration solennelle du carillon de Sint-Geertrui",
-      "description": "À partir de 11 h : inauguration solennelle de notre carillon renouvelé — messe, allocutions, réception festive et musique. Le carillonneur Marc Van Eyck joue le carillon. Par beau temps sur la cour de l'abbaye.\n\nTout le monde est le bienvenu, en particulier les généreux donateurs qui ont rendu possible l'agrandissement du carillon.",
+      "description": "À partir de 11 h : célébration eucharistique solennelle d'inauguration de notre carillon renouvelé (douze cloches, nouveau clavier), présidée par le père Arnold Castro.\n\n12 h–12 h 30 : courte prestation du carillonneur titulaire Marc Van Eyck — les premiers sons officiels. Puis brèves allocutions, conférence, présentation de la nouvelle brochure sur le carillon, rafraîchissements ; jeux de carillonneurs invités ensuite.\n\nÉcoute possible dans le parc de l'abbaye, le corridor du Geertruihof et le Klein Begijnhof ; chaises dans le jardin (musée Scouts et Guides). Inscription obligatoire pour la réception : geertruifeesten@gmail.com ou 0474 72 83 60.\n\nTout le monde est le bienvenu, en particulier les généreux donateurs qui ont rendu possible l'agrandissement du carillon.",
       "date": "2026-07-12",
       "highlighted": true
     },
