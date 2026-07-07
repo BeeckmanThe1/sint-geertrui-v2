@@ -8,10 +8,10 @@
   - Long term this still does not scale if every mail requires a chat session; duplicates and recap-vs-upcoming errors remain risks without a structured store and merge tooling.
   - Concerts remain a separate pipeline (CSV → build script → `concerts*.json`).
 - **Alternatives considered:**
-  - Keep JSON indefinitely — rejected for long-term maintainability.
-  - Headless CMS (Sanity, Payload, etc.) — viable if parish volunteers need a UI; heavier than needed for phase 1.
-  - Fully autonomous agent writes to production — rejected until merge rules and quality are proven; high impact if wrong (times, locations, “church closed”).
-  - JSON only, no DB — acceptable short-term bootstrap only.
+  - Keep JSON indefinitely, rejected for long-term maintainability.
+  - Headless CMS (Sanity, Payload, etc.), viable if parish volunteers need a UI; heavier than needed for phase 1.
+  - Fully autonomous agent writes to production, rejected until merge rules and quality are proven; high impact if wrong (times, locations, “church closed”).
+  - JSON only, no DB, acceptable short-term bootstrap only.
 - **Consequences:**
   - Short term: continue **paste email → agent updates `community*.json` → Thomas reviews → deploy**; document merge rules for the agent.
   - Medium term: introduce DB schema + staging table + approval step; site reads DB or generated JSON.

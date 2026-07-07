@@ -5,7 +5,7 @@ alwaysApply: true
 
 # Parish email paste (intake)
 
-If the user message is **primarily pasted email(s) or bulletin text** about Sint-Geertrui parish life — one mail or **several forwards in one paste** — Dutch schedule text, Gemeenschapsploeg, *lichtflits*, Sunday services, *Geloofsgesprek*, *Geertruicafé*, beiaard, slotviering — and they are **not** asking an unrelated question only:
+If the user message is **primarily pasted email(s) or bulletin text** about Sint-Geertrui parish life, one mail or **several forwards in one paste**, Dutch schedule text, Gemeenschapsploeg, *lichtflits*, Sunday services, *Geloofsgesprek*, *Geertruicafé*, beiaard, slotviering, and they are **not** asking an unrelated question only:
 
 1. Read and follow **`.cursor/skills/parish-agenda-email/SKILL.md`** immediately.
 2. Update `community.json`, `community.en.json`, and `community.fr.json`.

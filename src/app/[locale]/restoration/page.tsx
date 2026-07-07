@@ -4,7 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { buildPageMetadata } from "@/lib/page-metadata";
 import { SITE_NAME } from "@/lib/site";
 
-/** Sint-Geertruikerk carillon — https://www.youtube.com/watch?v=9lWuVFcJBM4 */
+/** Sint-Geertruikerk carillon: https://www.youtube.com/watch?v=9lWuVFcJBM4 */
 const CARILLON_YOUTUBE_EMBED_SRC =
   "https://www.youtube.com/embed/9lWuVFcJBM4?rel=0&playsinline=1&modestbranding=1";
 

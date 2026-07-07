@@ -23,7 +23,7 @@
     "metaDescription": "Découvrez l'histoire, la restauration et les activités de l'église Sint-Geertruikerk à Louvain.",
     "hero": {
       "imageAlt": "Extérieur de l'église Sint-Geertruikerk",
-      "missionBody": "Ceux qui ont vécu avant nous sont partis,\nPourtant cette vieille maison de bois et de pierre\nreste debout, prière vers Toi.\nNous prions avec eux — exauce-nous.",
+      "missionBody": "Ceux qui ont vécu avant nous sont partis,\nPourtant cette vieille maison de bois et de pierre\nreste debout, prière vers Toi.\nNous prions avec eux, exauce-nous.",
       "missionAuthor": "W. Barnard"
     },
     "events": {
@@ -157,7 +157,7 @@
     },
     "kerkfabriek": {
       "title": "Fabrique d’église & conseil",
-      "body": "La fabrique d’église est une personne morale de droit public chargée de gérer les moyens matériels nécessaires à la vie liturgique d’une paroisse. Le conseil presbytéral (kerkraad) en est l’organe de gestion — les personnes qui décident des finances, de l’entretien et des autres aspects matériels liés au culte. Il compte en principe cinq membres et peut également inclure un représentant du diocèse et plusieurs conseillers.",
+      "body": "La fabrique d’église est une personne morale de droit public chargée de gérer les moyens matériels nécessaires à la vie liturgique d’une paroisse. Le conseil presbytéral (kerkraad) en est l’organe de gestion, les personnes qui décident des finances, de l’entretien et des autres aspects matériels liés au culte. Il compte en principe cinq membres et peut également inclure un représentant du diocèse et plusieurs conseillers.",
       "membersIntro": "Le conseil presbytéral de Sint-Geertrui se compose comme suit :",
       "members": [
         { "name": "Axel Buyse", "role": "Président", "email": "axel.buyse@gmail.com", "phone": "0492 13 07 02" },
@@ -173,7 +173,7 @@
     },
     "koor": {
       "title": "Chœur Gertro",
-      "body": "Avec la fabrique d'église et l'équipe communautaire, le chœur Gertro fait tout naturellement partie de la vie paroissiale Geertrui. Depuis longtemps, il colore les célébrations à l'église — musique au service de la liturgie — sous la direction de Jan Breuls, chef de chœur principal.\n\nEnvie de chanter avec nous ? Les nouvelles voix sont les bienvenues. En principe une répétition par semaine, souvent le vendredi soir ; demandez au chœur pour l'horaire exact.",
+      "body": "Avec la fabrique d'église et l'équipe communautaire, le chœur Gertro fait tout naturellement partie de la vie paroissiale Geertrui. Depuis longtemps, il colore les célébrations à l'église, musique au service de la liturgie, sous la direction de Jan Breuls, chef de chœur principal.\n\nEnvie de chanter avec nous ? Les nouvelles voix sont les bienvenues. En principe une répétition par semaine, souvent le vendredi soir ; demandez au chœur pour l'horaire exact.",
       "imageAlt": "Le chœur Gertro en répétition dans l'église Sint-Geertruikerk, avec le chef de chœur principal Jan Breuls et les choristes devant le jubé gothique."
     },
     "reachCard": {

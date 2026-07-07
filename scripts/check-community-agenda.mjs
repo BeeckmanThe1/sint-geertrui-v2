@@ -75,7 +75,7 @@ function checkLocale(events, locale) {
       const otherId = dateService.get(serviceKey);
       if (otherId !== row.id) {
         warnings.push(
-          `[${locale}] same date + service type "${kind}" on ${row.date}: ids ${otherId} and ${row.id} — confirm intentional (e.g. two times?)`,
+          `[${locale}] same date + service type "${kind}" on ${row.date}: ids ${otherId} and ${row.id}, confirm intentional (e.g. two times?)`,
         );
       }
     } else if (kind !== "other") {
@@ -87,12 +87,12 @@ function checkLocale(events, locale) {
       kind === "eucharist" || kind === "word-communion" || kind === "faith-talk";
     if (isRoutine && len >= READ_MORE_MIN_CHARS) {
       warnings.push(
-        `[${locale}] ${row.id}: routine event description is ${len} chars (≥${READ_MORE_MIN_CHARS}) — card grid will look uneven; shorten to ~${ROUTINE_MAX_CHARS} chars`,
+        `[${locale}] ${row.id}: routine event description is ${len} chars (≥${READ_MORE_MIN_CHARS}), card grid will look uneven; shorten to ~${ROUTINE_MAX_CHARS} chars`,
       );
     }
     if (isRoutine && len > ROUTINE_MAX_CHARS && len < READ_MORE_MIN_CHARS) {
       warnings.push(
-        `[${locale}] ${row.id}: routine description is ${len} chars — prefer ~60–${ROUTINE_MAX_CHARS} for grid consistency`,
+        `[${locale}] ${row.id}: routine description is ${len} chars, prefer ~60–${ROUTINE_MAX_CHARS} for grid consistency`,
       );
     }
   }

@@ -23,7 +23,7 @@
     "metaDescription": "Discover the history, restoration, and activities of Sint-Geertruikerk in Leuven.",
     "hero": {
       "imageAlt": "Exterior of Sint-Geertruikerk",
-      "missionBody": "Those who lived before us have gone,\nYet this old house of wood and stone\nstill stands as a prayer to You.\nWe pray with them—hear us now.",
+      "missionBody": "Those who lived before us have gone,\nYet this old house of wood and stone\nstill stands as a prayer to You.\nWe pray with them, hear us now.",
       "missionAuthor": "W. Barnard"
     },
     "events": {
@@ -157,7 +157,7 @@
     },
     "kerkfabriek": {
       "title": "Church fabric & council",
-      "body": "The church fabric (kerkfabriek) is a public body responsible for managing the material resources needed to support public worship in a parish. The church council (kerkraad) is the governing body of the fabric — the people who decide on finances, maintenance, and other material matters related to worship. A council typically has five members and may also include a representative of the diocese and several advisors.",
+      "body": "The church fabric (kerkfabriek) is a public body responsible for managing the material resources needed to support public worship in a parish. The church council (kerkraad) is the governing body of the fabric, the people who decide on finances, maintenance, and other material matters related to worship. A council typically has five members and may also include a representative of the diocese and several advisors.",
       "membersIntro": "The Sint-Geertrui church council consists of:",
       "members": [
         { "name": "Axel Buyse", "role": "Chair", "email": "axel.buyse@gmail.com", "phone": "0492 13 07 02" },
@@ -173,7 +173,7 @@
     },
     "koor": {
       "title": "Gertro choir",
-      "body": "Together with the church fabric and the community team, the Gertro choir is simply part of parish life here at Sint-Geertruikerk. For years the choir has been part of Sunday worship — music with heart for the liturgy — under chief conductor Jan Breuls.\n\nFancy joining? New singers are genuinely welcome. There is usually a rehearsal once a week, often on a Friday evening — ask the choir for the exact time.",
+      "body": "Together with the church fabric and the community team, the Gertro choir is simply part of parish life here at Sint-Geertruikerk. For years the choir has been part of Sunday worship, music with heart for the liturgy, under chief conductor Jan Breuls.\n\nFancy joining? New singers are genuinely welcome. There is usually a rehearsal once a week, often on a Friday evening; ask the choir for the exact time.",
       "imageAlt": "The Gertro choir rehearsing in Sint-Geertruikerk, with chief conductor Jan Breuls and singers in front of the Gothic choir screen."
     },
     "reachCard": {

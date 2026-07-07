@@ -1,4 +1,4 @@
-# Parish agenda email — examples
+# Parish agenda email, examples
 
 ## Example 1: Sunday schedule block (update + add)
 
@@ -22,8 +22,8 @@
 
 **Agent actions:**
 
-- **`2026-06-21-35`** — title `"Zegening twaalf nieuwe beiaardklokken"`, zegening + klokken bekijken + drankje, `highlighted: true`.
-- **`2026-06-21-42`** — separate row for potluck/Geertruiberaad; title mentions Auberge Espagnole, **not** the zegening.
+- **`2026-06-21-35`**, title `"Zegening twaalf nieuwe beiaardklokken"`, zegening + klokken bekijken + drankje, `highlighted: true`.
+- **`2026-06-21-42`**, separate row for potluck/Geertruiberaad; title mentions Auberge Espagnole, **not** the zegening.
 - Do **not** use only `"Slot- en dankviering werkjaar"` as the zegening title.
 
 ## Example 2b: Beiaard inluiding (different date)
@@ -32,8 +32,8 @@
 
 **Agent actions:**
 
-- **`2026-07-12-33`** — title `"Plechtige inluiding vernieuwde Sint-Geertruibeiaard"`, `highlighted: true`.
-- Keep separate from June zegening row — different date, different event.
+- **`2026-07-12-33`**, title `"Plechtige inluiding vernieuwde Sint-Geertruibeiaard"`, `highlighted: true`.
+- Keep separate from June zegening row, different date, different event.
 
 ## Example 3: Skip recap
 
@@ -43,7 +43,7 @@
 
 **Agent actions:**
 
-- If date is past and text is purely a report → skip new row, or update existing Geertruicafé entry only if that event was already listed as upcoming and now needs the report as description (Thomas rarely wants this — default skip).
+- If date is past and text is purely a report → skip new row, or update existing Geertruicafé entry only if that event was already listed as upcoming and now needs the report as description (Thomas rarely wants this, default skip).
 
 ## Example 4: No service / elsewhere
 
@@ -68,7 +68,7 @@
 
 > Zondag 7 juni eucharistieviering voorgegaan door pater Arnold Castro.
 
-**Existing row:** `2026-06-07-38` — `"Eucharistieviering"`, `"Om 11 uur, voorgegaan door pater Arnold Castro."`
+**Existing row:** `2026-06-07-38`, `"Eucharistieviering"`, `"Om 11 uur, voorgegaan door pater Arnold Castro."`
 
 **Agent actions:**
 
@@ -81,7 +81,7 @@
 
 **Agent actions:**
 
-- Description: `"Gebedsleider: Tomas Bruyland."` (~30 chars) — **Routine** tier.
+- Description: `"Gebedsleider: Tomas Bruyland."` (~30 chars), **Routine** tier.
 - Do not copy the full email into `description`.
 
 **Email:** slotviering with potluck + Geertruiberaad details.
@@ -93,7 +93,7 @@
 
 ## Example 8: Multiple emails in one paste
 
-**User message:** three forwarded blocks — (1) June Sunday schedule, (2) Geertruicafé invite, (3) reminder that Pentecost is already listed.
+**User message:** three forwarded blocks, (1) June Sunday schedule, (2) Geertruicafé invite, (3) reminder that Pentecost is already listed.
 
 **Agent actions:**
 
@@ -112,5 +112,5 @@
 **Agent actions:**
 
 - **Do not add** four generic `Beiaardconcert Sint-Geertruibeiaard` rows to `concerts.json`.
-- Report **Skipped** — needs per-date start time (and location if unclear).
+- Report **Skipped**, needs per-date start time (and location if unclear).
 - If Thomas later provides “zondag 19 juli om 15 u., park abdij”, then add one concrete concert row.

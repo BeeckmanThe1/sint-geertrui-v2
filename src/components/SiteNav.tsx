@@ -42,7 +42,7 @@ export function SiteNav() {
       return false;
     }
     // `usePathname()` from next-intl is already the internal pathname (e.g. `/history`), not the
-    // localized URL segment — so compare to `canonicalHref`, not `getPathname(...)`.
+    // localized URL segment, so compare to `canonicalHref`, not `getPathname(...)`.
     return pathname === canonicalHref || pathname.startsWith(`${canonicalHref}/`);
   };
 

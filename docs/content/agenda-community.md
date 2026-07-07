@@ -14,24 +14,24 @@ This is separate from **Concerten**, which come from a different source and upda
 4. The **agent** reads all pasted blocks, merges candidates, reconciles against existing `community*.json` rows, and writes or updates JSON in **Dutch (canonical)** plus **English and French** translations in the matching locale files.
 5. Thomas **reviews** the diff (quick sanity check), then changes are **deployed** with a normal site release.
 
-There is no parish-facing editor, no external calendar sync, and no automated email intake today — the copy-paste step is still manual, but **JSON authoring and translation are agent-assisted**, not hand-typed by Thomas.
+There is no parish-facing editor, no external calendar sync, and no automated email intake today, the copy-paste step is still manual, but **JSON authoring and translation are agent-assisted**, not hand-typed by Thomas.
 
-**Agent skill (paste email → update JSON):** `.cursor/skills/parish-agenda-email/SKILL.md` — Thomas can paste mail with no extra prompt; see also `.cursor/rules/parish-email-intake.mdc`.
+**Agent skill (paste email → update JSON):** `.cursor/skills/parish-agenda-email/SKILL.md`, Thomas can paste mail with no extra prompt; see also `.cursor/rules/parish-email-intake.mdc`.
 
 ### Agent task checklist (today)
 
 When processing pasted parish email(s), the agent should:
 
-- Accept **multiple forwarded emails in one paste** — split into blocks, extract all, **dedupe across mails**, then write JSON once.
+- Accept **multiple forwarded emails in one paste**, split into blocks, extract all, **dedupe across mails**, then write JSON once.
 - Read `community.json` (and `.en.json` / `.fr.json`) before changing anything.
-- Run a **duplicate audit** by date + event intent; **update in place** — never add a second row for the same event.
+- Run a **duplicate audit** by date + event intent; **update in place**, never add a second row for the same event.
 - Run **`npm run agenda:check-community`** after edits (blocks duplicate ids and date+title pairs).
 - Keep **routine** descriptions short (~60–140 chars) so agenda cards stay even; long text (≥200 chars) only for exceptional items (read-more UI).
 - Skip or flag **past recaps** unless Thomas explicitly wants them published.
 - Keep the **same `id`** across all three locale files for each event.
 - Write NL from the email; draft EN/FR with similar length and meaning.
 - Set `highlighted: true` only for noteworthy future items when appropriate.
-- **Only meaningful events** — skip rows without actionable detail; see skill section “Only meaningful events”.
+- **Only meaningful events**, skip rows without actionable detail; see skill section “Only meaningful events”.
 - **Beiaard:** zegening (e.g. 21 June) and inluiding (e.g. 12 July) are **two separate** community rows; put the milestone in the **title**, both `highlighted: true`.
 
 ## Only meaningful events
@@ -47,7 +47,7 @@ The agenda is for parishioners, not archive filler.
 | Event | Example title (NL) |
 |-------|---------------------|
 | Zegening new bells | `Zegening twaalf nieuwe beiaardklokken` |
-| Potluck same day | separate row, e.g. `Slot- en dankviering werkjaar — Auberge Espagnole` |
+| Potluck same day | separate row, e.g. `Slot- en dankviering werkjaar, Auberge Espagnole` |
 | Inluiding renovated carillon | `Plechtige inluiding vernieuwde Sint-Geertruibeiaard` |
 
 Zegening ≠ inluiding. Do not merge. Reference ids: `2026-06-21-35`, `2026-06-21-42`, `2026-07-12-33`.
@@ -80,18 +80,18 @@ Each event row:
 
 **Quality checks after edits:** `npm run agenda:check-community` (duplicates + length warnings) and `npm test -- src/lib/agenda-events.test.ts`.
 
-**Description length:** routine Sunday services ~60–140 characters; longer copy (≥200 chars) triggers read-more clamp in the card grid — reserve for exceptional announcements only.
+**Description length:** routine Sunday services ~60–140 characters; longer copy (≥200 chars) triggers read-more clamp in the card grid, reserve for exceptional announcements only.
 
 **Not used for community events:**
 
-- `npm run agenda:build` and `concerts-and-events.csv` — concerts/rehearsals only.
-- `messages/*.json` — UI labels only, not event data.
+- `npm run agenda:build` and `concerts-and-events.csv`, concerts/rehearsals only.
+- `messages/*.json`, UI labels only, not event data.
 
 ## Content patterns to preserve
 
 - Recurring Sunday rhythm (often 11:00) with celebrant or prayer leader named.
-- Some emails bundle many Sundays; reconcile against existing rows before adding — **never duplicate** same date + event type.
-- Some entries are **reports** (past tense), not invitations — do not treat every paragraph as a new future event.
+- Some emails bundle many Sundays; reconcile against existing rows before adding, **never duplicate** same date + event type.
+- Some entries are **reports** (past tense), not invitations, do not treat every paragraph as a new future event.
 - Cross-parish / zone events (e.g. Chrism mass elsewhere, church closed → service at Assumptionists).
 - NL copy from email is **canonical**; EN/FR are translations.
 
