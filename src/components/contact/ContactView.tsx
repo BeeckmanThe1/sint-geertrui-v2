@@ -118,9 +118,9 @@ export async function ContactView({ locale }: ContactViewProps) {
             <h3 className="mt-8 text-xs font-semibold uppercase tracking-wide text-zinc-500">
               {t("gemeenschapsploeg.membersHeading")}
             </h3>
-            <ul className="mt-4 grid list-none gap-x-8 gap-y-2 sm:grid-cols-2" role="list">
+            <ul className="mt-4 list-none sm:columns-2 sm:gap-x-8" role="list">
               {members.map((member) => (
-                <li key={member.name} className="text-base text-zinc-800">
+                <li key={member.name} className="mb-2 break-inside-avoid text-base text-zinc-800">
                   <span className="font-medium text-zinc-900">{member.name}</span>
                   {member.role ? (
                     <span className="mt-0.5 block text-sm text-zinc-700">{member.role}</span>
