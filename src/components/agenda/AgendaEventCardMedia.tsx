@@ -7,6 +7,8 @@ type AgendaEventCardMediaProps = {
   sizes?: string;
   /** `right` keeps text aligned when some cards lack images; `top` stacks image above body. */
   placement?: "top" | "right";
+  /** `wide` gives side thumbnails more room (e.g. home highlights strip). */
+  imageSize?: "default" | "wide";
 };
 
 /**
@@ -19,6 +21,7 @@ export function AgendaEventCardMedia({
   alt,
   sizes,
   placement = "right",
+  imageSize = "default",
 }: AgendaEventCardMediaProps) {
   const trimmed = imageUrl?.trim();
   if (!trimmed) {
@@ -27,7 +30,9 @@ export function AgendaEventCardMedia({
 
   const boxClass =
     placement === "right"
-      ? "relative w-[5.5rem] shrink-0 self-stretch overflow-hidden bg-zinc-400/50 sm:w-28 lg:w-32"
+      ? imageSize === "wide"
+        ? "relative w-28 shrink-0 self-stretch overflow-hidden bg-zinc-400/50 sm:w-36 md:w-44"
+        : "relative w-[5.5rem] shrink-0 self-stretch overflow-hidden bg-zinc-400/50 sm:w-28 lg:w-32"
       : "relative aspect-[4/3] w-full shrink-0 overflow-hidden bg-zinc-400/50";
   const resolvedSizes = sizes ?? "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw";
 

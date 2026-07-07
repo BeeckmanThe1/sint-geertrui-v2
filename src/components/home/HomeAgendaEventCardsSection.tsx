@@ -39,6 +39,16 @@ const cardBodyVariant: Record<NonNullable<HomeAgendaEventCardsSectionProps["tone
   highlighted: "homeHighlighted",
 };
 
+function highlightedCardsGridClass(count: number): string {
+  if (count === 1) {
+    return "mx-auto max-w-2xl";
+  }
+  if (count === 2) {
+    return "mx-auto max-w-5xl md:grid-cols-2";
+  }
+  return "mx-auto max-w-7xl md:grid-cols-3";
+}
+
 /**
  * Shared three-column event cards + agenda link (home “strip” layout).
  */
@@ -73,13 +83,21 @@ export function HomeAgendaEventCardsSection({
               {emptyMessage}
             </p>
           ) : (
-            <div className="grid items-stretch gap-7 md:grid-cols-3 md:gap-8 md:pr-14">
+            <div
+              className={clsx(
+                "grid items-stretch gap-7 md:gap-8",
+                tone === "highlighted"
+                  ? highlightedCardsGridClass(items.length)
+                  : "md:grid-cols-3 md:pr-14",
+              )}
+            >
               {items.map((item) => {
                 const formattedDate = formatAgendaDate(item.date, locale);
+                const isHighlighted = tone === "highlighted";
                 return (
                   <article
                     className={clsx(
-                      "flex h-full min-h-0 flex-row overflow-hidden rounded-md border",
+                      "flex h-full min-h-0 w-full flex-row overflow-hidden rounded-md border",
                       articleToneClass[tone],
                     )}
                     key={item.id}
@@ -93,16 +111,26 @@ export function HomeAgendaEventCardsSection({
                     />
                     <AgendaEventCardMedia
                       alt={imageAlt}
+                      imageSize={isHighlighted ? "wide" : "default"}
                       imageUrl={item.imageUrl}
                       placement="right"
-                      sizes="(max-width: 768px) 100vw, 33vw"
+                      sizes={
+                        isHighlighted
+                          ? "(max-width: 768px) 40vw, 22rem"
+                          : "(max-width: 768px) 100vw, 33vw"
+                      }
                     />
                   </article>
                 );
               })}
             </div>
           )}
-          <div className="mt-8 flex justify-center md:absolute md:right-0 md:top-1/2 md:mt-0 md:-translate-y-1/2 md:justify-end">
+          <div
+            className={clsx(
+              "mt-8 flex justify-center md:absolute md:top-1/2 md:mt-0 md:-translate-y-1/2",
+              tone === "highlighted" ? "md:right-8" : "md:right-0 md:justify-end",
+            )}
+          >
             <Link
               aria-label={agendaLinkAria}
               className="inline-flex min-h-12 min-w-12 items-center justify-center text-3xl font-bold leading-none text-zinc-900 transition hover:opacity-65"
