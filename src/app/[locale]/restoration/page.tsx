@@ -1,5 +1,8 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import { buildPageMetadata } from "@/lib/page-metadata";
+import { SITE_NAME } from "@/lib/site";
 
 /** Sint-Geertruikerk carillon — https://www.youtube.com/watch?v=9lWuVFcJBM4 */
 const CARILLON_YOUTUBE_EMBED_SRC =
@@ -63,6 +66,18 @@ function RestorationSection({
 type RestorationPageProps = {
   params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({
+  params,
+}: RestorationPageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "restoration" });
+
+  return buildPageMetadata(locale, "/restoration", {
+    title: `${t("title")} | ${SITE_NAME}`,
+    description: t("intro"),
+  });
+}
 
 export default async function RestorationPage({ params }: RestorationPageProps) {
   const { locale } = await params;

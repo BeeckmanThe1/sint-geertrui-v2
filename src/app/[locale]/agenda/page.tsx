@@ -12,6 +12,7 @@ import {
   isAgendaCategory,
   paginateItems,
 } from "@/lib/agenda-events";
+import { buildPageMetadata } from "@/lib/page-metadata";
 
 type AgendaPageProps = {
   params: Promise<{ locale: string }>;
@@ -25,10 +26,10 @@ export async function generateMetadata({
   setRequestLocale(locale);
   const t = await getTranslations({ locale: await getLocale(), namespace: "agenda" });
 
-  return {
+  return buildPageMetadata(locale, "/agenda", {
     title: t("metaTitle"),
     description: t("metaDescription"),
-  };
+  });
 }
 
 export default async function AgendaPage({ params, searchParams }: AgendaPageProps) {

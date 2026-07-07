@@ -1,4 +1,7 @@
 /** Shared pathname map for next-intl routing and the sitemap. */
+export const LOCALES = ["nl", "fr", "en"] as const;
+export const DEFAULT_LOCALE = LOCALES[0];
+
 export const pathnames = {
   "/": "/",
   "/agenda": "/agenda",

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { HistoryArticle } from "@/components/history/HistoryArticle";
 import { HistoryBookCarouselWrapper } from "@/components/history/HistoryBookCarousel";
+import { buildPageMetadata } from "@/lib/page-metadata";
 
 type HistoryPageProps = {
   params: Promise<{ locale: string }>;
@@ -13,10 +14,10 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "history" });
 
-  return {
+  return buildPageMetadata(locale, "/history", {
     title: t("metaTitle"),
     description: t("metaDescription"),
-  };
+  });
 }
 
 export default async function HistoryPage() {

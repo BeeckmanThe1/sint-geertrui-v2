@@ -6,6 +6,7 @@ import { HomeHighlightedEvents } from "@/components/home/HomeHighlightedEvents";
 import { HomePanorama } from "@/components/home/HomePanorama";
 import { HomeYouTube } from "@/components/home/HomeYouTube";
 import { getHomeAgendaPreviewRows } from "@/lib/agenda-events";
+import { buildPageMetadata } from "@/lib/page-metadata";
 
 type LocaleHomePageProps = {
   params: Promise<{ locale: string }>;
@@ -18,10 +19,10 @@ export async function generateMetadata({
   setRequestLocale(locale);
   const t = await getTranslations({ locale: await getLocale(), namespace: "home" });
 
-  return {
+  return buildPageMetadata(locale, "/", {
     title: t("metaTitle"),
     description: t("metaDescription"),
-  };
+  });
 }
 
 export default async function LocaleHomePage({ params }: LocaleHomePageProps) {
