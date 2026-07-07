@@ -141,18 +141,18 @@
     },
     "gemeenschapsploeg": {
       "title": "Gemeenschapsploeg",
-      "body": "De Gemeenschapsploeg van de Geertrui-gemeenschap staat in voor de religieuze begeleiding van wat vroeger 'de parochie' werd genoemd. De Geertrui-gemeenschap maakt intussen deel uit van de <zone>Pastorale zone Leuven aan de Dijle</zone>, waarin alle vroegere parochies binnen de 'vesten' van de oude stad samenwerken. De Gemeenschapsploeg verzorgt of begeleidt bijvoorbeeld de missen en woorddiensten in onze kerk.",
+      "body": "De gemeenschapsploeg van de Sint-Geertruikerk staat in voor de religieuze begeleiding van wat vroeger 'de parochie' werd genoemd. De Sint-Geertruikergemeenschap maakt intussen deel uit van de <zone>Pastorale zone Leuven aan de Dijle</zone>, waarin alle vroegere parochies binnen de 'vesten' van de oude stad samenwerken. De gemeenschapsploeg verzorgt of begeleidt bijvoorbeeld de missen en woorddiensten in onze kerk.",
       "membersHeading": "Leden",
       "members": [
-        "Greet Beerts",
-        "Chris Heremans",
-        "Wim Janssens",
-        "Bart Massart",
-        "Rita Merckx",
-        "Ingrid Meulemans",
-        "Lieve Vandeven",
-        "Mieke Vanderputte",
-        "Asha Mabel"
+        { "name": "Greet Beerts" },
+        { "name": "Chris Heremans" },
+        { "name": "Wim Janssens" },
+        { "name": "Asha Mabel" },
+        { "name": "Bart Massart" },
+        { "name": "Rita Merckx", "role": "Voorzitter" },
+        { "name": "Ingrid Meulemans" },
+        { "name": "Lieve Vandeven" },
+        { "name": "Mieke Vanderputte" }
       ]
     },
     "kerkfabriek": {

@@ -23,20 +23,21 @@ export async function AgendaEventGrid({ locale, items }: AgendaEventGridProps) {
         const formattedDate = formatAgendaDate(item.date, locale);
         return (
           <article
-            className="flex h-full min-h-0 flex-col overflow-hidden rounded-md border border-zinc-900/10 bg-[#f5eedc] shadow-md shadow-black/[0.07] ring-1 ring-white/35"
+            className="flex h-full min-h-0 flex-row overflow-hidden rounded-md border border-zinc-900/10 bg-[#f5eedc] shadow-md shadow-black/[0.07] ring-1 ring-white/35"
             key={item.id}
           >
-            <AgendaEventCardMedia
-              alt={t("imageAlt")}
-              imageUrl={item.imageUrl}
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            />
             <AgendaEventCardBody
               description={item.description}
               formattedDate={formattedDate}
               isoDate={item.date}
               title={item.title}
               variant="agenda"
+            />
+            <AgendaEventCardMedia
+              alt={t("imageAlt")}
+              imageUrl={item.imageUrl}
+              placement="right"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             />
           </article>
         );

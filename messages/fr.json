@@ -141,18 +141,18 @@
     },
     "gemeenschapsploeg": {
       "title": "Équipe communautaire",
-      "body": "L’équipe communautaire (Gemeenschapsploeg) de la communauté Geertrui assure l’accompagnement religieux de ce qu’on appelait autrefois « la paroisse ». La communauté Geertrui fait désormais partie de la <zone>zone pastorale Louvain-Dyle</zone>, au sein de laquelle toutes les anciennes paroisses à l’intérieur des anciennes enceintes de la ville collaborent. L’équipe assure ou accompagne notamment les messes et les célébrations de la Parole dans notre église.",
+      "body": "L’équipe communautaire (Gemeenschapsploeg) de la communauté de Sint-Geertrui assure l’accompagnement religieux de ce qu’on appelait autrefois « la paroisse ». La communauté de Sint-Geertrui fait désormais partie de la <zone>zone pastorale Louvain-Dyle</zone>, au sein de laquelle toutes les anciennes paroisses à l’intérieur des anciennes enceintes de la ville collaborent. L’équipe assure ou accompagne notamment les messes et les célébrations de la Parole dans notre église.",
       "membersHeading": "Membres",
       "members": [
-        "Greet Beerts",
-        "Chris Heremans",
-        "Wim Janssens",
-        "Bart Massart",
-        "Rita Merckx",
-        "Ingrid Meulemans",
-        "Lieve Vandeven",
-        "Mieke Vanderputte",
-        "Asha Mabel"
+        { "name": "Greet Beerts" },
+        { "name": "Chris Heremans" },
+        { "name": "Wim Janssens" },
+        { "name": "Asha Mabel" },
+        { "name": "Bart Massart" },
+        { "name": "Rita Merckx", "role": "Présidente" },
+        { "name": "Ingrid Meulemans" },
+        { "name": "Lieve Vandeven" },
+        { "name": "Mieke Vanderputte" }
       ]
     },
     "kerkfabriek": {

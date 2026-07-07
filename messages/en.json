@@ -141,18 +141,18 @@
     },
     "gemeenschapsploeg": {
       "title": "Community team",
-      "body": "The community team (Gemeenschapsploeg) of the Geertrui community provides pastoral support for what used to be called “the parish”. The Geertrui community is now part of the <zone>Pastoral zone Leuven on the Dijle</zone>, in which all former parishes within the ramparts of the old city work together. The community team leads or supports, for example, Masses and liturgies of the Word in our church.",
+      "body": "The community team (Gemeenschapsploeg) of the Sint-Geertrui church community provides pastoral support for what used to be called “the parish”. The Sint-Geertrui church community is now part of the <zone>Pastoral zone Leuven on the Dijle</zone>, in which all former parishes within the ramparts of the old city work together. The community team leads or supports, for example, Masses and liturgies of the Word in our church.",
       "membersHeading": "Members",
       "members": [
-        "Greet Beerts",
-        "Chris Heremans",
-        "Wim Janssens",
-        "Bart Massart",
-        "Rita Merckx",
-        "Ingrid Meulemans",
-        "Lieve Vandeven",
-        "Mieke Vanderputte",
-        "Asha Mabel"
+        { "name": "Greet Beerts" },
+        { "name": "Chris Heremans" },
+        { "name": "Wim Janssens" },
+        { "name": "Asha Mabel" },
+        { "name": "Bart Massart" },
+        { "name": "Rita Merckx", "role": "Chair" },
+        { "name": "Ingrid Meulemans" },
+        { "name": "Lieve Vandeven" },
+        { "name": "Mieke Vanderputte" }
       ]
     },
     "kerkfabriek": {

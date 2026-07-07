@@ -79,22 +79,23 @@ export function HomeAgendaEventCardsSection({
                 return (
                   <article
                     className={clsx(
-                      "flex h-full min-h-0 flex-col overflow-hidden rounded-md border",
+                      "flex h-full min-h-0 flex-row overflow-hidden rounded-md border",
                       articleToneClass[tone],
                     )}
                     key={item.id}
                   >
-                    <AgendaEventCardMedia
-                      alt={imageAlt}
-                      imageUrl={item.imageUrl}
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                    />
                     <AgendaEventCardBody
                       description={item.description}
                       formattedDate={formattedDate}
                       isoDate={item.date}
                       title={item.title}
                       variant={cardBodyVariant[tone]}
+                    />
+                    <AgendaEventCardMedia
+                      alt={imageAlt}
+                      imageUrl={item.imageUrl}
+                      placement="right"
+                      sizes="(max-width: 768px) 100vw, 33vw"
                     />
                   </article>
                 );

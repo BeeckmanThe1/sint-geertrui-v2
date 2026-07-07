@@ -18,6 +18,11 @@ type ContactViewProps = {
   locale: string;
 };
 
+type GemeenschapsploegMember = {
+  name: string;
+  role?: string;
+};
+
 type KerkraadMember = {
   name: string;
   role?: string;
@@ -28,7 +33,9 @@ type KerkraadMember = {
 export async function ContactView({ locale }: ContactViewProps) {
   const t = await getTranslations({ locale, namespace: "contact" });
   const membersRaw = t.raw("gemeenschapsploeg.members");
-  const members = Array.isArray(membersRaw) ? (membersRaw as string[]) : [];
+  const members: GemeenschapsploegMember[] = Array.isArray(membersRaw)
+    ? (membersRaw as GemeenschapsploegMember[])
+    : [];
   const kerkraadRaw = t.raw("kerkfabriek.members");
   const kerkraadMembers: KerkraadMember[] = Array.isArray(kerkraadRaw)
     ? (kerkraadRaw as KerkraadMember[])
@@ -112,9 +119,12 @@ export async function ContactView({ locale }: ContactViewProps) {
               {t("gemeenschapsploeg.membersHeading")}
             </h3>
             <ul className="mt-4 grid list-none gap-x-8 gap-y-2 sm:grid-cols-2" role="list">
-              {members.map((name) => (
-                <li key={name} className="text-base text-zinc-800">
-                  {name}
+              {members.map((member) => (
+                <li key={member.name} className="text-base text-zinc-800">
+                  <span className="font-medium text-zinc-900">{member.name}</span>
+                  {member.role ? (
+                    <span className="mt-0.5 block text-sm text-zinc-700">{member.role}</span>
+                  ) : null}
                 </li>
               ))}
             </ul>
