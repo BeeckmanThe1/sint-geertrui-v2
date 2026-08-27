@@ -307,6 +307,13 @@
       "date": "2026-07-19"
     },
     {
+      "id": "2026-07-19-44",
+      "category": "community",
+      "title": "Open Raga lesson",
+      "description": "10 a.m. to noon in St Gertrude’s Church, organised by parishioner Chantal De Waele. Feel free to drop in.",
+      "date": "2026-07-19"
+    },
+    {
       "id": "2026-07-26-44",
       "category": "community",
       "title": "Service of the Word and Communion",
@@ -319,6 +326,69 @@
       "title": "Eucharistic celebration",
       "description": "11 a.m., led by Father Arnold Castro.",
       "date": "2026-08-02"
+    },
+    {
+      "id": "2026-08-04-49",
+      "category": "community",
+      "title": "Exhibition: Never again Hibakusha",
+      "description": "Until 28 August, Tue–Sun 1.30–4.30 p.m. in St Gertrude’s Church. Testimonies of Hiroshima and Nagasaki survivors; organised by St Michael’s Peace Church.",
+      "date": "2026-08-04"
+    },
+    {
+      "id": "2026-08-09-46",
+      "category": "community",
+      "title": "No Mass in our church (holiday schedule)",
+      "description": "No service in our church; we join the 10 a.m. celebration at St Peter’s Church.",
+      "date": "2026-08-09"
+    },
+    {
+      "id": "2026-08-15-47",
+      "category": "community",
+      "title": "No Mass (Assumption of the Blessed Virgin Mary)",
+      "description": "No service in our church on the Assumption of the Blessed Virgin Mary.",
+      "date": "2026-08-15"
+    },
+    {
+      "id": "2026-08-16-48",
+      "category": "community",
+      "title": "Service of the Word and Communion",
+      "description": "11 a.m., prayer leader: Tomas Bruyland.",
+      "date": "2026-08-16"
+    },
+    {
+      "id": "2026-08-23-49",
+      "category": "community",
+      "title": "No Mass in our church (holiday schedule)",
+      "description": "No service in our church; we join the 10 a.m. celebration at St Peter’s Church. Note: the ReNeWi tour starts and finishes in Leuven.",
+      "date": "2026-08-23"
+    },
+    {
+      "id": "2026-08-30-50",
+      "category": "community",
+      "title": "Eucharistic celebration",
+      "description": "11 a.m., led by Father Arnold Castro.",
+      "date": "2026-08-30"
+    },
+    {
+      "id": "2026-09-06-51",
+      "category": "community",
+      "title": "Eucharistic celebration (start of new pastoral year)",
+      "description": "11 a.m., led by Father Arnold Castro.",
+      "date": "2026-09-06"
+    },
+    {
+      "id": "2026-09-06-52",
+      "category": "community",
+      "title": "Festive start of the new pastoral year",
+      "description": "After the 11 a.m. service we celebrate the start of the pastoral year. Sign up by Sunday 30 August by email or phone (geertruifeesten@gmail.com or +32 474 72 83 60); let us know how many people to expect.",
+      "date": "2026-09-06"
+    },
+    {
+      "id": "2026-09-13-53",
+      "category": "community",
+      "title": "Service of the Word and Communion",
+      "description": "11 a.m., prayer leader: Tomas Bruyland.",
+      "date": "2026-09-13"
     },
     {
       "id": "2026-10-01-36",

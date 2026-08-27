@@ -307,6 +307,13 @@
       "date": "2026-07-19"
     },
     {
+      "id": "2026-07-19-44",
+      "category": "community",
+      "title": "Open les Raga",
+      "description": "Van 10 tot 12 u. in de Sint-Geertruikerk, georganiseerd door parochiaan Chantal De Waele. Kom gerust een kijkje nemen.",
+      "date": "2026-07-19"
+    },
+    {
       "id": "2026-07-26-44",
       "category": "community",
       "title": "Dienst van Woord en Communie",
@@ -319,6 +326,69 @@
       "title": "Eucharistieviering",
       "description": "Om 11 uur, voorgegaan door pater Arnold Castro.",
       "date": "2026-08-02"
+    },
+    {
+      "id": "2026-08-04-49",
+      "category": "community",
+      "title": "Tentoonstelling: Nooit meer Hibakusha",
+      "description": "Tot 28 augustus, di–zo 13.30–16.30 u. in de Sint-Geertruikerk. Getuigenissen van overlevenden van Hiroshima en Nagasaki; organisatie Sint-Michiels Vredeskerk.",
+      "date": "2026-08-04"
+    },
+    {
+      "id": "2026-08-09-46",
+      "category": "community",
+      "title": "Geen viering in onze kerk (vakantieritme)",
+      "description": "Geen viering in onze kerk; we sluiten aan bij de viering om 10 uur in de Sint-Pieterskerk.",
+      "date": "2026-08-09"
+    },
+    {
+      "id": "2026-08-15-47",
+      "category": "community",
+      "title": "Geen viering (O.L.Vrouw Ten Hemelopneming)",
+      "description": "Geen viering in onze kerk op O.L.Vrouw Ten Hemelopneming.",
+      "date": "2026-08-15"
+    },
+    {
+      "id": "2026-08-16-48",
+      "category": "community",
+      "title": "Dienst van Woord en Communie",
+      "description": "Om 11 uur, gebedsleider: Tomas Bruyland.",
+      "date": "2026-08-16"
+    },
+    {
+      "id": "2026-08-23-49",
+      "category": "community",
+      "title": "Geen viering in onze kerk (vakantieritme)",
+      "description": "Geen viering in onze kerk; we sluiten aan bij de viering om 10 uur in de Sint-Pieterskerk. Let op: de ReNeWi tour vertrekt en komt aan in Leuven.",
+      "date": "2026-08-23"
+    },
+    {
+      "id": "2026-08-30-50",
+      "category": "community",
+      "title": "Eucharistieviering",
+      "description": "Om 11 uur, voorgegaan door pater Arnold Castro.",
+      "date": "2026-08-30"
+    },
+    {
+      "id": "2026-09-06-51",
+      "category": "community",
+      "title": "Eucharistieviering (start nieuw werkjaar)",
+      "description": "Om 11 uur, voorgegaan door pater Arnold Castro.",
+      "date": "2026-09-06"
+    },
+    {
+      "id": "2026-09-06-52",
+      "category": "community",
+      "title": "Feestelijke start nieuw werkjaar",
+      "description": "Na de viering om 11 uur zetten we het werkjaar feestelijk in. Inschrijven kan tot zondag 30 augustus per mail of telefonisch (geertruifeesten@gmail.com of 0474 72 83 60); geef door met hoeveel personen we jullie mogen verwachten.",
+      "date": "2026-09-06"
+    },
+    {
+      "id": "2026-09-13-53",
+      "category": "community",
+      "title": "Dienst van Woord en Communie",
+      "description": "Om 11 uur, gebedsleider: Tomas Bruyland.",
+      "date": "2026-09-13"
     },
     {
       "id": "2026-10-01-36",

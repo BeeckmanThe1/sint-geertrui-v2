@@ -307,6 +307,13 @@
       "date": "2026-07-19"
     },
     {
+      "id": "2026-07-19-44",
+      "category": "community",
+      "title": "Cours ouvert de Raga",
+      "description": "De 10 h à 12 h à l'église Sint-Geertrui, organisé par la paroissienne Chantal De Waele. N'hésitez pas à passer.",
+      "date": "2026-07-19"
+    },
+    {
       "id": "2026-07-26-44",
       "category": "community",
       "title": "Célébration de la Parole et de la communion",
@@ -319,6 +326,69 @@
       "title": "Célébration eucharistique",
       "description": "À 11 h, présidée par le père Arnold Castro.",
       "date": "2026-08-02"
+    },
+    {
+      "id": "2026-08-04-49",
+      "category": "community",
+      "title": "Exposition : Plus jamais Hibakusha",
+      "description": "Jusqu'au 28 août, mar–dim 13 h 30–16 h 30 à l'église Sint-Geertrui. Témoignages de survivants d'Hiroshima et Nagasaki ; organisation Église de la Paix Saint-Michel.",
+      "date": "2026-08-04"
+    },
+    {
+      "id": "2026-08-09-46",
+      "category": "community",
+      "title": "Pas de célébration dans notre église (rythme estival)",
+      "description": "Pas de célébration dans notre église ; nous rejoignons la messe à 10 h à l'église Saint-Pierre.",
+      "date": "2026-08-09"
+    },
+    {
+      "id": "2026-08-15-47",
+      "category": "community",
+      "title": "Pas de célébration (Assomption de Notre-Dame)",
+      "description": "Pas de célébration dans notre église à l'Assomption de Notre-Dame.",
+      "date": "2026-08-15"
+    },
+    {
+      "id": "2026-08-16-48",
+      "category": "community",
+      "title": "Célébration de la Parole et de la communion",
+      "description": "À 11 h, animateur de prière : Tomas Bruyland.",
+      "date": "2026-08-16"
+    },
+    {
+      "id": "2026-08-23-49",
+      "category": "community",
+      "title": "Pas de célébration dans notre église (rythme estival)",
+      "description": "Pas de célébration dans notre église ; nous rejoignons la messe à 10 h à l'église Saint-Pierre. Attention : la ReNeWi tour part et arrive à Louvain.",
+      "date": "2026-08-23"
+    },
+    {
+      "id": "2026-08-30-50",
+      "category": "community",
+      "title": "Célébration eucharistique",
+      "description": "À 11 h, présidée par le père Arnold Castro.",
+      "date": "2026-08-30"
+    },
+    {
+      "id": "2026-09-06-51",
+      "category": "community",
+      "title": "Célébration eucharistique (début de la nouvelle année pastorale)",
+      "description": "À 11 h, présidée par le père Arnold Castro.",
+      "date": "2026-09-06"
+    },
+    {
+      "id": "2026-09-06-52",
+      "category": "community",
+      "title": "Lancement festif de la nouvelle année pastorale",
+      "description": "Après la messe de 11 h, nous lançons l'année pastorale en fête. Inscription jusqu'au dimanche 30 août par mail ou téléphone (geertruifeesten@gmail.com ou 0474 72 83 60) ; indiquez le nombre de personnes.",
+      "date": "2026-09-06"
+    },
+    {
+      "id": "2026-09-13-53",
+      "category": "community",
+      "title": "Célébration de la Parole et de la communion",
+      "description": "À 11 h, animateur de prière : Tomas Bruyland.",
+      "date": "2026-09-13"
     },
     {
       "id": "2026-10-01-36",
