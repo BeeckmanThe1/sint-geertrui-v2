@@ -29,6 +29,8 @@ export async function AgendaEventGrid({ locale, items }: AgendaEventGridProps) {
             <AgendaEventCardBody
               description={item.description}
               formattedDate={formattedDate}
+              imageAlt={t("imageAlt")}
+              imageUrls={item.imageUrls}
               isoDate={item.date}
               title={item.title}
               variant="agenda"

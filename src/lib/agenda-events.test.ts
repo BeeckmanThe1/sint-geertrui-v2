@@ -31,6 +31,29 @@ describe("buildAgendaTabOrder", () => {
     expect(ordered.map((i) => i.id)).toEqual(["f3", "f2", "f1", "p1", "p2"]);
   });
 
+  it("keeps every upcoming event when futureCap is uncapped (agenda page)", () => {
+    const today = "2026-05-14";
+    const subset: AgendaEventItem[] = [
+      item("f3", "2026-05-24"),
+      item("f1", "2026-05-14"),
+      item("p1", "2026-05-10"),
+      item("f2", "2026-05-17"),
+      item("f4", "2026-05-31"),
+      item("f5", "2026-06-01"),
+      item("p2", "2026-05-03"),
+    ];
+    const ordered = buildAgendaTabOrder(subset, today, Number.POSITIVE_INFINITY);
+    expect(ordered.map((i) => i.id)).toEqual([
+      "f5",
+      "f4",
+      "f3",
+      "f2",
+      "f1",
+      "p1",
+      "p2",
+    ]);
+  });
+
   it("sorts past newest-first with stable id on same day", () => {
     const today = "2026-05-20";
     const subset: AgendaEventItem[] = [
@@ -87,5 +110,11 @@ describe("getHomeAgendaPreviewRows", () => {
     expect(ids).toEqual(
       expect.arrayContaining(["2026-10-01-36", "2026-07-12-33", "2026-06-21-35"]),
     );
+  });
+
+  it("keeps the church-closure highlight after its start date via highlightUntil", () => {
+    jest.setSystemTime(new Date("2026-10-18T12:00:00.000Z"));
+    const { highlighted } = getHomeAgendaPreviewRows("nl");
+    expect(highlighted.map((h) => h.id)).toContain("2026-10-01-36");
   });
 });

@@ -394,9 +394,66 @@
       "id": "2026-10-01-36",
       "category": "community",
       "title": "Kerk tijdelijk gesloten - eredienst bij de Assumptionisten",
-      "description": "Als je op deze website de teksten over de restauratie leest, merk je dat er al heel wat werkzaamheden aan het gebouw zijn uitgevoerd, maar dat er de komende jaren nog veel meer op stapel staat.\n\nVanaf oktober 2026 worden er in de kerk stabiliteitsproblemen met enkele pilaren aangepakt en wordt alles in gereedheid gebracht om een verwarmingssysteem te installeren. Daarvoor moet de kerk helaas een half jaar dicht voor de eredienst. Onze geloofsgemeenschap wordt in die tijd gastvrij opgevangen door de paters Assumptionisten, vlakbij onze kerk, in de Halve Straat. Die hele periode lang kunnen wij voor de zondagsdiensten samen komen in de kapel van het klooster.",
+      "description": "Als je op deze website de teksten over de restauratie leest, merk je dat er al heel wat werkzaamheden aan het gebouw zijn uitgevoerd, maar dat er de komende jaren nog veel meer op stapel staat.\n\nVanaf oktober 2026 worden er in de kerk stabiliteitsproblemen met enkele pilaren aangepakt en wordt alles in gereedheid gebracht om een verwarmingssysteem te installeren. Daarvoor moet de kerk helaas een half jaar dicht voor de eredienst. Onze geloofsgemeenschap wordt in die tijd gastvrij opgevangen door de paters Assumptionisten. Klooster: hoek Pereboomstraat en Halvestraat, recht tegenover de parking van Thiry. Die hele periode lang kunnen wij voor de zondagsdiensten samen komen in de kapel van het klooster.",
       "date": "2026-10-01",
+      "highlighted": true,
+      "highlightUntil": "2027-04-30",
+      "imageUrl": "/images/restoration/article/packed-choir.jpg",
+      "imageUrls": [
+        "/images/restoration/article/packed-choir.jpg",
+        "/images/restoration/article/packed-nave.jpg",
+        "/images/restoration/article/packed-scaffold.jpg"
+      ]
+    },
+    {
+      "id": "2026-10-11-54",
+      "category": "community",
+      "title": "Dienst van Woord en Communie (kapel Assumptionisten)",
+      "description": "Om 11 uur in de kapel van de paters Assumptionisten, gebedsleider: Dirk Verheyen. Na de viering: koffie in het salon.",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "2026-10-18-55",
+      "category": "community",
+      "title": "Eucharistieviering (kapel Assumptionisten)",
+      "description": "Om 11 uur in de kapel van de paters Assumptionisten, voorgegaan door pater Arnold Castro. Na de viering: koffie in het salon.",
+      "date": "2026-10-18"
+    },
+    {
+      "id": "2026-10-25-56",
+      "category": "community",
+      "title": "Geloofsgesprek (eerste van het werkjaar)",
+      "description": "Om 9.30 u. in het salon van de paters Assumptionisten. Pater Castro is moderator; samen in gesprek over de lezingen van die zondag.",
+      "date": "2026-10-25"
+    },
+    {
+      "id": "2026-10-25-57",
+      "category": "community",
+      "title": "Eucharistieviering (kapel Assumptionisten)",
+      "description": "Om 11 uur in de kapel van de paters Assumptionisten, voorgegaan door pater Arnold Castro.",
+      "date": "2026-10-25"
+    },
+    {
+      "id": "2026-10-27-58",
+      "category": "community",
+      "title": "Diaconie-werkgroep (pastorale zone)",
+      "description": "Om 20 uur in het Sint-Kwintenshuis, Naamsestraat 153, Leuven. Op zoek naar vrijwilligers voor diaconie in de pastorale zone.",
+      "date": "2026-10-27",
       "highlighted": true
+    },
+    {
+      "id": "2026-11-01-59",
+      "category": "community",
+      "title": "Eucharistieviering (Allerheiligen)",
+      "description": "Om 11 uur in de kapel van de paters Assumptionisten, voorgegaan door pater Arnold Castro.",
+      "date": "2026-11-01"
+    },
+    {
+      "id": "2026-11-08-60",
+      "category": "community",
+      "title": "Herdenkingsviering overledenen voorbije jaar",
+      "description": "Om 11 uur in de kapel van de paters Assumptionisten, voorgegaan door Mia Bertmans.",
+      "date": "2026-11-08"
     }
   ]
 }

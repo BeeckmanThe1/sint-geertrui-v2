@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useEffect, useId } from "react";
 import { createPortal } from "react-dom";
@@ -11,6 +12,9 @@ type AgendaEventDescriptionDialogProps = {
   formattedDate: string;
   isoDate: string;
   description: string;
+  /** Optional gallery shown below the description (e.g. packed-church photos). */
+  imageUrls?: string[];
+  imageAlt?: string;
 };
 
 export function AgendaEventDescriptionDialog({
@@ -20,9 +24,13 @@ export function AgendaEventDescriptionDialog({
   formattedDate,
   isoDate,
   description,
+  imageUrls,
+  imageAlt,
 }: AgendaEventDescriptionDialogProps) {
   const t = useTranslations("agenda");
   const titleId = useId();
+  const gallery = (imageUrls ?? []).map((url) => url.trim()).filter(Boolean);
+  const resolvedAlt = imageAlt?.trim() || t("imageAlt");
 
   useEffect(() => {
     if (!open) {
@@ -93,6 +101,35 @@ export function AgendaEventDescriptionDialog({
           <p className="max-w-prose text-pretty text-sm leading-relaxed text-zinc-800/95 whitespace-pre-line sm:text-base">
             {description}
           </p>
+          {gallery.length > 0 ? (
+            <ul className="mt-5 grid list-none gap-3 p-0 sm:grid-cols-1">
+              {gallery.map((src) => (
+                <li
+                  className="relative aspect-[4/3] w-full overflow-hidden rounded-sm bg-zinc-400/40"
+                  key={src}
+                >
+                  {src.startsWith("/") ? (
+                    <Image
+                      alt={resolvedAlt}
+                      className="object-cover"
+                      fill
+                      sizes="(max-width: 672px) 100vw, 42rem"
+                      src={src}
+                    />
+                  ) : (
+                    <Image
+                      alt={resolvedAlt}
+                      className="object-cover"
+                      fill
+                      sizes="(max-width: 672px) 100vw, 42rem"
+                      src={src}
+                      unoptimized
+                    />
+                  )}
+                </li>
+              ))}
+            </ul>
+          ) : null}
         </div>
       </div>
     </div>,

@@ -7,6 +7,9 @@ export type AgendaEventCardBodyProps = {
   isoDate: string;
   title: string;
   description: string;
+  /** Gallery for the read-more dialog (card thumbnail stays separate via media). */
+  imageUrls?: string[];
+  imageAlt?: string;
   /** `agenda` = agenda page; `home` = home upcoming strip; `homeHighlighted` = “In de kijker” strip. */
   variant?: "agenda" | "home" | "homeHighlighted";
 };
@@ -26,6 +29,8 @@ export function AgendaEventCardBody({
   isoDate,
   title,
   description,
+  imageUrls,
+  imageAlt,
   variant = "agenda",
 }: AgendaEventCardBodyProps) {
   return (
@@ -48,6 +53,8 @@ export function AgendaEventCardBody({
         <AgendaReadMoreDescription
           eventTitle={title}
           formattedDate={formattedDate}
+          imageAlt={imageAlt}
+          imageUrls={imageUrls}
           isoDate={isoDate}
           text={description}
           variant={variant}

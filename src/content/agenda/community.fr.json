@@ -394,9 +394,66 @@
       "id": "2026-10-01-36",
       "category": "community",
       "title": "Église temporairement fermée - culte chez les Assomptionnistes",
-      "description": "Si vous lisez sur ce site les textes sur la restauration, vous constaterez qu'une grande partie des travaux sur le bâtiment a déjà été réalisée, et qu'il en reste encore beaucoup pour les années à venir.\n\nÀ partir d'octobre 2026, des travaux de stabilité seront entrepris sur certains piliers dans l'église et tout sera préparé pour installer un système de chauffage. Pour cela l'église devra malheureusement rester fermée au culte public pendant six mois. Notre communauté de foi sera alors accueillie par les pères assomptionnistes, tout près de notre église, dans la Halve Straat. Pendant toute cette période nous pourrons nous réunir pour les messes dominicales dans la chapelle du couvent.",
+      "description": "Si vous lisez sur ce site les textes sur la restauration, vous constaterez qu'une grande partie des travaux sur le bâtiment a déjà été réalisée, et qu'il en reste encore beaucoup pour les années à venir.\n\nÀ partir d'octobre 2026, des travaux de stabilité seront entrepris sur certains piliers dans l'église et tout sera préparé pour installer un système de chauffage. Pour cela l'église devra malheureusement rester fermée au culte public pendant six mois. Notre communauté de foi sera alors accueillie par les pères assomptionnistes. Couvent : angle Pereboomstraat et Halvestraat, en face du parking Thiry. Pendant toute cette période nous pourrons nous réunir pour les messes dominicales dans la chapelle du couvent.",
       "date": "2026-10-01",
+      "highlighted": true,
+      "highlightUntil": "2027-04-30",
+      "imageUrl": "/images/restoration/article/packed-choir.jpg",
+      "imageUrls": [
+        "/images/restoration/article/packed-choir.jpg",
+        "/images/restoration/article/packed-nave.jpg",
+        "/images/restoration/article/packed-scaffold.jpg"
+      ]
+    },
+    {
+      "id": "2026-10-11-54",
+      "category": "community",
+      "title": "Célébration de la Parole et de la communion (chapelle Assomptionnistes)",
+      "description": "À 11 h dans la chapelle des pères assomptionnistes (angle Pereboomstraat / Halvestraat), animateur de prière : Dirk Verheyen. Après : café au salon.",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "2026-10-18-55",
+      "category": "community",
+      "title": "Célébration eucharistique (chapelle Assomptionnistes)",
+      "description": "À 11 h dans la chapelle des pères assomptionnistes, présidée par le père Arnold Castro. Après : café au salon.",
+      "date": "2026-10-18"
+    },
+    {
+      "id": "2026-10-25-56",
+      "category": "community",
+      "title": "Conversation de foi (première de l'année pastorale)",
+      "description": "À 9 h 30 au salon des pères assomptionnistes. Le père Castro modère ; ensemble autour des lectures du dimanche.",
+      "date": "2026-10-25"
+    },
+    {
+      "id": "2026-10-25-57",
+      "category": "community",
+      "title": "Célébration eucharistique (chapelle Assomptionnistes)",
+      "description": "À 11 h dans la chapelle des pères assomptionnistes, présidée par le père Arnold Castro.",
+      "date": "2026-10-25"
+    },
+    {
+      "id": "2026-10-27-58",
+      "category": "community",
+      "title": "Groupe diaconie (zone pastorale)",
+      "description": "À 20 h au Sint-Kwintenshuis, Naamsestraat 153, Louvain. Recherche de volontaires pour la diaconie dans la zone pastorale.",
+      "date": "2026-10-27",
       "highlighted": true
+    },
+    {
+      "id": "2026-11-01-59",
+      "category": "community",
+      "title": "Célébration eucharistique (Toussaint)",
+      "description": "À 11 h dans la chapelle des pères assomptionnistes, présidée par le père Arnold Castro.",
+      "date": "2026-11-01"
+    },
+    {
+      "id": "2026-11-08-60",
+      "category": "community",
+      "title": "Célébration du souvenir des défunts de l'année écoulée",
+      "description": "À 11 h dans la chapelle des pères assomptionnistes, présidée par Mia Bertmans.",
+      "date": "2026-11-08"
     }
   ]
 }

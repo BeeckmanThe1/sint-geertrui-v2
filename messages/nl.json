@@ -116,7 +116,16 @@
       },
       "sources": "Bronnen: inventaris.onroerenderfgoed.be; www.studioroma.be"
     },
-    "albumTitle": "Blader door het fotoalbum"
+    "albumTitle": "Blader door het fotoalbum",
+    "viewAllArchive": "Bekijk alle archiefbeelden",
+    "lightboxHint": "Gebruik de pijltjestoetsen of de knoppen om te bladeren",
+    "galleryPage": {
+      "metaTitle": "Archiefbeelden | Sint-Geertruikerk Leuven",
+      "metaDescription": "Prentkaarten en archieffoto’s van de Sint-Geertruikerk en haar omgeving door de eeuwen heen.",
+      "title": "De kerk in oude beelden",
+      "intro": "Deze prentkaarten en archieffoto’s laten zien hoe de Sint-Geertruikerk en haar buurt er in vorige eeuwen uitzagen: het stadsgezicht, de toren, en de verwondingen na augustus 1914.",
+      "backToHistory": "← Terug naar geschiedenis"
+    }
   },
   "contact": {
     "metaTitle": "Contact | Sint-Geertruikerk Leuven",

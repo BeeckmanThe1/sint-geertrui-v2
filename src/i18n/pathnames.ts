@@ -18,6 +18,11 @@ export const pathnames = {
     fr: "/histoire",
     en: "/history",
   },
+  "/history/gallery": {
+    nl: "/geschiedenis/archief",
+    fr: "/histoire/archives",
+    en: "/history/archive",
+  },
 } as const;
 
 export type AppPathname = keyof typeof pathnames;
@@ -31,4 +36,5 @@ export const SITEMAP_PATHNAMES: AppPathname[] = [
   "/privacy",
   "/cookies",
   "/history",
+  "/history/gallery",
 ];

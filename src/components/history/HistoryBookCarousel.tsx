@@ -2,9 +2,10 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { useCallback, useEffect, useId, useState } from "react";
-import { createPortal } from "react-dom";
+import { useCallback, useState } from "react";
+import { Link } from "@/i18n/navigation";
 import { HISTORY_GALLERY } from "@/lib/history-gallery";
+import { HistoryGalleryLightbox } from "@/components/history/HistoryGalleryLightbox";
 import bookDecor from "./book.png";
 import clsx from "clsx";
 
@@ -14,9 +15,8 @@ const galleryList = [...HISTORY_GALLERY];
 const BOOK_TEASER_REF_VIEWPORT_PX = 860;
 const BOOK_TEASER_BASE_SCALE = 1.1;
 
-export function HistoryBookCarousel({transform}: {transform: string}) {
+export function HistoryBookCarousel({ transform }: { transform: string }) {
   const t = useTranslations("history");
-  const titleId = useId();
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
   const hasImages = galleryList.length > 0;
@@ -30,42 +30,11 @@ export function HistoryBookCarousel({transform}: {transform: string}) {
     setIndex((i) => (i + 1) % galleryList.length);
   }, []);
 
-  useEffect(() => {
-    if (!open) {
-      return;
-    }
-
-    const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
-        setOpen(false);
-      }
-      if (event.key === "ArrowLeft") {
-        goPrev();
-      }
-      if (event.key === "ArrowRight") {
-        goNext();
-      }
-    };
-
-    window.addEventListener("keydown", onKeyDown);
-    return () => window.removeEventListener("keydown", onKeyDown);
-  }, [goNext, goPrev, open]);
-
-  useEffect(() => {
-    if (!open) {
-      return;
-    }
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [open]);
-
   if (!hasImages) {
     return (
       <section
         aria-label={t("bookSectionLabel")}
-        className="border-t border-black/10 px-5 py-12 sm:px-8 sm:py-14 absolute"
+        className="absolute border-t border-black/10 px-5 py-12 sm:px-8 sm:py-14"
       >
         <p className="mx-auto max-w-3xl text-center text-sm text-zinc-700">
           {t("bookEmptyFallback")}
@@ -73,6 +42,7 @@ export function HistoryBookCarousel({transform}: {transform: string}) {
       </section>
     );
   }
+
   return (
     <section
       aria-label={t("bookSectionLabel")}
@@ -81,90 +51,42 @@ export function HistoryBookCarousel({transform}: {transform: string}) {
         transform: `translate(-41%, -46%) rotate(-18deg) scale(calc(${BOOK_TEASER_BASE_SCALE} * min(1, 100vw / ${BOOK_TEASER_REF_VIEWPORT_PX}px)))`,
       }}
     >
-      <div className={clsx("mx-auto h-full flex max-w-5xl flex-col items-center gap-6 md:flex-row md:items-center md:justify-center md:gap-10 lg:gap-14 rounded-[15px] filter opacity-50 cursor-pointer", transform)}>
+      <div
+        className={clsx(
+          "mx-auto flex h-full max-w-5xl cursor-pointer flex-col items-center gap-6 rounded-[15px] opacity-50 filter md:flex-row md:items-center md:justify-center md:gap-10 lg:gap-14",
+          transform,
+        )}
+      >
         <button
           aria-haspopup="dialog"
           aria-label={t("bookOpenLabel")}
-          className="border-4 border-black rounded-lg cursor-pointer h-full group relative max-w-lg shrink-0 overflow-hidden rounded-sm shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white disabled:pointer-events-none disabled:opacity-50"
+          className="group relative aspect-[560/360] w-[min(26rem,62vw)] shrink-0 cursor-pointer overflow-hidden rounded-sm border-4 border-black shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white disabled:pointer-events-none disabled:opacity-50"
           disabled={!hasImages}
-          onClick={() => setOpen(true)}
+          onClick={() => {
+            setIndex(0);
+            setOpen(true);
+          }}
           type="button"
         >
+          {/* Preview is often portrait; fixed landscape slot + object-cover keeps it on the book page. */}
           <Image
             alt={t("bookTeaserAlt")}
-            className="h-auto max-h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
-            height={360}
+            className="object-cover transition duration-300 group-hover:scale-[1.02]"
+            fill
+            sizes="(max-width: 512px) 100vw, 512px"
             src={previewSrc}
-            width={560}
           />
         </button>
       </div>
 
-      {open
-        ? createPortal(
-            <div
-              aria-labelledby={titleId}
-              aria-modal="true"
-              className="fixed inset-0 z-[100] flex items-center justify-center bg-black/75 p-4"
-              onClick={() => setOpen(false)}
-              role="dialog"
-            >
-              <div
-                className="relative flex max-h-[92vh] w-full max-w-5xl flex-col gap-4"
-                onClick={(event) => event.stopPropagation()}
-              >
-                <h2 className="sr-only" id={titleId}>
-                  {t("dialogTitle")}
-                </h2>
-                <button
-                  aria-label={t("closeLabel")}
-                  className="absolute -right-1 -top-12 rounded-sm bg-white/10 px-3 py-1.5 text-sm font-medium text-white hover:bg-white/20 sm:right-0 sm:top-0"
-                  onClick={() => setOpen(false)}
-                  type="button"
-                >
-                  {t("closeLabel")}
-                </button>
-
-                <div className="relative aspect-[4/3] w-full max-h-[80vh] bg-zinc-900 sm:aspect-[3/2]">
-                  <Image
-                    alt={t("carouselImageAlt", {
-                      current: index + 1,
-                      total: galleryList.length,
-                    })}
-                    className="object-contain"
-                    fill
-                    priority
-                    sizes="(max-width: 1024px) 100vw, 1024px"
-                    src={galleryList[index]}
-                  />
-                </div>
-
-                <div className="flex items-center justify-between gap-4">
-                  <button
-                    aria-label={t("prevLabel")}
-                    className="rounded-sm bg-white/15 px-4 py-2 text-sm font-medium text-white hover:bg-white/25"
-                    onClick={goPrev}
-                    type="button"
-                  >
-                    {t("prevLabel")}
-                  </button>
-                  <span className="text-sm tabular-nums text-white/90">
-                    {index + 1} / {galleryList.length}
-                  </span>
-                  <button
-                    aria-label={t("nextLabel")}
-                    className="rounded-sm bg-white/15 px-4 py-2 text-sm font-medium text-white hover:bg-white/25"
-                    onClick={goNext}
-                    type="button"
-                  >
-                    {t("nextLabel")}
-                  </button>
-                </div>
-              </div>
-            </div>,
-            document.body,
-          )
-        : null}
+      <HistoryGalleryLightbox
+        images={galleryList}
+        index={index}
+        onClose={() => setOpen(false)}
+        onNext={goNext}
+        onPrev={goPrev}
+        open={open}
+      />
     </section>
   );
 }
@@ -178,17 +100,23 @@ export function HistoryBookCarouselWrapper() {
       className="relative block overflow-hidden rounded-t-xl"
     >
       <Image
-        unoptimized
         alt={t("bookTeaserAlt")}
         className="h-auto w-full"
         src={bookDecor}
+        unoptimized
       />
-      <p
-        className="pointer-events-none absolute right-3 top-3 z-20 max-w-[min(100%,18rem)] text-right font-medium text-sm text-white/95 drop-shadow-[0_1px_3px_rgb(0_0_0_/_0.6)] sm:right-5 sm:top-5 sm:max-w-[22rem] sm:text-base"
-      >
+      <p className="pointer-events-none absolute right-3 top-3 z-20 max-w-[min(100%,18rem)] text-right text-sm font-medium text-white/95 drop-shadow-[0_1px_3px_rgb(0_0_0_/_0.6)] sm:right-5 sm:top-5 sm:max-w-[22rem] sm:text-base">
         {t("albumTitle")}
       </p>
       <HistoryBookCarousel transform="" />
+      <div className="absolute inset-x-0 bottom-0 z-20 flex justify-center bg-gradient-to-t from-black/55 to-transparent px-4 pb-5 pt-12">
+        <Link
+          className="rounded-full bg-white/95 px-5 py-2.5 text-sm font-semibold text-zinc-900 shadow-md transition hover:bg-white"
+          href="/history/gallery"
+        >
+          {t("viewAllArchive")}
+        </Link>
+      </div>
     </section>
   );
 }

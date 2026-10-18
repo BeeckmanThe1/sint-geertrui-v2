@@ -394,9 +394,66 @@
       "id": "2026-10-01-36",
       "category": "community",
       "title": "Church temporarily closed - worship with the Assumptionists",
-      "description": "If you read the texts about the restoration on this website, you will see that a great deal of work has already been carried out on the building, and that much more is planned in the coming years.\n\nFrom October 2026 stability work will be carried out on several pillars in the church and everything will be prepared for installing a heating system. For that reason the church will unfortunately have to be closed for public worship for six months. During that time our faith community is kindly hosted by the Assumptionist fathers, close to our church in Halve Straat. Throughout that period we can gather for Sunday services together in the monastery chapel.",
+      "description": "If you read the texts about the restoration on this website, you will see that a great deal of work has already been carried out on the building, and that much more is planned in the coming years.\n\nFrom October 2026 stability work will be carried out on several pillars in the church and everything will be prepared for installing a heating system. For that reason the church will unfortunately have to be closed for public worship for six months. During that time our faith community is kindly hosted by the Assumptionist fathers. Monastery: corner of Pereboomstraat and Halvestraat, opposite Thiry car park. Throughout that period we can gather for Sunday services together in the monastery chapel.",
       "date": "2026-10-01",
+      "highlighted": true,
+      "highlightUntil": "2027-04-30",
+      "imageUrl": "/images/restoration/article/packed-choir.jpg",
+      "imageUrls": [
+        "/images/restoration/article/packed-choir.jpg",
+        "/images/restoration/article/packed-nave.jpg",
+        "/images/restoration/article/packed-scaffold.jpg"
+      ]
+    },
+    {
+      "id": "2026-10-11-54",
+      "category": "community",
+      "title": "Service of the Word and Communion (Assumptionist chapel)",
+      "description": "11 a.m. in the Assumptionist fathers’ chapel, prayer leader: Dirk Verheyen. After the service: coffee in the salon.",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "2026-10-18-55",
+      "category": "community",
+      "title": "Eucharistic celebration (Assumptionist chapel)",
+      "description": "11 a.m. in the Assumptionist fathers’ chapel, led by Father Arnold Castro. After the service: coffee in the salon.",
+      "date": "2026-10-18"
+    },
+    {
+      "id": "2026-10-25-56",
+      "category": "community",
+      "title": "Faith conversation (first of the pastoral year)",
+      "description": "9.30 a.m. in the Assumptionist fathers’ salon. Father Castro moderates; together we reflect on the readings of the Sunday.",
+      "date": "2026-10-25"
+    },
+    {
+      "id": "2026-10-25-57",
+      "category": "community",
+      "title": "Eucharistic celebration (Assumptionist chapel)",
+      "description": "11 a.m. in the Assumptionist fathers’ chapel, led by Father Arnold Castro.",
+      "date": "2026-10-25"
+    },
+    {
+      "id": "2026-10-27-58",
+      "category": "community",
+      "title": "Diaconate working group (pastoral zone)",
+      "description": "8 p.m. at Sint-Kwintenshuis, Naamsestraat 153, Leuven. Looking for volunteers for diaconate work in the pastoral zone.",
+      "date": "2026-10-27",
       "highlighted": true
+    },
+    {
+      "id": "2026-11-01-59",
+      "category": "community",
+      "title": "Eucharistic celebration (All Saints)",
+      "description": "11 a.m. in the Assumptionist fathers’ chapel, led by Father Arnold Castro.",
+      "date": "2026-11-01"
+    },
+    {
+      "id": "2026-11-08-60",
+      "category": "community",
+      "title": "Memorial service for the deceased of the past year",
+      "description": "11 a.m. in the Assumptionist fathers’ chapel, led by Mia Bertmans.",
+      "date": "2026-11-08"
     }
   ]
 }

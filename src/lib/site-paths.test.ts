@@ -11,5 +11,8 @@ describe("getLocalizedPath", () => {
     expect(getLocalizedPath("fr", "/restoration")).toBe("/fr/restauration");
     expect(getLocalizedPath("en", "/history")).toBe("/en/history");
     expect(getLocalizedPath("nl", "/history")).toBe("/nl/geschiedenis");
+    expect(getLocalizedPath("nl", "/history/gallery")).toBe("/nl/geschiedenis/archief");
+    expect(getLocalizedPath("en", "/history/gallery")).toBe("/en/history/archive");
+    expect(getLocalizedPath("fr", "/history/gallery")).toBe("/fr/histoire/archives");
   });
 });

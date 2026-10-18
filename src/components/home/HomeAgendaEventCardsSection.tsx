@@ -105,6 +105,8 @@ export function HomeAgendaEventCardsSection({
                     <AgendaEventCardBody
                       description={item.description}
                       formattedDate={formattedDate}
+                      imageAlt={imageAlt}
+                      imageUrls={item.imageUrls}
                       isoDate={item.date}
                       title={item.title}
                       variant={cardBodyVariant[tone]}

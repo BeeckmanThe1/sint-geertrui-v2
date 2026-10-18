@@ -14,6 +14,8 @@ type AgendaReadMoreDescriptionProps = {
   eventTitle: string;
   formattedDate: string;
   isoDate: string;
+  imageUrls?: string[];
+  imageAlt?: string;
 };
 
 const fadeFromClass: Record<AgendaReadMoreDescriptionProps["variant"], string> = {
@@ -28,11 +30,14 @@ export function AgendaReadMoreDescription({
   eventTitle,
   formattedDate,
   isoDate,
+  imageUrls,
+  imageAlt,
 }: AgendaReadMoreDescriptionProps) {
   const t = useTranslations("agenda");
   const id = useId();
   const [dialogOpen, setDialogOpen] = useState(false);
-  const collapsible = text.length >= READ_MORE_MIN_CHARS;
+  const gallery = (imageUrls ?? []).map((url) => url.trim()).filter(Boolean);
+  const collapsible = text.length >= READ_MORE_MIN_CHARS || gallery.length > 1;
 
   if (!collapsible) {
     return (
@@ -71,6 +76,8 @@ export function AgendaReadMoreDescription({
       <AgendaEventDescriptionDialog
         description={text}
         formattedDate={formattedDate}
+        imageAlt={imageAlt}
+        imageUrls={gallery}
         isoDate={isoDate}
         onClose={() => setDialogOpen(false)}
         open={dialogOpen}

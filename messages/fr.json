@@ -116,7 +116,16 @@
       },
       "sources": "Sources: inventaris.onroerenderfgoed.be; www.studioroma.be"
     },
-    "albumTitle": "Feuilletez l'album photo"
+    "albumTitle": "Feuilletez l'album photo",
+    "viewAllArchive": "Voir toutes les images d'archives",
+    "lightboxHint": "Utilisez les flèches du clavier ou les boutons pour parcourir",
+    "galleryPage": {
+      "metaTitle": "Images d'archives | Sint-Geertruikerk Louvain",
+      "metaDescription": "Cartes postales et photographies d'archives de l'église Sint-Geertruikerk et de son quartier au fil des siècles.",
+      "title": "L'église en anciennes images",
+      "intro": "Ces cartes postales et photographies d'archives montrent l'église Sint-Geertruikerk et son quartier aux siècles passés : le paysage urbain, la tour, et les blessures d'août 1914.",
+      "backToHistory": "← Retour à l'histoire"
+    }
   },
   "contact": {
     "metaTitle": "Contact | Sint-Geertruikerk Louvain",

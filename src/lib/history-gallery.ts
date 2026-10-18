@@ -1,11 +1,11 @@
 /**
- * Paths under /public for the history page archival carousel (oude-doos assets).
+ * Paths under /public for the history archival gallery (book teaser, lightbox, archive page).
  * Order is stable for predictable navigation.
  *
- * Bump `CACHE_BUST` when JPEGs in /public/images/history/gallery/ are replaced
+ * Bump `CACHE_BUST` when files in /public/images/history/gallery/ are replaced
  * so browsers and CDNs fetch the new files instead of a stale cache entry.
  */
-export const HISTORY_GALLERY_CACHE_BUST = "2";
+export const HISTORY_GALLERY_CACHE_BUST = "3";
 
 const PATHS = [
   "/images/history/gallery/IMG_1343.jpeg",
@@ -17,6 +17,11 @@ const PATHS = [
   "/images/history/gallery/IMG_1354.jpeg",
   "/images/history/gallery/IMG_1356.jpeg",
   "/images/history/gallery/IMG_1357.jpeg",
+  "/images/history/gallery/archive-1914-street.jpg",
+  "/images/history/gallery/archive-city-view.png",
+  "/images/history/gallery/archive-ruins-wide.png",
+  "/images/history/gallery/archive-ruins-spire.png",
+  "/images/history/gallery/archive-tower-damage.png",
 ] as const;
 
 function withCacheBust(path: string): string {
@@ -24,3 +29,7 @@ function withCacheBust(path: string): string {
 }
 
 export const HISTORY_GALLERY: string[] = PATHS.map((path) => withCacheBust(path));
+
+export function getHistoryGalleryCount(): number {
+  return HISTORY_GALLERY.length;
+}

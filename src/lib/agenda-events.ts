@@ -37,10 +37,17 @@ export type AgendaEventItem = {
   description: string;
   /** ISO YYYY-MM-DD */
   date: string;
-  /** Optional: public path (`/images/...`) or `https://` URL; if omitted, cards show no image. */
+  /** Optional: public path (`/images/...`) or `https://` URL; card thumbnail (first of gallery). */
   imageUrl?: string;
-  /** When true, eligible for the home “highlighted” strip (future dates only). */
+  /** Optional gallery for the read-more dialog; card still uses {@link imageUrl}. */
+  imageUrls?: string[];
+  /** When true, eligible for the home “highlighted” strip (see {@link highlightUntil}). */
   highlighted?: boolean;
+  /**
+   * ISO YYYY-MM-DD. When set on a highlighted item, keep it in “In de kijker” until this date
+   * (inclusive), even if {@link date} is already past. Use for multi-month status notices.
+   */
+  highlightUntil?: string;
 };
 
 const CATEGORY_SET = new Set<string>(["agenda", "concerts", "community"]);
@@ -62,9 +69,17 @@ function mapRow(row: {
   description: string;
   date: string;
   imageUrl?: string | null;
+  imageUrls?: string[] | null;
   highlighted?: boolean | null;
+  highlightUntil?: string | null;
 }): AgendaEventItem {
-  const imageUrl = row.imageUrl?.trim();
+  const gallery = (row.imageUrls ?? [])
+    .map((url) => url.trim())
+    .filter((url) => url.length > 0);
+  const imageUrl = row.imageUrl?.trim() || gallery[0];
+  const imageUrls =
+    gallery.length > 0 ? gallery : imageUrl ? [imageUrl] : undefined;
+  const highlightUntil = row.highlightUntil?.trim();
   return {
     id: row.id,
     category: row.category as AgendaCategory,
@@ -72,7 +87,9 @@ function mapRow(row: {
     description: row.description,
     date: row.date,
     ...(imageUrl ? { imageUrl } : {}),
+    ...(imageUrls && imageUrls.length > 0 ? { imageUrls } : {}),
     ...(row.highlighted === true ? { highlighted: true } : {}),
+    ...(highlightUntil ? { highlightUntil } : {}),
   };
 }
 
@@ -150,12 +167,24 @@ export function getUpcomingAgendaItems(limit: number, locale: string = "nl"): Ag
   return selectUpcomingBand(getAllAgendaItems(locale), limit);
 }
 
-/** Highlighted rows (JSON `highlighted: true`), same ordering cap as the home preview strip. */
+/**
+ * Highlighted rows (JSON `highlighted: true`), same ordering cap as the home preview strip.
+ * Eligibility uses `highlightUntil` when set, otherwise `date` — so multi-month notices (e.g.
+ * church closed from October through spring) stay in “In de kijker” after their start date.
+ */
 export function getHighlightedAgendaItems(limit: number, locale: string = "nl"): AgendaEventItem[] {
-  return selectUpcomingBand(
-    getAllAgendaItems(locale).filter((item) => item.highlighted === true),
-    limit,
-  );
+  const todayKey = agendaDateKey(getTodayIsoInAgendaTimezone());
+  const candidates = getAllAgendaItems(locale).filter((item) => {
+    if (item.highlighted !== true) {
+      return false;
+    }
+    const untilKey = agendaDateKey(item.highlightUntil ?? item.date);
+    return untilKey >= todayKey;
+  });
+  const cap = Math.max(0, limit);
+  const soonest = [...candidates].sort(sortDateAscIdAsc).slice(0, cap);
+  soonest.sort(sortDateDescIdAsc);
+  return soonest;
 }
 
 /**
@@ -173,8 +202,10 @@ export function getHomeAgendaPreviewRows(locale: string = "nl"): {
 }
 
 /**
- * Pick the soonest `futureCap` upcoming events, then order that band and the archive with the
- * same comparator: newest date first (new → old).
+ * Order agenda items for a tab: upcoming band first, then past archive.
+ * Both bands use newest-date-first (new → old). When `futureCap` is finite (home preview),
+ * only the soonest N upcoming events are kept; the full agenda page passes
+ * {@link AGENDA_PAGE_FUTURE_CAP} so every future event stays visible.
  */
 export function buildAgendaTabOrder(
   subset: AgendaEventItem[],
@@ -184,12 +215,17 @@ export function buildAgendaTabOrder(
   const todayKey = agendaDateKey(todayIso);
   const upcoming = subset.filter((item) => agendaDateKey(item.date) >= todayKey);
   const past = subset.filter((item) => agendaDateKey(item.date) < todayKey);
-  const cap = Math.max(0, futureCap);
-  const soonest = [...upcoming].sort(sortDateAscIdAsc).slice(0, cap);
-  soonest.sort(sortDateDescIdAsc);
+  const capped =
+    Number.isFinite(futureCap) && futureCap >= 0
+      ? [...upcoming].sort(sortDateAscIdAsc).slice(0, futureCap)
+      : [...upcoming];
+  capped.sort(sortDateDescIdAsc);
   past.sort(sortDateDescIdAsc);
-  return [...soonest, ...past];
+  return [...capped, ...past];
 }
+
+/** No cap: `/agenda` must list every upcoming event (pagination handles volume). */
+export const AGENDA_PAGE_FUTURE_CAP = Number.POSITIVE_INFINITY;
 
 /**
  * Items for the active agenda tab. `agenda` is the combined view (community + concerts);
@@ -208,7 +244,7 @@ export function filterAgendaItems(
   } else {
     subset = items.filter((item) => item.category === filter);
   }
-  return buildAgendaTabOrder(subset, today, AGENDA_FUTURE_CAP);
+  return buildAgendaTabOrder(subset, today, AGENDA_PAGE_FUTURE_CAP);
 }
 
 export function paginateItems<T>(items: T[], page: number, pageSize: number): T[] {

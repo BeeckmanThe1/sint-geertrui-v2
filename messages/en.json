@@ -116,7 +116,16 @@
       },
       "sources": "Sources: inventaris.onroerenderfgoed.be; www.studioroma.be"
     },
-    "albumTitle": "Browse the photo album"
+    "albumTitle": "Browse the photo album",
+    "viewAllArchive": "View all archive images",
+    "lightboxHint": "Use the arrow keys or the buttons to browse",
+    "galleryPage": {
+      "metaTitle": "Archive images | Sint-Geertruikerk Leuven",
+      "metaDescription": "Postcards and archival photographs of Sint-Geertruikerk and its neighbourhood through the centuries.",
+      "title": "The church in old images",
+      "intro": "These postcards and archival photographs show how Sint-Geertruikerk and its neighbourhood looked in earlier centuries: the cityscape, the tower, and the scars after August 1914.",
+      "backToHistory": "← Back to history"
+    }
   },
   "contact": {
     "metaTitle": "Contact | Sint-Geertruikerk Leuven",
